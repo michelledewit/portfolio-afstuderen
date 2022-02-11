@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA analyse en doelen instellen Urgenda </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="">
+        <div class="flex items-center justify-between h-28 bg-primary">
+            <div class="flex flex-col"></div>
+            <div class="bg-primary lg:w-6/12 w-full py-6">
+                <div class="block max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+                    <a href="index.html" class="text-black hover:opacity-75 bold md:text-2xl text-lg">Portfolio -
+                        Michelle</a>
+                </div>
+            </div>
+            <div
+                class="bg-primary lg:grid hidden w-6/12 py-6 justify-items-end  max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex items-center">
+
+                        <!-- Profile dropdown -->
+                        <div class="ml-3 relative " x-data="{ open: false }">
+                            <div>
+                                <button type="button"
+                                    class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    @click="open = true" x-bind:aria-expanded="open" id="user-menu-button"
+                                    aria-haspopup="true">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="h-6 w-6 " src="img/Vector.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div x-show.transition="open" @click.away="open = false"
+                                class="origin-top-right absolute right-0 z-50 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                tabindex="-1">
+                                <a href="./index.html#leerdoelen" class="block px-4 py-2 text-sm text-gray-700"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Leerdoelen</a>
+                                <a href="./index.html#projecten" class="block px-4 py-2 text-sm text-gray-700"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Projecten</a>
+                                <a href="po.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                    tabindex="-1" id="user-menu-item-0">Persoonlijke ontwikkeling</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div x-data="{ isOpen: false }" class="mobile-navbar sm:hidden">
+                <button type="button" @click="isOpen = !isOpen" class=" focus:outline-none mx-4 mt-2 mb-"
+                    id="user-menu-button" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 " src="img/Vector.svg" alt="">
+                </button>
+                <!-- navbar wrapper -->
+                <div class="fixed left-0 w-full h-40 p-5 bg-white rounded-lg shadow-xl top-16 z-50" x-show="isOpen"
+                    @click.away=" isOpen = false">
+
+                    <div class="flex flex-col space-y-6">
+                        <a href="./index.html#leerdoelen" class="text-sm text-black">Leerdoelen</a>
+                        <a href="./index.html#projecten" class="text-sm text-black">Projecten</a>
+                        <a href="po.html" class="text-sm text-black">Persoonlijke ontwikkeling</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="flex justify-center"><span
+            class=" mt-16 mb-1 mx-6 inline-flex items-center px-6 py-1 rounded-full text-base medium bg-white shadow">
+            Urgenda </span></div>
+
+
+    <div class="text-5xl mt-4 text-primary bold text-center md:w-full w-1/2 mx-auto leading-tight">
+        GA analyse en doelen instellen Urgenda</div>
+    <div class="regular text-xl md:w-1/2 w-10/12 mx-auto text-center mt-4 ">Het analyseren van de Google Analytics
+        gegevens van de Thuisbaas website. Een inzicht in bezoekersstatistieken en gedrag om zo de websiteprestaties te
+        verbeteren.</div>
+
+
+    <div class="md:w-7/12 w-10/12 mx-auto ">
+        <div class="my-12">
+            <img src="img/analytics/urgenda-website.PNG" class=" w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mb-3">Aanpak Analyse</div>
+        <div class="text-lg regular leading-8">Vanuit Urgenda was de vraag gekomen om een Google Analytics analyse uit
+            te voeren van de Thuisbaas website. Het doel voor deze analyse was om te achterhalen wat de verbeterpunten
+            op de website zijn en wat juist al goed scoort op de website.<br><br>
+
+            De opdrachtgevers van Urgenda hebben mijn Google Analytics account toegang gegeven tot het account van de
+            Thuisbaas website waarna ik deze gegevens heb onderzocht. Voor de analyse heb ik de Google Analytics
+            gegevens van de Thuisbaas website van 1 oktober tot 1 december (90 dagen) gebruikt zodat er gelijkwaardige
+            omstandigheden zijn voor de verschillende gegevens.
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Advies en Inzichten</div>
+        <div class="text-lg regular leading-8">Uit de analyse zijn een aantal inzichten een advies gekomen die relevant
+            zijn voor de Thuisbaas website.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/intro.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Social media</div>
+        <div class="text-lg regular leading-8">Het verhogen van bezoekers op de website door middel van Facebook en
+            Instagram aan de hand van social media campagnes. Het social media platform dat nu zorgt voor de meeste
+            bezoekers op de website is Twitter. Dit is een opvallende statistiek aangezien dit meer dan het dubbele aan
+            bezoekers trekt op de website terwijl Facebook en Instagram veel meer gebruikers hebben. Het optimaliseren
+            van Facebook en Instagram is daarom zeker een slag in te slaan door middel van bijvoorbeeld social media
+            campagnes.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/social.png" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Call to action</div>
+        <div class="text-lg regular leading-8">Onderzoeken welke bestemmingspagina wel de juiste call to action is in de
+            header op de homepagina. Het bouncepercentage van de pagina advies-woonhuizen is 80%. Dit is vergeleken met
+            de andere pagina's erg hoog. De grote call-to-action in de header op de homepagina gaat naar deze pagina.
+            Hier is het advies om te testen welke pagina zorgt voor een lager bouncepercentage.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/cta.png" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Referral trouw.nl</div>
+        <div class="text-lg regular leading-8">Er zijn relatief veel gebruikers op de Thuisbaas website gekomen via een
+            referral (doorverwijzing) in een nieuwsartikel op Trouw.nl. Zo heeft dit bijvoorbeeld in één week voor 300
+            bezoeker gezorgd. Zulke doorverwijzingen zorgen dus voor meer bezoekers op de website.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/trouw.png" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Email</div>
+        <div class="text-lg regular leading-8">Een aandachtspunt zijn de lage bezoekersaantallen die via de email op de
+            website zijn gekomen. Een mogelijkheid om dit aantal te verhogen is bijvoorbeeld met een e-mail strategie in
+            de vorm van een nieuwsbrief.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/mail.png" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Volledig rapport</div>
+        <div class="text-lg regular leading-8">Lees de gehele analyse met meer conclusies en kleinere inzichten in de
+            onderstaande bijlage van de Google Analytics analyse
+        </div>
+
+        <a href="https://absorbed-transport-b26.notion.site/Google-Analytics-Analyse-e0dc52a20a9346e7a65fbaca42578f26"
+            target="_blank">
+            <button type="button"
+                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 medium shadow-sm mt-6 bg-primary hover:opacity-75 focus:outline-none">
+                Volledig onderzoek</button>
+        </a>
+
+        <div class="text-3xl text-primary bold mb-3 mt-10">Aanpak Doelen instellen</div>
+        <div class="text-lg regular leading-8">Na het uitvoeren van de analyse is nog de vraag vanuit Urgenda gekomen om
+            doelen in te
+            stellen voor het het invullen van verschillende formulieren als het contactformulier om zo hieruit inzichten
+            te achterhalen.
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Aanmaken doelen</div>
+        <div class="text-lg regular leading-8">De eerste stap was het aanmaken van de doelen. De doelen die moesten
+            worden ingesteld waren het aanmelden voor advies woonhuizen, advies appartementen en het contactformulier.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/doel1.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Trechterweergave</div>
+        <div class="text-lg regular leading-8">Bij elke doelstelling is het doel bereikt bij een bepaalde
+            bestemmingspagina. Binnen het bereiken van een doel is een ideaal stappenproces vastgesteld. Om te meten
+            waar een gebruiker in welke stap het proces verlaat of juist bij de volgende stap uitkomt heb ik trechters
+            ingesteld.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/doel2.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-lg regular leading-8">De gegevens van de trechterweergave zijn weer zichtbaar in de conversie
+            rapporten.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/doel3.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-lg regular leading-8">In de afbeelding hieronder een overzicht van de hoeveelheid aangemelde
+            formulieren voor de aangemaakte doelen.
+        </div>
+
+        <div class="mt-12 mb-8">
+            <img src="img/analytics/urgenda/doel4.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Reflectie</div>
+        <div class="text-lg regular leading-8">Ik vond het erg gaaf om Google Analytics analyse uit te voeren van de
+            Thuisbaas website. Ik heb nu veel meer een inzicht hoe in het “echt” de websitegegevens in Google Analytics
+            eruit zien. Wat mij opviel tijdens de analyse was hoeveel data er inzichtelijk is en dus informatie
+            oplevert. Het is bijvoorbeeld in één oogopslag te zien hoeveel mensen er via email op de website komen en of
+            dit al verkeer oplevert of dat hier juist een slag in te maken is.<br><br>
+
+            Naast het uitvoeren van de analyse vond ik het ook fijn dat ze mij toevertrouwden om ook dingen aan te
+            passen op het account zoals het instellen van de doelen. Ik ben blij dat ik dit heb kunnen doen en dat het
+            uiteindelijk ook echt werkt zodat Thuisbaas meer gegevens kan verzamelen over verschillende
+            aanmeldprocessen.
+        </div>
+
+    </div>
+
+    <footer class="flex flex-col justify-center px-6  sm:px-6 lg:px-24 mt-24 mb-8">
+        <div class="h-px w-full bg-primary mb-6"></div>
+        <div class="text-lg text-center">Michelle de Wit - Minor Digitale Marketing 2021</div>
+    </footer>
+</body>
+
+<style>
+    .text-primary {
+        color: #cee8dc;
+    }
+
+    .bg-primary {
+        background-color: #cee8dc;
+    }
+
+    .bg-gray-bg {
+        background-color: #f9f9f9;
+    }
+
+    .light {
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+    }
+
+    .regular {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+
+    .semi-bold {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .bold {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
+
+    .border-thick {
+        border: white solid 22px;
+    }
+
+    .border-green {
+        border: #cee8dc solid 16px;
+    }
+
+    .filterDiv {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+
+
+</html>

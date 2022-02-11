@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inrichten Google Analytics lekker droog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="">
+        <div class="flex items-center justify-between h-28 bg-primary">
+            <div class="flex flex-col"></div>
+            <div class="bg-primary lg:w-6/12 w-full py-6">
+                <div class="block max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+                    <a href="index.html" class="text-black hover:opacity-75 bold md:text-2xl text-lg">Portfolio -
+                        Michelle</a>
+                </div>
+            </div>
+            <div
+                class="bg-primary lg:grid hidden w-6/12 py-6 justify-items-end  max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex items-center">
+
+                        <!-- Profile dropdown -->
+                        <div class="ml-3 relative " x-data="{ open: false }">
+                            <div>
+                                <button type="button"
+                                    class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    @click="open = true" x-bind:aria-expanded="open" id="user-menu-button"
+                                    aria-haspopup="true">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="h-6 w-6 " src="img/Vector.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div x-show.transition="open" @click.away="open = false"
+                                class="origin-top-right absolute right-0 z-50 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                tabindex="-1">
+                                <a href="./index.html#leerdoelen" class="block px-4 py-2 text-sm text-gray-700"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Leerdoelen</a>
+                                <a href="./index.html#projecten" class="block px-4 py-2 text-sm text-gray-700"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Projecten</a>
+                                <a href="po.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                    tabindex="-1" id="user-menu-item-0">Persoonlijke ontwikkeling</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div x-data="{ isOpen: false }" class="mobile-navbar sm:hidden">
+                <button type="button" @click="isOpen = !isOpen" class=" focus:outline-none mx-4 mt-2 mb-"
+                    id="user-menu-button" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 " src="img/Vector.svg" alt="">
+                </button>
+                <!-- navbar wrapper -->
+                <div class="fixed left-0 w-full h-40 p-5 bg-white rounded-lg shadow-xl top-16 z-50" x-show="isOpen"
+                    @click.away=" isOpen = false">
+
+                    <div class="flex flex-col space-y-6">
+                        <a href="./index.html#leerdoelen" class="text-sm text-black">Leerdoelen</a>
+                        <a href="./index.html#projecten" class="text-sm text-black">Projecten</a>
+                        <a href="po.html" class="text-sm text-black">Persoonlijke ontwikkeling</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="my-8">
+        <div class="flex justify-center"><span
+                class=" mt-6 mb-1 mx-6 inline-flex items-center px-6 py-1 rounded-full text-base medium bg-white shadow">
+                Lekker droog </span></div>
+
+
+        <div class="text-5xl text-primary bold text-center mt-1 md:w-2/5 w-1/2 mx-auto leading-tight">Inrichten Google
+            Analytics </div>
+        <div class="regular text-xl md:w-1/2 w-10/12 mx-auto text-center mt-4 ">Voor de webshopopdracht heb ik de
+            website
+            van lekker droog gekoppeld aan Google
+            Analytics en vervolgens ingericht.</div>
+
+    </div>
+
+
+    <div class="md:w-7/12 w-10/12 mx-auto my-12">
+        <div class="mb-12">
+            <img src="img/analytics/webshop/homepage.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Google Analytics koppelen</div>
+        <div class="text-lg regular leading-8">Voor de webshopopdracht heb ik de website van lekker droog gekoppeld
+            aan
+            Google Analytics. Ik had nog nooit met deze tool gewerkt dus als eerste stap heb ik een Google Analytics
+            account aangemaakt. Vervolgens heb ik in mijn account een property aangemaakt welke is gekoppeld aan de
+            lekker droog domeinnaam. Om Google Analytics ook daadwerkelijk in de webshop te gebruiken heb ik de
+            Google
+            Analytics code toegevoegd aan de code van de website.
+        </div>
+
+        <div class="my-12">
+            <img src="img/analytics/webshop/code-ga.PNG" class="h-96 w-full object-cover ">
+            <!-- <figcaption class=" border-l-4 border-primary"> <div class="ml-2 text-sm">Percentage ecstasy gebruikers per jaar stijgt</div></figcaption> -->
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Dataweergaves</div>
+        <div class="text-lg regular leading-8">Ik heb verschillende dataweergaves aangemaakt in de property. De
+            dataweergave "unfiltered" is de ruwe data waarin bijvoorbeeld geen filters zijn toegepast, dit is een
+            weergave waar dus de gegevens die worden verzameld ongefilterd worden getoond. "test" is de dataweergave
+            waarin aangemaakte filters of doelgroepen kunnen worden getest of deze juist zijn geïmplementeerd. Als
+            bijvoorbeeld een filter dan juist is geïmplementeerd kan ik deze overzetten naar de "master" waarin dus
+            de
+            ingerichte GA dataweergaves met de werkende filter wordt getoond.<br><br>
+        </div>
+
+        <div class="my-12">
+            <img src="img/analytics/webshop/weergave.png" class="h-96 w-full object-cover ">
+            <!-- <figcaption class=" border-l-4 border-primary"> <div class="ml-2 text-sm">Percentage ecstasy gebruikers per jaar stijgt</div></figcaption> -->
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Filteren</div>
+        <div class="text-lg regular leading-8">Om alleen de data van bezoekers te verzamelen en dus niet van
+            werknemers
+            die bijvoorbeeld nieuwe elementen aan de website toevoegen te kunnen onderscheiden heb ik een filter
+            opgesteld. De filter "verwijder IP adres", hierin worden alle bezoekers uitgesloten die gelijk zijn aan
+            een
+            waarde en in dit geval een IP adres. Op deze manier raakt de data niet vervuild met gegevens van
+            werknemers
+            die werkzaamheden aan de website uitvoeren.
+        </div>
+
+        <div class="my-12">
+            <img src="img/analytics/webshop/filter.png" class="h-96 w-full object-cover ">
+            <!-- <figcaption class=" border-l-4 border-primary"> <div class="ml-2 text-sm">Percentage ecstasy gebruikers per jaar stijgt</div></figcaption> -->
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Doelgroepen</div>
+        <div class="text-lg regular leading-8">Om alleen de data van bezoekers te verzamelen en dus niet van
+            werknemers
+            die bijvoorbeeld nieuwe elementen aan de website toevoegen te kunnen onderscheiden heb ik een filter
+            opgesteld. De filter "verwijder IP adres", hierin worden alle bezoekers uitgesloten die gelijk zijn aan
+            een
+            waarde en in dit geval een IP adres. Op deze manier raakt de data niet vervuild met gegevens van
+            werknemers
+            die werkzaamheden aan de website uitvoeren.
+        </div>
+
+        <div class="my-12">
+            <img src="img/analytics/webshop/doelgroepen.png" class="h-96 w-full object-cover ">
+            <!-- <figcaption class=" border-l-4 border-primary"> <div class="ml-2 text-sm">Percentage ecstasy gebruikers per jaar stijgt</div></figcaption> -->
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Conversies</div>
+        <div class="text-lg regular leading-8">Om te meten hoe vaak gebruikers specifieke acties succesvol uitvoeren
+            heb
+            ik conversies opgesteld. Zoals hoeveel mensen succesvol een collectie bekijken of een aankoop succesvol
+            afronden.
+        </div>
+
+        <div class="my-12">
+            <img src="img/analytics/webshop/doelen.png" class="h-96 w-full object-cover ">
+            <!-- <figcaption class=" border-l-4 border-primary"> <div class="ml-2 text-sm">Percentage ecstasy gebruikers per jaar stijgt</div></figcaption> -->
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Trechters</div>
+        <div class="text-lg regular leading-8">Voor het meten van een succesvolle bestelling heb ik een trechter
+            opgezet. Hiermee is het mogelijk om doelen op te splitsen zodat bijvoorbeeld kan worden ingezien waar
+            het in
+            het bestelproces is misgegaan. Waarom verlaten zoveel gebruikers de winkelwagen of waarom wordt de
+            checkout
+            pagina niet bereikt.
+        </div>
+
+        <div class="my-12">
+            <img src="img/analytics/webshop/trechter.PNG" class="h-96 w-full object-cover ">
+            <!-- <figcaption class=" border-l-4 border-primary"> <div class="ml-2 text-sm">Percentage ecstasy gebruikers per jaar stijgt</div></figcaption> -->
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Conversies koppelen aan event</div>
+        <div class="text-lg regular leading-8">Ik heb ook enkele doelen opgesteld waaraan een event is gekoppeld
+            zoals
+            het aanmelden voor de nieuwsbrief. Voor event goals heb ik een doel opgesteld met verschillende
+            eventvoorwaarden. Deze voorwaarden komen dan weer in de code voor de knop terug waardoor dit doel kan
+            worden
+            gemeten.
+        </div>
+
+        <div class="my-12">
+            <img src="img/analytics/webshop/event.PNG" class="h-96 w-full object-cover ">
+            <!-- <figcaption class=" border-l-4 border-primary"> <div class="ml-2 text-sm">Percentage ecstasy gebruikers per jaar stijgt</div></figcaption> -->
+        </div>
+
+
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Reflectie</div>
+        <div class="text-lg regular leading-8">Aangezien het de eerste keer was dat ik Google Analytics heb gebruikt
+            na
+            het behalen van de certificaten vond ik het op het begin lastig om een start te maken. Zo was ik
+            bijvoorbeeld een paar uur bezig met het switchen van Google Analytics 4 naar Google Analytics Universal.
+            Toen de start eenmaal was gemaakt ging het steeds makkelijker en kon ik ook de kennis die ik had
+            opgedaan
+            middels de certificaten toepassen zoals: het maken van de verschillende views, uitsluiten van ip
+            adressen en
+            het opstellen van doelen.<br><br>
+
+            De volgende keer als ik Google Analytics ga inrichten in een website wil ik mij meer verdiepen in het
+            maken
+            van doelen in GA. Doelen die ook daadwerkelijk aan Key Performance Indicators gekoppeld zijn. Verder zou
+            ik
+            om mij willen verdiepen in Google Tag Manager zodat ik bijvoorbeeld voor events geen aparte code meer
+            hoeft
+            te implementeren maar dit met Tag manager kan gaan toepassen.
+        </div>
+
+    </div>
+
+    <footer class="flex flex-col justify-center px-6  sm:px-6 lg:px-24 mt-24 mb-8">
+        <div class="h-px w-full bg-primary mb-6"></div>
+        <div class="text-lg text-center">Michelle de Wit - Minor Digitale Marketing 2021</div>
+    </footer>
+</body>
+
+<style>
+    .text-primary {
+        color: #cee8dc;
+    }
+
+    .bg-primary {
+        background-color: #cee8dc;
+    }
+
+    .bg-gray-bg {
+        background-color: #f9f9f9;
+    }
+
+    .light {
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+    }
+
+    .regular {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+
+    .semi-bold {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .bold {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
+
+    .border-thick {
+        border: white solid 22px;
+    }
+
+    .border-green {
+        border: #cee8dc solid 16px;
+    }
+
+    .filterDiv {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+
+
+</html>

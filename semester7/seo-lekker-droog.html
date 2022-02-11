@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Lekker droog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="">
+        <div class="flex items-center justify-between h-28 bg-primary">
+            <div class="flex flex-col"></div>
+            <div class="bg-primary lg:w-6/12 w-full py-6">
+                <div class="block max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+                    <a href="index.html" class="text-black hover:opacity-75 bold md:text-2xl text-lg">Portfolio -
+                        Michelle</a>
+                </div>
+            </div>
+            <div
+                class="bg-primary lg:grid hidden w-6/12 py-6 justify-items-end  max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex items-center">
+
+                        <!-- Profile dropdown -->
+                        <div class="ml-3 relative " x-data="{ open: false }">
+                            <div>
+                                <button type="button"
+                                    class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    @click="open = true" x-bind:aria-expanded="open" id="user-menu-button"
+                                    aria-haspopup="true">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="h-6 w-6 " src="img/Vector.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div x-show.transition="open" @click.away="open = false"
+                                class="origin-top-right absolute right-0 z-50 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                tabindex="-1">
+                                <a href="./index.html#leerdoelen" class="block px-4 py-2 text-sm text-gray-700"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Leerdoelen</a>
+                                <a href="./index.html#projecten" class="block px-4 py-2 text-sm text-gray-700"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Projecten</a>
+                                <a href="po.html" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                    tabindex="-1" id="user-menu-item-0">Persoonlijke ontwikkeling</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div x-data="{ isOpen: false }" class="mobile-navbar sm:hidden">
+                <button type="button" @click="isOpen = !isOpen" class=" focus:outline-none mx-4 mt-2 mb-"
+                    id="user-menu-button" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 " src="img/Vector.svg" alt="">
+                </button>
+                <!-- navbar wrapper -->
+                <div class="fixed left-0 w-full h-40 p-5 bg-white rounded-lg shadow-xl top-16 z-50" x-show="isOpen"
+                    @click.away=" isOpen = false">
+
+                    <div class="flex flex-col space-y-6">
+                        <a href="./index.html#leerdoelen" class="text-sm text-black">Leerdoelen</a>
+                        <a href="./index.html#projecten" class="text-sm text-black">Projecten</a>
+                        <a href="po.html" class="text-sm text-black">Persoonlijke ontwikkeling</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="flex justify-center"><span
+            class=" mt-16 mb-1 mx-6 inline-flex items-center px-6 py-1 rounded-full text-base medium bg-white shadow">
+            Lekker droog </span></div>
+
+
+    <div class="text-5xl mt-4 text-primary bold text-center md:w-full w-1/2 mx-auto leading-tight">
+        SEO Lekker droog</div>
+    <div class="regular text-xl md:w-1/2 w-10/12 mx-auto text-center mt-4 ">Om zo hoog mogelijk in de zoekresultaten te
+        komen heb ik verschillende SEO technieken
+        toegepast.</div>
+
+
+    <div class="md:w-7/12 w-10/12 mx-auto ">
+        <div class="my-12">
+            <img src="img/seo/droog/seo.png" class="w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mb-3">Aanpak schrijven van teksten</div>
+        <div class="text-lg regular leading-8">Voor de webshop heb ik voor verschillende pagina's de tekstuele content
+            geschreven. Voor deze content was het belangrijk om de tekst te optimaliseren voor drie doeleinden: de SEO
+            om zo hoog mogelijk in de zoekmachines te komen en om tekstuele content te creëren die aansluit bij de tone
+            of voice en doelgroep van het merk lekker droog.
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Zoekmachines</div>
+        <div class="text-lg regular leading-8">Bij het schrijven van de teksten gericht op de zoekmachines heb ik
+            gebruik gemaakt van de zoekwoordanalyse die ik hiervoor heb uitgevoerd. Uit deze zoekwoordanalyse zijn de
+            volgende belangrijkste zoekwoorden ontstaan: "Waterdichte zwembroek" en "Zwembroek met waterdichte
+            zakken". Dit is bijvoorbeeld te zien in de onderstaande afbeelding waarin de header te zien is.
+        </div>
+
+        <div class="my-12">
+            <img src="img/seo/droog/2.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-lg regular leading-8">
+            Zoals in de afbeelding hieronder te zien is heb ik in de teksten ook gebruik gemaakt van synoniemen voor
+            waterdichte zwembroek zoals bijvoorbeeld:
+            "waterafstotende zwemkleding" of van zoekwoorden die het probleem omvatten zoals: "Waar laat
+            ik mijn spullen op het strand?"
+        </div>
+
+        <div class="my-12">
+            <img src="img/seo/droog/7.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Doelgroep en tone of voice</div>
+        <div class="text-lg regular leading-8">De eerste stap hiervoor was het achterhalen van de doelgroep. Dit heb ik
+            doormiddel van een interview gedaan. Hieruit is een doelgroep gekomen: mannen tussen de 17 t/m 23 die vaak
+            met vrienden op pad gaan en in de zomer regelmatig lekker gaan zwemmen. Deze doelgroep is veel te vinden op
+            social media en dan in het bijzonder Instagram daarom is social media een belangrijk uitgangspunt van de
+            website.
+        </div>
+
+        <div class="mb-12">
+            <img src="img/seo/droog/8.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-lg regular leading-8">De tone of voice of van lekker droog is als volgt: lekker droog
+            communiceert altijd op een relaxte manier met klanten. Zelfs wanneer er even iets fout gaat blijft de
+            klantenservice rustig, het komt allemaal goed. Zij stellen zich professioneel op, maar er is altijd ruimte
+            voor wat humor, want we blijven droog. Onze doelgroep is jong dus we spreken ze op een vlotte manier aan met
+            teksten en beelden die deze groep aanspreekt, dit zullen korte teksten zijn waar onze droge humor in is
+            verwerkt.
+        </div>
+
+        <a href="https://www.figma.com/file/cYhrUbGypz4X2bXOwThAOH/Ontwerp?node-id=82%3A265" target="_blank">
+            <button type="button"
+                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 medium shadow-sm mt-6 bg-primary hover:opacity-75 focus:outline-none">
+                Bekijk hier alle geschreven teksten</button>
+        </a>
+
+        <div class="my-12">
+            <img src="img/seo/droog/11.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Technische SEO</div>
+        <div class="text-lg regular leading-8">Voor het realiseren van de lekker droog website hebben we als groep
+            gebruik gemaakt van Shopify. In Shopify heb ik verschillende werkzaamheden uitgevoerd zodat we hoger in de
+            zoekmachines terecht komen.
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Sitemap</div>
+        <div class="text-lg regular leading-8">Van elke pagina van de lekker droog website is een XML sitemap
+            gegenereerd zoals bijvoorbeeld lekkerdroog.nl/cart.xml of lekkerdroog.nl/orders/sitemap.xml. Hierdoor
+            kunnen zoekmachines de website makkelijk lezen doordat de pagina's geïndexeerd kunnen worden waardoor weer
+            makkelijker de informatie gevonden kan worden.
+        </div>
+
+        <div class="my-12">
+            <img src="img/seo/droog/sitemap.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Meta titel en beschrijving</div>
+        <div class="text-lg regular leading-8">Voor de webshop heb ik per pagina de meta titel en beschrijving ingevuld.
+            Het was hiervoor van belang dat de zoekwoorden "waterdichte zwembroek" en "zwembroek met waterdichte zakken"
+            in de beschrijving terug kwamen.
+        </div>
+
+        <div class="my-12">
+            <img src="img/seo/droog/metabeschrijvingen.PNG" class="h-96 w-full object-cover ">
+        </div>
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Alt tekst</div>
+        <div class="text-lg regular leading-8">Om organisch hoger in de zoekresultaten te komen heb ik de afbeeldingen
+            op de webshop een alt tag aan de afbeelding meegegeven. Dit is nuttig voor browsers die geen afbeeldingen
+            weergeven of voor mensen met een visuele beperking die software gebruiken om de inhoud te kunnen horen.
+        </div>
+
+        <div class="my-12">
+            <img src="img/seo/droog/alt.png" class="h-96 w-full object-cover ">
+        </div>
+
+
+        <div class="text-3xl text-primary bold mt-8 mb-3">Reflectie</div>
+        <div class="text-lg regular leading-8">Ik had al vaker content voor websites geschreven maar deze content was
+            altijd gericht op de tone of voice van het merk of content die past bij de doelgroep. Voor de lekker droog
+            webshop heb ik voor het eerst content gemaakt wat gericht is op zoekwoorden.<br><br>
+
+            Ik heb door het schrijven van de lekker droog website content geleerd om content te schrijven voor een
+            website vanuit drie invalshoeken. De tone of voice van het merk, gericht op de doelgroep en door middel van
+            zoekwoorden om zo hoog mogelijk in de zoekmachines te komen.
+        </div>
+
+    </div>
+
+    <footer class="flex flex-col justify-center px-6  sm:px-6 lg:px-24 mt-24 mb-8">
+        <div class="h-px w-full bg-primary mb-6"></div>
+        <div class="text-lg text-center">Michelle de Wit - Minor Digitale Marketing 2021</div>
+    </footer>
+</body>
+
+<style>
+    .text-primary {
+        color: #cee8dc;
+    }
+
+    .bg-primary {
+        background-color: #cee8dc;
+    }
+
+    .bg-gray-bg {
+        background-color: #f9f9f9;
+    }
+
+    .light {
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+    }
+
+    .regular {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+    }
+
+    .semi-bold {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .bold {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+    }
+
+    .border-thick {
+        border: white solid 22px;
+    }
+
+    .border-green {
+        border: #cee8dc solid 16px;
+    }
+
+    .filterDiv {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+
+
+</html>
