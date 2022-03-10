@@ -32,30 +32,32 @@
                         <!-- Profile dropdown -->
                         <div class="ml-3 relative " x-data="{ open: false }">
                             <div>
-                              <button type="button"
-                                class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                                @click="open = true" x-bind:aria-expanded="open" id="user-menu-button" aria-haspopup="true">
-                                <span class="sr-only">Open user menu</span>
-                                <img class="h-6 w-6 " src="img/Vector.svg" alt="">
-                              </button>
+                                <button type="button"
+                                    class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    @click="open = true" x-bind:aria-expanded="open" id="user-menu-button"
+                                    aria-haspopup="true">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="h-6 w-6 " src="img/Vector.svg" alt="">
+                                </button>
                             </div>
-              
+
                             <div x-show.transition="open" @click.away="open = false"
-                              class="origin-top-right absolute right-0 z-50 mt-2 pl-6 pr-24 rounded-md shadow-lg py-1 bg-yellow ring-1 ring-black ring-opacity-5 focus:outline-none"
-                              role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                              <!-- Active: "bg-gray-100", Not Active: "" -->
-                              <a href="#leerdoelen" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold" role="menuitem"
-                                tabindex="-1" id="user-menu-item-1">Opdracht</a>
-                              <a href="#projecten" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
-                                tabindex="-1" id="user-menu-item-2">Sprints</a>
-                              <a href="po.html" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem" tabindex="-1"
-                                id="user-menu-item-0">Conclusie & Aanbevelingen</a>
-                              <a href="#projecten" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
-                                tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
-                              <a href="po.html" class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
-                                tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
+                                class="origin-top-right absolute right-0 z-50 mt-2 pl-6 pr-24 rounded-md shadow-lg py-1 bg-yellow ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                tabindex="-1">
+                                <!-- Active: "bg-gray-100", Not Active: "" -->
+                                <a href="#leerdoelen" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Opdracht</a>
+                                <a href="#projecten" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Sprints</a>
+                                <a href="po.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Conclusie & Aanbevelingen</a>
+                                <a href="#projecten" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
+                                <a href="po.html" class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,34 +70,68 @@
                 </button>
                 <!-- navbar wrapper -->
                 <div class="fixed left-0 w-full h-40 p-5 bg-white rounded-lg shadow-xl top-16 z-50" x-show="isOpen"
-                @click.away=" isOpen = false">
-      
-                <div class="flex flex-col space-y-6">
-                  <a href="#leerdoelen" class="text-sm text-black uppercase">Opdracht</a>
-                  <a href="#projecten" class="text-sm text-black uppercase">Sprints</a>
-                  <a href="po.html" class="text-sm text-black uppercase">Conclusie & Aanbevelingen</a>
-                  <a href="#projecten" class="text-sm text-black uppercase">Leeswijzer</a>
-                  <a href="po.html" class="text-sm text-black uppercase">Literatuurlijst</a>
+                    @click.away=" isOpen = false">
+
+                    <div class="flex flex-col space-y-6">
+                        <a href="#leerdoelen" class="text-sm text-black uppercase">Opdracht</a>
+                        <a href="#projecten" class="text-sm text-black uppercase">Sprints</a>
+                        <a href="po.html" class="text-sm text-black uppercase">Conclusie & Aanbevelingen</a>
+                        <a href="#projecten" class="text-sm text-black uppercase">Leeswijzer</a>
+                        <a href="po.html" class="text-sm text-black uppercase">Literatuurlijst</a>
+                    </div>
                 </div>
-              </div>
             </div>
 
         </div>
     </nav>
 
-<div class="my-16">
-    <div class="text-4xl uppercase bold text-center mt-1 md:w-full w-1/2 mx-auto leading-tight">wat is marketing automation</div>
-    <div class="regular text-xl md:w-1/2 w-10/12 mx-auto text-center mt-4 ">Welkom op mijn afstudeerportfolio it is a long established fact that a reader will be distracted by the readable content of a page when looking.</div>
-</div>
+    <div class="my-16">
+        <div class="text-4xl uppercase bold text-center mt-1 md:w-full w-1/2 mx-auto leading-tight">wat is marketing
+            automation</div>
+        <div class="regular text-xl md:w-1/2 w-10/12 mx-auto text-center mt-4 ">Welkom op mijn afstudeerportfolio it is
+            a long established fact that a reader will be distracted by the readable content of a page when looking.
+        </div>
+    </div>
 
 
     <div class="md:w-7/12 w-10/12 mx-auto">
         <div class="">
-            <img src="img/analyse/comparison chart.png" class="h-96 w-full object-cover ">
+            <img src="img/analyse/ma_flow.png" class="h-96 w-full object-cover ">
         </div>
 
-        <div class="text-3xl mt-4 uppercase bold mb-2">Aanpak</div>
-        <div class="text-lg regular leading-8 opacity-75">In de analysefase heb ik als eerste stap een projectplan opgesteld. In het projectplan is de opdracht beschreven, de toegepaste project- en onderzoeksmethodes en zijn de planningen en activiteiten in kaart gebracht. Het doel van de analysefase is om de deelvraag <span class="bold">“Wat is marketing automation?”</span> te beantwoorden d.m.v. een onderzoek naar marketing automation en marketing automation systemen. Aan het eind van de sprint heb ik requirements list opgesteld in de vorm van user stories. 
+        <div class="text-3xl mt-6 uppercase bold mb-2">Aanpak</div>
+        <div class="text-lg regular leading-8 opacity-75 ">In de analysefase heb ik als eerste stap een projectplan
+            opgesteld. In het projectplan is de opdracht beschreven, de toegepaste project- en onderzoeksmethodes en
+            zijn de planningen en activiteiten in kaart gebracht. Het doel van de analysefase is om de deelvraag <span
+                class="bold italic">“Wat is marketing automation?”</span> te beantwoorden d.m.v. een onderzoek naar
+            marketing automation en marketing automation systemen. Aan het eind van de sprint heb ik requirements list
+            opgesteld in de vorm van user stories.
+        </div>
+
+        <div class="text-3xl mt-6 uppercase bold mb-2">Onderzoeksmethode</div>
+        <div class="text-lg regular leading-8 opacity-75">In de analysefase heb ik als eerste stap een projectplan
+            opgesteld. In het projectplan is de opdracht beschreven, de toegepaste project- en onderzoeksmethodes en
+            zijn de planningen en activiteiten in kaart gebracht. Het doel van de analysefase is om de deelvraag <span
+                class="bold italic">“Wat is marketing automation?”</span> te beantwoorden d.m.v. een onderzoek naar
+            marketing automation en marketing automation systemen. Aan het eind van de sprint heb ik requirements list
+            opgesteld in de vorm van user stories.
+        </div>
+
+        <a href="https://google.com" target="_blank">
+            <button type="button"
+                class="inline-flex items-center bold tracking-wide pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
+                    <path
+                        d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
+                        fill="black" />
+                </svg>
+                &nbsp Methode</button>
+        </a>
+
+        <div class="text-3xl mt-6 uppercase bold mb-2">Literatuurlijst</div>
+        <div class="text-lg regular leading-8 opacity-75">S. (2022, 15 februari). Functies van Simplicate Bedrijfssoftware | Probeer nu 14 dagen. Simplicate. Geraadpleegd op 10 maart 2022, van <a href="https://www.simplicate.com/nl/functies/"><span 
+                class="bold hover:opacity-75">https://www.simplicate.com/nl/functies/</span></a>
         </div>
 
     </div>
@@ -103,58 +139,8 @@
     <footer class="flex flex-col justify-center px-6 mt-12  sm:px-6 lg:px-24">
         <div class="h-px w-full bg-gray-800 mb-6 opacity-25"></div>
         <div class="text-lg text-center mb-6">Michelle de Wit - Afstudeerportfolio 2022</div>
-      </footer>
+    </footer>
 </body>
-
-<style>
-    .text-primary {
-        color: #cee8dc;
-    }
-
-    .bg-primary {
-        background-color: #cee8dc;
-    }
-
-    .bg-gray-bg {
-        background-color: #f9f9f9;
-    }
-
-    .light {
-        font-family: "Inter", sans-serif;
-        font-weight: 300;
-    }
-
-    .regular {
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-    }
-
-    .semi-bold {
-        font-family: "Inter", sans-serif;
-        font-weight: 600;
-    }
-
-    .bold {
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-    }
-
-    .border-thick {
-        border: white solid 22px;
-    }
-
-    .border-green {
-        border: #cee8dc solid 16px;
-    }
-
-    .filterDiv {
-        display: none;
-    }
-
-    .show {
-        display: block;
-    }
-</style>
 
 
 </html>
