@@ -42,15 +42,15 @@
                 class="origin-top-right absolute right-0 z-50 mt-2 pl-6 pr-24 rounded-md shadow-lg py-1 bg-yellow ring-1 ring-black ring-opacity-5 focus:outline-none"
                 role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
                 <!-- Active: "bg-gray-100", Not Active: "" -->
-                <a href="#leerdoelen" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold" role="menuitem"
+                <a href="#projectinformatie" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold" role="menuitem"
                   tabindex="-1" id="user-menu-item-1">Opdracht</a>
-                <a href="#projecten" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
+                <a href="#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
                   tabindex="-1" id="user-menu-item-2">Onderzoeksvragen</a>
-                <a href="po.html" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem" tabindex="-1"
+                <a href="#conclusie" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem" tabindex="-1"
                   id="user-menu-item-0">Conclusie & Aanbevelingen</a>
-                <a href="#projecten" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
+                <a href="#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
                   tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
-                <a href="po.html" class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
+                <a href="#projectinformatie" class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
                   tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
               </div>
             </div>
@@ -69,11 +69,11 @@
           @click.away=" isOpen = false">
 
           <div class="flex flex-col space-y-6">
-            <a href="#leerdoelen" class="text-sm text-black uppercase">Opdracht</a>
-            <a href="#projecten" class="text-sm text-black uppercase">Onderzoeksvragen</a>
-            <a href="po.html" class="text-sm text-black uppercase">Conclusie & Aanbevelingen</a>
-            <a href="#projecten" class="text-sm text-black uppercase">Leeswijzer</a>
-            <a href="po.html" class="text-sm text-black uppercase">Literatuurlijst</a>
+            <a href="#projectinformatie" class="text-sm text-black uppercase">Opdracht</a>
+            <a href="#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
+            <a href="#conclusie" class="text-sm text-black uppercase">Conclusie & Aanbevelingen</a>
+            <a href="#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
+            <a href="#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
           </div>
         </div>
       </div>
@@ -86,7 +86,7 @@
 
   <div class="">
 
-    <div class=" flex md:flex-row flex-col relative bg-yellow rounded-br-3xl">
+    <div class="flex md:flex-row flex-col relative bg-yellow rounded-br-3xl">
       <div class="lg:w-1/2 lg:mx-24 md:mx-16 mx-6 lg:mt-32 mt-12 lg:mb-48 mb-16">
         <div class="text-lg medium mb-1 opacity-75">Afstudeerportfolio</div>
         <div class=" lg:text-5xl text-4xl bold leading-tight lg:my-0 my-2 uppercase">Michelle de Wit</div>
@@ -115,7 +115,7 @@
     </div>
 
 
-    <div id="leerdoelen" class="relative bg-white py-16 sm:py-24 lg:py-24">
+    <div id="projectinformatie" class="relative bg-white py-16 sm:py-24 lg:py-24">
       <div class="mx-auto px-6 text-center sm:px-6 lg:px-24 ">
         <p class="lg:mt-2 mt-4 text-3xl bold text-gray-900 leading-tight sm:text-4xl uppercase">
           Projectinformatie
@@ -142,7 +142,7 @@
                     <h3 class="mt-4 text-2xl bold text-gray-900 tracking-tight uppercase">Projectplan</h3>
                     <div class="flex justify-center">
                       <p class="mt-2 text-xl text-gray-dark text-center w-11/12">
-                        Het opstellen van een projectplan waarin de verschillende aspecten van het project zijn
+                        Het opstellen van een projectplan waarin de verschillende aspecten van de opdracht zijn
                         beschreven
                       </p>
                     </div>
@@ -205,7 +205,7 @@
       </div>
     </div>
 
-    <div id="projecten" class="mt-8 mb-16">
+    <div id="sprints" class="mt-8 mb-16">
       <div class="mx-auto text-center px-6  sm:px-6 lg:px-24 ">
         <p class="lg:mt-2 mt-4 text-3xl bold text-gray-900 leading-tight sm:text-4xl uppercase">
           Onderzoeksvragen
@@ -229,7 +229,7 @@
                 </svg>
             </div>
             <h1 class="text-3xl bold uppercase my-2 tracking-wide">Analyse</h1>
-            <h2 class="text-xl text-gray-light light w-5/6 my-3">Wat is marketing automation en met welke systemen kan dit worden ingezet?</h2>
+            <h2 class="text-xl opacity-75 light w-5/6 my-3">Wat is marketing automation en met welke systemen kan dit worden ingezet?</h2>
             <a class="hover:opacity-75" href="analysefase.html">
               <button type="button"
                 class="inline-flex items-center text-lg leading-4 bold shadow-sm mt-4 uppercase underline hover:opacity-75 focus:outline-none tracking-wide">
@@ -252,7 +252,7 @@
               </svg>
             </div>
             <h1 class="text-3xl bold uppercase my-2 tracking-wide">Doelgroep</h1>
-            <h2 class="text-xl text-gray-light light w-5/6 my-3">Welke doelgroepprofielen moeten worden aangesproken?</h2>
+            <h2 class="text-xl opacity-75 light w-5/6 my-3">Welke doelgroepprofielen moeten worden aangesproken?</h2>
             <a class="hover:opacity-75" href="doelgroepfase.html">
               <button type="button"
                 class="inline-flex items-center text-lg leading-4 bold shadow-sm mt-4 uppercase underline hover:opacity-75 focus:outline-none tracking-wide">
