@@ -10127,6 +10127,11 @@ video {
   cursor: not-allowed;
 }
 
+.cursor-zoom {
+  cursor: zoom-in;
+}
+
+
 .block {
   display: block;
 }
@@ -20688,6 +20693,10 @@ video {
 
 .translate-x-64 {
   --transform-translate-x: 16rem;
+}
+
+.translate-x-72 {
+  --transform-translate-x: 62rem;
 }
 
 .translate-x-px {
