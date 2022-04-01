@@ -10750,6 +10750,10 @@ video {
   height: 16rem;
 }
 
+.h-72 {
+  height: 22rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -20861,6 +20865,10 @@ video {
 
 .translate-y-64 {
   --transform-translate-y: 16rem;
+}
+
+.translate-y-72{
+  --transform-translate-y: 20rem;
 }
 
 .translate-y-px {
