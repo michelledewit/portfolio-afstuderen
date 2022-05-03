@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ontwikkeling</title>
+    <title>Marketing automation proces</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../src/styles.css">
     <link rel="stylesheet" href="../src/app.js">
@@ -21,14 +21,15 @@
 <body>
 
     <nav class="">
-        <div class="flex items-center justify-between h-28 bg-green">
+        <div class="flex items-center justify-between h-28 bg-yellow">
             <div class="flex flex-col"></div>
-            <div class="bg-green lg:w-6/12 w-full py-6">
+            <div class="bg-yellow lg:w-6/12 w-full py-6">
                 <div class="hidden sm:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
                     <a href="index.html" class="text-black hover:opacity-75 py-8 bold text-3xl uppercase">Portfolio</a>
                 </div>
             </div>
-            <div class="bg-green lg:grid hidden w-6/12 py-6 justify-items-end  max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+            <div
+                class="bg-yellow lg:grid hidden w-6/12 py-6 justify-items-end  max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
 
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex items-center">
@@ -94,130 +95,273 @@
     </nav>
 
     <div class="my-16">
-        <div class="text-4xl uppercase bold text-center mt-1 md:w-6/12 w-1/2 mx-auto leading-tight">Ontwikkeling
+        <div class="text-4xl uppercase bold text-center mt-1 md:w-6/12 w-1/2 mx-auto leading-tight">Marketing automation
+            proces
         </div>
-        <div class="regular text-xl md:w-7/12 w-10/12 mx-auto text-center mt-4 opacity-75 uppercase">Hoe kan een een
-            werkende prototype worden uitgewerkt met
-            de frameworks die binnen Brik worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn in Craft CMS?
+        <div class="regular text-xl md:w-1/2 w-10/12 mx-auto text-center mt-4 opacity-75 uppercase">Op welke wijze kan
+            er gerichte content op de juiste fases in de flow naar het juiste doelgroepprofiel worden gecommuniceerd gebaseerd
+            op de customer journey?
         </div>
     </div>
 
-    <div class="w-8/12 mx-auto">
+    <div class="w-8/12 mx-auto -mt-4">
         <div class="flex justify-center">
-            <img src="img/ontwikkeling/ont-overzicht.png" class="w-1/3 object-cover ">
+            <img src="img/flow/overzicht2.png" class="w-5/12 object-cover ">
         </div>
     </div>
 
     <div class="w-8/12 mx-auto">
         <div class="text-2xl mt-8 uppercase bold mb-2">Inleiding</div>
-        <div class="text-xl regular leading-8 opacity-75 mb-12">In de ontwikkelingsfase stond de deelvraag <span
-                class="bold">“Hoe kan een een werkende prototype worden uitgewerkt met
-                de frameworks die binnen Brik worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn in Craft
-                CMS?” </span>centraal.
-
-            Om deze vraag te beantwoorden ben ik begonnen met de Front-end ontwikkeling van het ontwerp uit te werken. Deze Front-end heb ik gekoppeld aan Craft CMS waardoor de content van de componenten te vullen zijn vanuit het back-end systeem. Nadat de basis van de landingspagina stond heb ik een eerste MVP uitgewerk waarin de lead score van een MSCH-profiel inzichtelijk is en op basis daarvan content wordt getoond of verborgen. <span class="text-red-600">Uitbreiding mvp</span> In de volgende hoofdstukken is het proces van de technsiche realisatie uitgewerkt.
+        <div class="text-xl regular leading-8 opacity-75 mb-12">In het onderzoek naar het marketing automation proces stond de deelvraag <span class="bold">“Op welke wijze kan
+                er gerichte content op de juiste fases in de flow naar het juiste doelgroepprofiel worden gecommuniceerd gebaseerd
+                op de customer journey?” </span>centraal. <br><br>
+                De fases in het marketing automation proces “lead generation” en “lead nurturing” heb ik uitgewerkt om deze deelvraag te kunnen beantwoorden. Deze fases heb ik gericht op de verschillende segmentaties van de doelgroep (Sectoren, DMU, Type websitebezoeker).
         </div>
     </div>
 
     <div class="w-8/12 mx-auto">
-        <div class="text-2xl mt-8 uppercase bold mb-2">Front-end landingspagina uitwerken</div>
-        <div class="text-xl regular leading-8 opacity-75">Na het uitwerken van de wireframes ben ik begonnen aan de
-            ontwikkeling van de Front-end. In de Front-end ontwikkeling heb ik gebruik gemaakt van het css framework <a
-                href="https://tailwindcss.com/" target="_blank"><span
-                    class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Ik heb Tailwind gekozen
-            aangezien dit binnen Brik in de bestaande website het gebruikte CSS framework is. TailwindCSS maakt gebruik
-            van utility classes waardoor ik herbruikbare componenten kan bouwen. Aan HTML elementen heb ik CSS
-            meegegeven door middel van Tailwind classnames waardoor de HTMl en CSS wordt samengevoegd en aansluit op het
-            ontwerp.
+        <div class="text-2xl mt-8 uppercase bold mb-2">Lead generation</div>
+        <div class="text-xl regular leading-8 opacity-75">De eerste stap van de fase was om bestaande
+            informatie over de doelgroep te achterhalen en of het uberhaupt relevant is om de websitebezoekers qua
+            aantallen in te delen in doelgroepprofielen. Hiervoor heb ik data van de Brik website van
+            februari geanalyseerd.
+            De inzichten zijn resultaten uit de tool Leadinfo (segmenteert bezoekende bedrijven op website) en Google
+            Analytics gegevens van de website. De belangrijkste inzichten zijn hieronder uitgewerkt en toegepast in het
+            uitwerken van de persona's en de customer journey, in de bijlage is het volledige onderzoek te lezen.
         </div>
-        <div class="my-12">
-            <a href="img/ontwikkeling/tailwind.png" class="glightbox" data-gallery="gallery2">
-                <img src="img/ontwikkeling/tailwind.png" class="w-full object-cover relative">
-            </a>
-            <figcaption class="flex justify-center mt-6 mb-10">
-                <div class="flex rounded justify-center bg-blue py-3 w-5/12 text-center">Classnames bepalen styling:<br>
-                    bijv. text-black = text-color, text-3xl = tekstformaat.</div>
-            </figcaption>
-        </div>
-        <div class="text-xl regular leading-8 opacity-75">Elk component van het ontwerp zoals een CTA, testimonials,
-            nieuwsbrief heb ik voor de MSCH-profielen uitgewerkt. Zie in de onderstaande
-            afbeelding het CTA element voor de humanistische bezoeker.
-        </div>
-        <div class="my-12">
-            <a href="img/ontwikkeling/tailwind-2.png" class="glightbox" data-gallery="gallery2">
-                <img src="img/ontwikkeling/tailwind-2.png" class="w-full object-cover relative">
-            </a>
-        </div>
-        <div class="text-2xl mt-8 uppercase bold mb-2">Front-end koppelen met Craft CMS</div>
-        <div class="text-xl regular leading-8 opacity-75">Belangrijk in de koppeling van de Front-end met Craft CMS is
-            dat er in het CMS voor elk component de vier profielen kunnen worden ingericht. Elk component van het
-            ontwerp zoals een CTA, testimonials, nieuwsbrief moeten voor de vier profielen worden ingericht.
-        </div>
-
-        <div class="text-2xl mt-8 uppercase bold mb-2">Alpine JS</div>
-        <div class="text-xl regular leading-8 opacity-75">Voor de werking en de animaties van verschillende componenten
-            heb ik gebruik gemaakt van het JavaScript framework Alpine JS. Alpine JS wordt ook wel gezien als een Vue light versie en is als module te installeren via NPM.<br><br>
-            Ik heb voor Alpine gekozen aangezien dit framework door Brik wordt gebruikt en ik er zelf al een klein beetje ervaring mee heb. Van belang is dat met Alpine JS dynamic loading op de landingspagina is toe te passen. Dit betekent dat er content kan worden geladen die aansluit op het type doelgroepprofiel, op basis van acties zonder dat de pagina opnieuw geladen moet worden.
-        </div>
-
-        <div class="text-2xl mt-8 uppercase bold mb-2">Git</div>
-        <div class="text-xl regular leading-8 opacity-75">Voor versiebeheer van de technische ontwikkeling heb ik de
-            binnen Brik gebruikte management tool Gitlab toegepast. Hierdoor kan de code worden beheerd in
-            groepsverband, worden merge conflicts voorkomen waardoor code niet wordt overschreven en kan er door middel
-            van versiebeheer eenvoudig worden teruggevallen op oudere versies als dat nodig is. Binnen de repository van
-            het project heb ik een branch aangemaakt speciaal gericht op het realiseren van de landingspagina. Hierin is
-            de naming convention (feature/naam-feature) die binnen Brik wordt gebruikt toegepast.
-        </div>
-        <div class="my-12">
-            <a href="img/ontwikkeling/git-branch.png" class="glightbox" data-gallery="gallery2">
-                <img src="img/ontwikkeling/git-branch.png" class="w-full object-cover relative">
-            </a>
-        </div>
-        <div class="text-xl regular leading-8 opacity-75">Tijdens de realisatie heb ik de verschillende toevoegingen en
-            aanpassingen binnen de code doorgezet (commits) naar de landingspagina branch. Elke commit bevat de binnen
-            Brik standaard toegepaste naming convention: "type commit" + "uitgevoerde werkzaamheid".
-        </div>
-        <div class="my-12">
-            <a href="img/ontwikkeling/git-branch-2.png" class="glightbox" data-gallery="gallery2">
-                <img src="img/ontwikkeling/git-branch-2.png" class="w-full object-cover relative">
-            </a>
-        </div>
+        <a href="https://absorbed-transport-b26.notion.site/Online-analytics-574532372d2947c1b2a21989faf92612"
+            target="_blank">
+            <button type="button"
+                class="inline-flex items-center bold tracking-wide pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
+                    <path
+                        d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
+                        fill="black" />
+                </svg>
+                &nbsp Volledig onderzoek</button>
+        </a>
     </div>
-
 
     <div class="w-8/12 mx-auto my-12">
-        <div class="text-2xl mt-8 uppercase bold mb-2">Lead scoring + Dynamische content MSCH-profiel</div>
+        <div class="text-2xl mt-8 uppercase bold mb-2">Lead nurturing</div>
 
-    <div class="text-xl mt-4 uppercase bold mb-2">Eerste MVP Lead scoring & Dynamische content</div>
-        <div class="text-xl regular leading-8 opacity-75">Ik ben begonnen met het uitwerken van een eerste MVP waarin de lead score en het MSCH-profiel van een lead inzichtelijk is. Op basis van een actie (klik op knop) krijgt het humanistische profiel een punt. Bij 3 punten wordt dan door middel van Alpine JS dynamische content geladen die aansluit bij het profiel. 
+        <div class="text-xl regular leading-8 opacity-75">Na het uitvoeren van online analytics onderzoek heb ik een
+            brainstormsessie met de
+            product owner gehouden waardoor potentiële klanten zijn gesegmenteerd in de verschillende sectoren waar Brik
+            zich op wil richten. Naast de verschillende sectoren zijn er ook
+            verschillende Decision Making Units (DMU) types uitgewerkt. DMU types zijn individuen binnen een
+            organisatie, die een belangrijke schakel zijn in het besluitvormingsproces rond de oplevering van een
+            dienst/product <a href="https://www.toolshero.nl/marketing-modellen/dmu-decision-making-unit/"><span
+                    class="hover:opacity-75 underline semi-bold">(Van Vliet, 2022)</span></a>. Binnen de DMU types komt
+            Brik komt 5
+            rollen tegen bij de potentiële klanten. Deze DMU's komen in de verschillende sectoren waarop Brik zich wil
+            richten terug.
         </div>
+
+        <a href="https://absorbed-transport-b26.notion.site/Doelgroepanalyse-4712e392d07d4c588af3639ac322aa5b"
+            target="_blank">
+            <button type="button"
+                class="inline-flex items-center bold tracking-wide pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
+                    <path
+                        d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
+                        fill="black" />
+                </svg>
+                &nbsp Brainstormsessie</button>
+        </a>
+
         <div class="my-12">
-            <a href="img/ontwikkeling/mvp-1.gif" class="glightbox" data-gallery="gallery2">
-                <img src="img/ontwikkeling/mvp-1.gif" class="w-full object-cover relative">
+            <a href="img/doelgroep/sectoren-dmu.jpg" class="glightbox" data-gallery="gallery2">
+                <img src="img/doelgroep/sectoren-dmu.jpg" class="w-full object-cover relative">
             </a>
         </div>
 
+        <div class="text-2xl mt-8 uppercase bold mb-2">Segmentatie Sectoren</div>
 
-        <div class="my-12">
-            <a href="img/doelgroep/mbti-type.jpg" class="glightbox" data-gallery="gallery3">
-                <img src="img/doelgroep/mbti-type.jpg" class="w-full object-cover relative">
-            </a>
+        <div class="text-xl regular leading-8 opacity-75">Na het uitvoeren van online analytics onderzoek heb ik een
+            brainstormsessie met de
+            product owner gehouden waardoor potentiële klanten zijn gesegmenteerd in de verschillende sectoren waar Brik
+            zich op wil richten. Naast de verschillende sectoren zijn er ook
+            verschillende Decision Making Units (DMU) types uitgewerkt. DMU types zijn individuen binnen een
+            organisatie, die een belangrijke schakel zijn in het besluitvormingsproces rond de oplevering van een
+            dienst/product <a href="https://www.toolshero.nl/marketing-modellen/dmu-decision-making-unit/"><span
+                    class="hover:opacity-75 underline semi-bold">(Van Vliet, 2022)</span></a>. Binnen de DMU types komt
+            Brik komt 5
+            rollen tegen bij de potentiële klanten. Deze DMU's komen in de verschillende sectoren waarop Brik zich wil
+            richten terug.
         </div>
 
-        <div class="text-xl mt-4 uppercase bold mb-2">Data opslaan</div>
-        <div class="text-xl regular leading-8 opacity-75">Op de huidige MVP is de data van een lead verdwenen bij een reload van de landingspagina. Om deze data te gebruiken heb ik ...
-        </div>
+        <div class="text-2xl mt-8 uppercase bold mb-2">Segmentatie type websitebezoeker</div>
 
-        <div class="text-xl mt-4 uppercase bold mb-2">Bij eerste paginaload</div>
-        <div class="text-xl regular leading-8 opacity-75">Uit de Google Analytics gegevens blijkt dat de gemiddelde sessieduur 42 seconden is. Hierop gebaseerd moet de score bij een sessieduur van 42 seconden punten aftrekken of bijtrekken afhankelijk van het doelgroepprofiel.
-        </div>
-
-        <div class="text-xl mt-4 uppercase bold mb-2">sessionTime</div>
-        <div class="text-xl regular leading-8 opacity-75">Uit de Google Analytics gegevens blijkt dat de gemiddelde sessieduur 42 seconden is. Hierop gebaseerd moet de score bij een sessieduur van 42 seconden punten aftrekken of bijtrekken afhankelijk van het doelgroepprofiel.
+        <div class="text-xl regular leading-8 opacity-75">Na het uitvoeren van online analytics onderzoek heb ik een
+            brainstormsessie met de
+            product owner gehouden waardoor potentiële klanten zijn gesegmenteerd in de verschillende sectoren waar Brik
+            zich op wil richten. Naast de verschillende sectoren zijn er ook
+            verschillende Decision Making Units (DMU) types uitgewerkt. DMU types zijn individuen binnen een
+            organisatie, die een belangrijke schakel zijn in het besluitvormingsproces rond de oplevering van een
+            dienst/product <a href="https://www.toolshero.nl/marketing-modellen/dmu-decision-making-unit/"><span
+                    class="hover:opacity-75 underline semi-bold">(Van Vliet, 2022)</span></a>. Binnen de DMU types komt
+            Brik komt 5
+            rollen tegen bij de potentiële klanten. Deze DMU's komen in de verschillende sectoren waarop Brik zich wil
+            richten terug.
         </div>
 
     </div>
 
+    <div class="w-8/12 mx-auto my-12">
+        <div class="text-xl regular leading-8 opacity-75 mb-12">De type websitebezoeker wordt bepaald aan de hand van
+            twee vragen: <a href="https://concept7.nl/artikelen/aankoopbeslissing"><span
+                    class="hover:opacity-75 underline semi-bold">(Concept7, 2021)</span></a>
+            <ul class="ml-8 mt-3 text-xl regular list-disc ">
+                <li class="text-red-400 my-1">
+                    <div class="text-black">Worden er beslissingen gemaakt op feitelijke of op emotionele grond?</div>
+                </li>
+                <li class="text-red-400 my-1">
+                    <div class="text-black">Worden beslissingen snel of langzaam gemaakt?</div>
+                </li>
+            </ul>
+        </div>
+        <div class="">
+            <img src="img/doelgroep/type-bezoekers.png" class="my-12 w-full object-cover ">
+        </div>
+
+
+        <div class="text-2xl mt-8 uppercase bold mb-2">Doelgroepprofielen</div>
+        <div class="text-xl regular leading-8 opacity-75 mb-12">De vijf DMU profielen heb ik gekoppeld aan een type
+            websitebezoeker gebaseerd op onderzoek naar bestaande informatie over de
+            typebezoekers, gesprekken met de
+            product owner, analyseren van de bestaande klanten van Brik en inzichten uit het online analytics onderzoek.
+            Uiteindelijk zijn er vijf doelgroepprofielen ontstaan die ik vervolgens heb uitgewerkt in ieder zijn eigen
+            persona met daarbij horende kleur gebaseerd op de vier type websitebezoekers. In een persona is een
+            situatieschets van een profiel uitgewerkt en zijn de behoeftes, voorkeuren en
+            gedragingen verwerkt.
+        </div>
+        <a href="https://absorbed-transport-b26.notion.site/Profielen-6b8ac0f06ddc4b988071a5a5d7ac1935" target="_blank">
+            <button type="button"
+                class="inline-flex items-center bold tracking-wide -mt-5 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mb-16 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
+                    <path
+                        d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
+                        fill="black" />
+                </svg>
+                &nbsp Onderzoek doelgroepprofielen</button>
+        </a>
+        <div class="glide persona-slider">
+            <div class="glide__track relative" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <a href="img/doelgroep/Persona - Start up - CEO.jpg" class="glightbox" data-gallery="gallery1"
+                            data-type="image">
+                            <img src="img/doelgroep/Persona - Start up - CEO.jpg" class="w-full object-cover relative">
+                            <div class="absolute top-0 transform translate-y-8 translate-x-72 hover:opacity-75">
+                                <svg width="35" height="35" viewBox="0 0 54 54" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.9569" cy="24.2609" r="24.004" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M23.957 23.2609H20.457M34.457 33.7609L29.971 29.2669L34.457 33.7609ZM32.457 23.2609C32.457 25.5153 31.5615 27.6773 29.9674 29.2713C28.3734 30.8654 26.2114 31.7609 23.957 31.7609C21.7027 31.7609 19.5407 30.8654 17.9466 29.2713C16.3526 27.6773 15.457 25.5153 15.457 23.2609C15.457 21.0066 16.3526 18.8446 17.9466 17.2505C19.5407 15.6565 21.7027 14.7609 23.957 14.7609C26.2114 14.7609 28.3734 15.6565 29.9674 17.2505C31.5615 18.8446 32.457 21.0066 32.457 23.2609V23.2609ZM23.957 19.7609V23.2609V19.7609ZM23.957 23.2609V26.7609V23.2609ZM23.957 23.2609H27.457H23.957Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="img/doelgroep/Persona - Zakelijke dienstverlening - Projectmanager.jpg"
+                            class="glightbox " data-gallery="gallery1" data-type="image">
+                            <img src="img/doelgroep/Persona - Zakelijke dienstverlening - Projectmanager.jpg"
+                                class="w-full object-cover relative">
+                            <div class="absolute top-0 transform translate-y-8 translate-x-72 hover:opacity-75">
+                                <svg width="35" height="35" viewBox="0 0 54 54" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.9569" cy="24.2609" r="24.004" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M23.957 23.2609H20.457M34.457 33.7609L29.971 29.2669L34.457 33.7609ZM32.457 23.2609C32.457 25.5153 31.5615 27.6773 29.9674 29.2713C28.3734 30.8654 26.2114 31.7609 23.957 31.7609C21.7027 31.7609 19.5407 30.8654 17.9466 29.2713C16.3526 27.6773 15.457 25.5153 15.457 23.2609C15.457 21.0066 16.3526 18.8446 17.9466 17.2505C19.5407 15.6565 21.7027 14.7609 23.957 14.7609C26.2114 14.7609 28.3734 15.6565 29.9674 17.2505C31.5615 18.8446 32.457 21.0066 32.457 23.2609V23.2609ZM23.957 19.7609V23.2609V19.7609ZM23.957 23.2609V26.7609V23.2609ZM23.957 23.2609H27.457H23.957Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="img/doelgroep/Persona - Kunst & Cultuur - Sales manager.jpg" class="glightbox "
+                            data-gallery="gallery1" data-type="image">
+                            <img src="img/doelgroep/Persona - Kunst & Cultuur - Sales manager.jpg"
+                                class="w-full object-cover relative">
+                            <div class="absolute top-0 transform translate-y-8 translate-x-72 hover:opacity-75">
+                                <svg width="35" height="35" viewBox="0 0 54 54" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.9569" cy="24.2609" r="24.004" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M23.957 23.2609H20.457M34.457 33.7609L29.971 29.2669L34.457 33.7609ZM32.457 23.2609C32.457 25.5153 31.5615 27.6773 29.9674 29.2713C28.3734 30.8654 26.2114 31.7609 23.957 31.7609C21.7027 31.7609 19.5407 30.8654 17.9466 29.2713C16.3526 27.6773 15.457 25.5153 15.457 23.2609C15.457 21.0066 16.3526 18.8446 17.9466 17.2505C19.5407 15.6565 21.7027 14.7609 23.957 14.7609C26.2114 14.7609 28.3734 15.6565 29.9674 17.2505C31.5615 18.8446 32.457 21.0066 32.457 23.2609V23.2609ZM23.957 19.7609V23.2609V19.7609ZM23.957 23.2609V26.7609V23.2609ZM23.957 23.2609H27.457H23.957Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="img/doelgroep/Persona - Retail & Handel - Marketing manager.jpg" class="glightbox "
+                            data-gallery="gallery1" data-type="image">
+                            <img src="img/doelgroep/Persona - Retail & Handel - Marketing manager.jpg"
+                                class="w-full object-cover relative">
+                            <div class="absolute top-0 transform translate-y-8 translate-x-72 hover:opacity-75">
+                                <svg width="35" height="35" viewBox="0 0 54 54" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.9569" cy="24.2609" r="24.004" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M23.957 23.2609H20.457M34.457 33.7609L29.971 29.2669L34.457 33.7609ZM32.457 23.2609C32.457 25.5153 31.5615 27.6773 29.9674 29.2713C28.3734 30.8654 26.2114 31.7609 23.957 31.7609C21.7027 31.7609 19.5407 30.8654 17.9466 29.2713C16.3526 27.6773 15.457 25.5153 15.457 23.2609C15.457 21.0066 16.3526 18.8446 17.9466 17.2505C19.5407 15.6565 21.7027 14.7609 23.957 14.7609C26.2114 14.7609 28.3734 15.6565 29.9674 17.2505C31.5615 18.8446 32.457 21.0066 32.457 23.2609V23.2609ZM23.957 19.7609V23.2609V19.7609ZM23.957 23.2609V26.7609V23.2609ZM23.957 23.2609H27.457H23.957Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="glide__slide">
+                        <a href="img/doelgroep/Persona - Onderwijs - Financieel.jpg" class="glightbox "
+                            data-gallery="gallery1" data-type="image">
+                            <img src="img/doelgroep/Persona - Onderwijs - Financieel.jpg"
+                                class="w-full object-cover relative">
+                            <div class="absolute top-0 transform translate-y-8 translate-x-72 hover:opacity-75">
+                                <svg width="35" height="35" viewBox="0 0 54 54" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.9569" cy="24.2609" r="24.004" stroke="black" stroke-width="2" />
+                                    <path
+                                        d="M23.957 23.2609H20.457M34.457 33.7609L29.971 29.2669L34.457 33.7609ZM32.457 23.2609C32.457 25.5153 31.5615 27.6773 29.9674 29.2713C28.3734 30.8654 26.2114 31.7609 23.957 31.7609C21.7027 31.7609 19.5407 30.8654 17.9466 29.2713C16.3526 27.6773 15.457 25.5153 15.457 23.2609C15.457 21.0066 16.3526 18.8446 17.9466 17.2505C19.5407 15.6565 21.7027 14.7609 23.957 14.7609C26.2114 14.7609 28.3734 15.6565 29.9674 17.2505C31.5615 18.8446 32.457 21.0066 32.457 23.2609V23.2609ZM23.957 19.7609V23.2609V19.7609ZM23.957 23.2609V26.7609V23.2609ZM23.957 23.2609H27.457H23.957Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="glide__arrows hover:opacity-50 flex justify-between cursor-pointer" data-glide-el="controls">
+                <div class="glide__arrow glide__arrow--left absolute top-0 left-0 transform rotate-180 -translate-x-24 translate-y-72"
+                    data-glide-dir="<">
+                    <svg width="40" height="39" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25.2852" cy="24.5" r="24" fill="white" stroke="black" />
+                        <path
+                            d="M29.8146 24.9363C29.6674 24.9363 29.5263 24.8789 29.4219 24.7765L20.5473 16.0202C20.4463 15.917 20.3904 15.7788 20.3916 15.6353C20.3929 15.4918 20.4512 15.3545 20.5541 15.2531C20.6569 15.1516 20.796 15.094 20.9414 15.0928C21.0869 15.0915 21.227 15.1467 21.3316 15.2464L30.2062 24.0027C30.2835 24.0792 30.3362 24.1766 30.3575 24.2826C30.3788 24.3886 30.3678 24.4985 30.3259 24.5983C30.284 24.6982 30.2131 24.7836 30.1221 24.8437C30.0311 24.9039 29.9241 24.9361 29.8146 24.9363Z"
+                            fill="#111111" />
+                        <path
+                            d="M20.9398 33.6927C20.8302 33.6927 20.723 33.6606 20.6319 33.6005C20.5407 33.5405 20.4696 33.4551 20.4276 33.3552C20.3856 33.2553 20.3745 33.1453 20.3958 33.0392C20.4171 32.9331 20.4697 32.8356 20.5471 32.759L29.4217 24.0027C29.5263 23.9031 29.6664 23.8479 29.8118 23.8491C29.9573 23.8504 30.0964 23.9079 30.1992 24.0094C30.3021 24.1109 30.3604 24.2481 30.3617 24.3916C30.3629 24.5351 30.307 24.6734 30.206 24.7766L21.3314 33.5329C21.28 33.5836 21.2189 33.6239 21.1517 33.6513C21.0845 33.6787 21.0125 33.6928 20.9398 33.6927Z"
+                            fill="#111111" />
+                    </svg>
+                </div>
+                <div class="glide__arrow glide__arrow--right absolute right-0 top-0 transform translate-x-24 translate-y-72"
+                    data-glide-dir=">">
+                    <svg width="40" height="39" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25.2852" cy="24.5" r="24" fill="white" stroke="black" />
+                        <path
+                            d="M29.8146 24.9363C29.6674 24.9363 29.5263 24.8789 29.4219 24.7765L20.5473 16.0202C20.4463 15.917 20.3904 15.7788 20.3916 15.6353C20.3929 15.4918 20.4512 15.3545 20.5541 15.2531C20.6569 15.1516 20.796 15.094 20.9414 15.0928C21.0869 15.0915 21.227 15.1467 21.3316 15.2464L30.2062 24.0027C30.2835 24.0792 30.3362 24.1766 30.3575 24.2826C30.3788 24.3886 30.3678 24.4985 30.3259 24.5983C30.284 24.6982 30.2131 24.7836 30.1221 24.8437C30.0311 24.9039 29.9241 24.9361 29.8146 24.9363Z"
+                            fill="#111111" />
+                        <path
+                            d="M20.9398 33.6927C20.8302 33.6927 20.723 33.6606 20.6319 33.6005C20.5407 33.5405 20.4696 33.4551 20.4276 33.3552C20.3856 33.2553 20.3745 33.1453 20.3958 33.0392C20.4171 32.9331 20.4697 32.8356 20.5471 32.759L29.4217 24.0027C29.5263 23.9031 29.6664 23.8479 29.8118 23.8491C29.9573 23.8504 30.0964 23.9079 30.1992 24.0094C30.3021 24.1109 30.3604 24.2481 30.3617 24.3916C30.3629 24.5351 30.307 24.6734 30.206 24.7766L21.3314 33.5329C21.28 33.5836 21.2189 33.6239 21.1517 33.6513C21.0845 33.6787 21.0125 33.6928 20.9398 33.6927Z"
+                            fill="#111111" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="w-8/12 mx-auto my-12">
         <div class="text-2xl mt-8 uppercase bold mb-2">Customer journey</div>
@@ -441,9 +585,8 @@
     </div>
 
     <div class="w-8/12 mx-auto my-12">
-        <div class="text-2xl mt-8 uppercase bold mb-2">Conclusie doelgroepprofielen</div>
-        <div class="text-xl regular leading-8 opacity-75"> In de doelgroepfase stond de vraag <span class="bold">“Welke
-                doelgroepprofielen moeten worden aangesproken?” </span>centraal. Deze onderzoeksvraag heb ik aan de hand
+        <div class="text-2xl mt-8 uppercase bold mb-2">Conclusie marketing automation proces</div>
+        <div class="text-xl regular leading-8 opacity-75"> In het uitwerken van het marketing automation proces stond de vraag <span class="bold">“Op welke wijze kan er gerichte content op de juiste fases in de flow naar het juiste doelgroepprofiel worden gecommuniceerd gebaseerd op de customer journey?” </span>centraal. Deze onderzoeksvraag heb ik aan de hand
             van brainstormsessies, onderzoeken naar bestaande klanten, afnemen van interviews en visuele uitwerkingen
             van de doelgroepprofielen beantwoord gekregen. De potentiële klanten van Brik zijn opgedeeld in vijf
             doelgroepprofielen. In ieder doelgroeprofiel is de sector, het DMU type en het type websitebezoekers
@@ -509,6 +652,17 @@
                         stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 &nbsp Naar overzicht </button>
+        </a>
+        <a href="ontwerp.html">
+            <button type="button"
+                class="inline-flex items-center bold tracking-wide pl-4 pr-4 mx-2 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                Volgende fase &nbsp
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="9.93823" cy="10.2833" rx="9.8717" ry="9.66417" fill="#CEE8DC" />
+                    <path d="M10.5162 6.60498L14.5627 10.2836L10.5162 13.9622M5.3136 10.2836H14.5627H5.3136Z"
+                        stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
         </a>
     </div>
 
