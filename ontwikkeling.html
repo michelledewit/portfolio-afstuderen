@@ -115,9 +115,9 @@
                 de frameworks die binnen Brik worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn in Craft
                 CMS?” </span>centraal.
 
-            Om deze vraag te beantwoorden ben ik begonnen met de Front-end ontwikkeling van het ontwerp uit te werken.
-            Deze Front-end heb ik gekoppeld aan Craft CMS waardoor de content van de componenten te vullen zijn vanuit
-            het back-end systeem. Nadat de basis van de landingspagina stond heb ik een eerste MVP uitgewerk waarin de
+            Om deze vraag te beantwoorden is er gestart met het uitwerken van de Front-end ontwikkeling.
+            Deze Front-end is gekoppeld aan Craft CMS waardoor de content van de componenten te vullen zijn vanuit
+            het back-end systeem. Nadat de basis van de landingspagina stond heb is een eerste MVP uitgewerk waarin de
             lead score van een MSCH-profiel inzichtelijk is en op basis daarvan content wordt getoond of verborgen.
             <span class="text-red-600">Uitbreiding mvp</span> In de volgende hoofdstukken is het proces van de
             technsiche realisatie uitgewerkt.
@@ -126,12 +126,12 @@
 
     <div class="w-8/12 mx-auto">
         <div class="text-2xl mt-8 uppercase bold mb-2">Front-end landingspagina uitwerken</div>
-        <div class="text-xl regular leading-8 opacity-75">Na het uitwerken van de wireframes ben ik begonnen aan de
-            ontwikkeling van de Front-end. In de Front-end ontwikkeling heb ik gebruik gemaakt van het css framework <a
+        <div class="text-xl regular leading-8 opacity-75">Na het uitwerken van de wireframes ben is er gestart met de
+            ontwikkeling van de Front-end gebaseerd op het ontwerp. In de Front-end ontwikkeling is gebruik gemaakt van het CSS framework <a
                 href="https://tailwindcss.com/" target="_blank"><span
-                    class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Ik heb Tailwind gekozen
+                    class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Er is voor Tailwind gekozen
             aangezien dit binnen Brik in de bestaande website het gebruikte CSS framework is. TailwindCSS maakt gebruik
-            van utility classes waardoor ik herbruikbare componenten kan bouwen. Aan HTML elementen heb ik CSS
+            van utility classes waardoor herbruikbare componenten kan worden gebouwd. Aan de HTML elementen is de CSS
             meegegeven door middel van Tailwind classnames waardoor de HTMl en CSS wordt samengevoegd en aansluit op het
             ontwerp.
         </div>
@@ -145,7 +145,7 @@
             </figcaption>
         </div>
         <div class="text-xl regular leading-8 opacity-75">Elk component van het ontwerp zoals een CTA, testimonials,
-            nieuwsbrief heb ik voor de MSCH-profielen uitgewerkt. Zie in de onderstaande
+            nieuwsbrief is voor de MSCH-profielen uitgewerkt. Zie in de onderstaande
             afbeelding het CTA element voor de humanistische bezoeker.
         </div>
         <div class="mt-4 mb-12">
@@ -163,7 +163,7 @@
                     naar eigen hand in te stellen waarmee de content voor de landingspagina's kan worden gevuld in
                     handgemaakte templates met Twig en PHP.
 
-                    Na het verbinden van de Front-end met Craft CMS ben ik het CMS gaan inrichten. De eerste stap was
+                    Na het verbinden van de Front-end met Craft CMS is Craft ingericht. De eerste stap was
                     het creëren van de landingspagina’s, conversiepagina's en bedankpagina's.</div>
             </div>
             <div class="ml-6 my-12 w-2/4">
@@ -191,8 +191,8 @@
         <div class="text-xl mt-4 uppercase bold mb-2">Contentblokken</div>
         <div class="text-xl regular leading-8 opacity-75">
             Een contentblok bestaat uit verschillende velden zoals bijvoorbeeld voor een CTA een titel, tekst, link en
-            een afbeelding. Deze velden heb ik middels Twig geïmplementeerd in de Front-end waardoor nu vanuit het CMS
-            de content per veld kan worden aangepast. Dit heb ik voor elk contentblok op deze manier uitgewerkt. </div>
+            een afbeelding. Deze velden heb zijn middels Twig geïmplementeerd in de Front-end waardoor nu vanuit het CMS
+            de content per veld kan worden aangepast. Welke voor elk contentblok op deze manier zijn uitgewerkt. </div>
 
         <div class="">
             <a href="img/ontwikkeling/craft-overzicht.png" class="glightbox">
@@ -229,7 +229,7 @@
 
         <div class="text-xl mt-4 uppercase bold mb-2">Data opslaan</div>
         <div class="text-xl regular leading-8 opacity-75">Op de huidige MVP is de data van een lead verdwenen bij een
-            reload van de landingspagina. Om deze data te gebruiken heb ik ...
+            reload van de landingspagina. Om deze data te gebruiken heb is ...
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Bij eerste paginaload</div>
@@ -253,19 +253,19 @@
 
     <div class="w-8/12 mx-auto my-12">
         <div class="text-2xl mt-8 uppercase bold mb-2">Git</div>
-        <div class="text-xl regular leading-8 opacity-75">Voor versiebeheer van de technische ontwikkeling heb ik de
+        <div class="text-xl regular leading-8 opacity-75">Voor versiebeheer van de technische ontwikkeling is de
             binnen Brik gebruikte management tool Gitlab toegepast. Hierdoor kan de code worden beheerd in
             groepsverband en kan er door middel
             van versiebeheer eenvoudig worden teruggevallen op oudere versies. Binnen de repository van
-            het project heb ik een branch aangemaakt speciaal gericht op het realiseren van de landingspagina. Hierin is
-            de naming convention (feature/naam-feature) die binnen Brik wordt gebruikt toegepast.
+            het project heb is een branch aangemaakt speciaal gericht op het realiseren van de landingspagina. Hierin is
+            de binnen Brik gebruikte naming convention (feature/naam-feature).
         </div>
         <div class="my-12">
             <a href="img/ontwikkeling/git-branch.png" class="glightbox" data-gallery="gallery2">
                 <img src="img/ontwikkeling/git-branch.png" class="w-full object-cover relative">
             </a>
         </div>
-        <div class="text-xl regular leading-8 opacity-75">Tijdens de realisatie heb ik de verschillende toevoegingen en
+        <div class="text-xl regular leading-8 opacity-75">Tijdens de realisatie zijn de verschillende toevoegingen en
             aanpassingen binnen de code doorgezet (commits) naar de landingspagina branch. Elke commit bevat de binnen
             Brik standaard toegepaste naming convention: "type commit" + "uitgevoerde werkzaamheid".
         </div>
