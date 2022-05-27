@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusie & Aanbevelingen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../src/app.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="src/glightbox.css" />
+
+
+</head>
+
+<body>
+
+    <nav class="">
+        <div class="flex items-center justify-between h-28 bg-blue">
+            <div class="flex flex-col"></div>
+            <div class="bg-blue lg:w-6/12 w-full py-6">
+                <div class="hidden sm:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+                    <a href="index.html" class="text-black hover:opacity-75 py-8 bold text-3xl uppercase">Portfolio</a>
+                </div>
+            </div>
+            <div class="bg-blue lg:grid hidden w-6/12 py-6 justify-items-end  max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex items-center">
+
+                        <!-- Profile dropdown -->
+                        <div class="ml-3 relative " x-data="{ open: false }">
+                            <div>
+                                <button type="button"
+                                    class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    @click="open = true" x-bind:aria-expanded="open" id="user-menu-button"
+                                    aria-haspopup="true">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="h-6 w-6 " src="img/Vector.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div x-show.transition="open" @click.away="open = false"
+                                class="origin-top-right absolute right-0 z-50 mt-2 pl-6 pr-24 rounded-md shadow-lg py-1 bg-blue ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                tabindex="-1">
+                                <!-- Active: "bg-gray-100", Not Active: "" -->
+                                <a href="opdracht.html" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Opdracht</a>
+                                <a href="#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Onderzoeksvragen</a>
+                                <a href="conclusie.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Conclusie</a>
+                                <a href="aanbevelingen.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Aanbevelingen</a>
+                                <a href="#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
+                                <a href="#projectinformatie"
+                                    class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
+                                    tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div x-data="{ isOpen: false }" class="mobile-navbar sm:hidden">
+                <button type="button" @click="isOpen = !isOpen" class=" focus:outline-none mx-4 mt-2 mb-"
+                    id="user-menu-button" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 " src="img/Vector.svg" alt="">
+                </button>
+                <!-- navbar wrapper -->
+                <div class="fixed left-0 w-full h-40 p-5 bg-white rounded-lg shadow-xl top-16 z-50" x-show="isOpen"
+                    @click.away=" isOpen = false">
+
+                    <div class="flex flex-col space-y-6">
+                        <a href="opdracht.html" class="text-sm text-black uppercase">Opdracht</a>
+                        <a href="#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
+                        <a href="conclusie.html" class="text-sm text-black uppercase">Conclusie</a>
+                        <a href="aanbevelingen.html" class="text-sm text-black uppercase">Aanbevelingen</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="my-16">
+        <div class="text-4xl uppercase bold text-center mt-1 md:w-6/12 w-1/2 mx-auto leading-tight">Conclusie &
+            Aanbevelingen
+        </div>
+        <div class="regular text-xl md:w-2/3 w-10/12 mx-auto text-center mt-4 opacity-75 uppercase">Hoe kunnen
+            kwalitatieve leads worden gegenereerd via een marketing automation proces waarin landingspagina’s worden
+            gecreëerd met een relevante boodschap, naar een specifieke doelgroep, op het juiste moment met als doel het
+            werven van potentiële nieuwe klanten?
+        </div>
+    </div>
+
+    <div class="w-8/12 mx-auto">
+        <div class="flex justify-center -mt-8">
+            <img src="img/analyse/overzicht2.png" class="w-5/12 transform object-cover">
+        </div>
+    </div>
+
+    <div class="w-8/12 mx-auto mb-12">
+        <div class="text-2xl mt-8 uppercase bold mb-2">Conclusie</div>
+        <div class="text-xl regular leading-8 opacity-75"> In de analysefase stond de vraag <span class="bold">“Wat is
+                marketing automation?” </span>centraal. Deze onderzoeksvraag heb ik aan de hand van een literatuurstudie
+            beantwoord.
+        </div>
+        <div class="mt-4 mb-8">
+            <a href="img/analyse/conclusie.png" class="glightbox" data-gallery="gallery5">
+                <img src="img/analyse/conclusie.png" class="w-full object-cover relative">
+            </a>
+        </div>
+
+        <div class="text-2xl mt-8 uppercase bold mb-2">Aanbevelingen</div>
+        <div class="text-xl regular leading-8 opacity-75"> In de analysefase stond de vraag <span class="bold">“Wat is
+                marketing automation?” </span>centraal. Deze onderzoeksvraag heb ik aan de hand van een literatuurstudie
+            beantwoord.
+        </div>
+        <div class="mt-4 mb-8">
+            <a href="img/analyse/conclusie.png" class="glightbox" data-gallery="gallery5">
+                <img src="img/analyse/conclusie.png" class="w-full object-cover relative">
+            </a>
+        </div>
+
+
+
+        <div class="flex justify-center my-6">
+            <a href="index.html">
+                <button type="button"
+                    class="inline-flex items-center bold tracking-wide mx-2 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="9.98685" cy="10.2836" rx="9.8717" ry="9.66417"
+                            transform="rotate(180 9.98685 10.2836)" fill="#CEE8DC" />
+                        <path
+                            d="M9.40872 13.9619L5.36222 10.2833L9.40872 6.60464M14.6114 10.2833L5.36222 10.2833L14.6114 10.2833Z"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    &nbsp Naar overzicht </button>
+            </a>
+        </div>
+    </div>
+
+
+    </div>
+
+    <footer class="flex flex-col justify-center px-6 mt-12  sm:px-6 lg:px-24">
+        <div class="h-px w-full bg-gray-800 mb-6 opacity-25"></div>
+        <div class="text-lg text-center mb-6">Michelle de Wit - Afstudeerportfolio 2022</div>
+    </footer>
+</body>
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+<script src="src/glightbox.js"></script>
+
+<script>
+    let personaSlider = document.querySelectorAll('.persona-slider');
+
+    for (let i = 0; i < personaSlider.length; i++) {
+        let glide = new Glide(personaSlider[i], {
+        });
+        glide.mount();
+    }
+
+    let cjSlider = document.querySelectorAll('.cj-slider');
+
+    for (let i = 0; i < cjSlider.length; i++) {
+        let glide = new Glide(cjSlider[i], {
+        });
+        glide.mount();
+    }
+
+    var lightbox = GLightbox();
+    lightbox.on('open', (target) => {
+        console.log('lightbox opened');
+    });
+
+    var lightboxVideo = GLightbox({
+        selector: '.glightbox3'
+    });
+    lightboxVideo.on('slide_changed', ({ prev, current }) => {
+        console.log('Prev slide', prev);
+        console.log('Current slide', current);
+
+        const { slideIndex, slideNode, slideConfig, player } = current;
+
+        if (player) {
+            if (!player.ready) {
+                // If player is not ready
+                player.on('ready', (event) => {
+                    // Do something when video is ready
+                });
+            }
+
+            player.on('play', (event) => {
+                console.log('Started play');
+            });
+
+            player.on('volumechange', (event) => {
+                console.log('Volume change');
+            });
+
+            player.on('ended', (event) => {
+                console.log('Video ended');
+            });
+        }
+    });
+
+    var lightboxInlineIframe = GLightbox({
+        selector: '.glightbox4'
+    });
+
+</script>
+
+
+</html>

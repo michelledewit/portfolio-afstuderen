@@ -50,17 +50,17 @@
                                 role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
                                 tabindex="-1">
                                 <!-- Active: "bg-gray-100", Not Active: "" -->
-                                <a href="index.html#projectinformatie"
-                                    class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold" role="menuitem"
-                                    tabindex="-1" id="user-menu-item-1">Opdracht</a>
-                                <a href="index.html#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                <a href="opdracht.html" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Opdracht</a>
+                                <a href="#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold"
                                     role="menuitem" tabindex="-1" id="user-menu-item-2">Onderzoeksvragen</a>
-                                <a href="index.html#conclusie" class="block px-4 py-4 text-2xl text-sm uppercase bold"
-                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Conclusie & Aanbevelingen</a>
-                                <a href="index.html#projectinformatie"
-                                    class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
-                                    tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
-                                <a href="index.html#projectinformatie"
+                                <a href="conclusie.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Conclusie</a>
+                                <a href="aanbevelingen.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Aanbevelingen</a>
+                                <a href="#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
+                                <a href="#projectinformatie"
                                     class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
                                     tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
                             </div>
@@ -80,13 +80,13 @@
                     @click.away=" isOpen = false">
 
                     <div class="flex flex-col space-y-6">
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Opdracht</a>
-                        <a href="index.html#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
-                        <a href="index.html#conclusie" class="text-sm text-black uppercase">Conclusie &
-                            Aanbevelingen</a>
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
-                    </div>
+                        <a href="opdracht.html" class="text-sm text-black uppercase">Opdracht</a>
+                        <a href="#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
+                        <a href="conclusie.html" class="text-sm text-black uppercase">Conclusie</a>
+                        <a href="aanbevelingen.html" class="text-sm text-black uppercase">Aanbevelingen</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
+                      </div>
                 </div>
             </div>
 
@@ -111,7 +111,8 @@
     <div class="w-8/12 mx-auto">
         <div class="text-2xl mt-8 uppercase bold mb-2">Inleiding</div>
         <div class="text-xl regular leading-8 opacity-75 mb-12">In de ontwikkelingsfase stond de deelvraag <span
-                class="bold">“Hoe kan een een technisch prototype worden uitgewerkt met de frameworks die binnen Brik worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn?” </span>centraal.
+                class="bold">“Hoe kan een een technisch prototype worden uitgewerkt met de frameworks die binnen Brik
+                worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn?” </span>centraal.
 
             Om deze vraag te beantwoorden is er gestart met het uitwerken van de Front-end ontwikkeling.
             Deze Front-end is gekoppeld aan Craft CMS waardoor de content van de componenten te vullen zijn vanuit
@@ -125,8 +126,8 @@
     <div class="w-8/12 mx-auto">
         <div class="text-2xl mt-8 uppercase bold mb-2">Front-end landingspagina uitwerken</div>
         <div class="text-xl regular leading-8 opacity-75">Na het uitwerken van de wireframes ben is er gestart met de
-            ontwikkeling van de Front-end gebaseerd op het ontwerp. In de Front-end ontwikkeling is gebruik gemaakt van het CSS framework <a
-                href="https://tailwindcss.com/" target="_blank"><span
+            ontwikkeling van de Front-end gebaseerd op het ontwerp. In de Front-end ontwikkeling is gebruik gemaakt van
+            het CSS framework <a href="https://tailwindcss.com/" target="_blank"><span
                     class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Er is voor Tailwind gekozen
             aangezien dit binnen Brik in de bestaande website het gebruikte CSS framework is. TailwindCSS maakt gebruik
             van utility classes waardoor herbruikbare componenten kan worden gebouwd. Aan de HTML elementen is de CSS
@@ -406,7 +407,10 @@
 
     <div class="w-8/12 mx-auto my-12">
         <div class="text-2xl mt-8 uppercase bold mb-2">Conclusie doelgroepprofielen</div>
-        <div class="text-xl regular leading-8 opacity-75"> In de doelgroepfase stond de vraag <span class="bold">“Hoe kan een een technisch prototype worden uitgewerkt met de frameworks die binnen Brik worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn?” </span>centraal. Deze onderzoeksvraag heb ik aan de hand
+        <div class="text-xl regular leading-8 opacity-75"> In de doelgroepfase stond de vraag <span class="bold">“Hoe
+                kan een een technisch prototype worden uitgewerkt met de frameworks die binnen Brik worden gebruikt
+                waardoor de kwalitatieve leads inzichtelijk zijn?” </span>centraal. Deze onderzoeksvraag heb ik aan de
+            hand
             van brainstormsessies, onderzoeken naar bestaande klanten, afnemen van interviews en visuele uitwerkingen
             van de doelgroepprofielen beantwoord gekregen. De potentiële klanten van Brik zijn opgedeeld in vijf
             doelgroepprofielen. In ieder doelgroeprofiel is de sector, het DMU type en het type websitebezoekers
@@ -417,23 +421,38 @@
                 <img src="img/doelgroep/conclusie.png" class="w-full object-cover relative">
             </a>
         </div>
-    </div>
-
-    <div class="w-8/12 mx-auto my-12">
-        <div class="text-2xl mt-8 uppercase bold mb-2">Reflectie</div>
-        <div class="text-xl regular leading-8 opacity-75">De werkzaamheden voor deze onderzoeksfase gingen mij goed af
-            en ik vond het ook erg leuk om te doen. Waar ik het in eerste instantie nog lastig vond om de
-            doelgroepprofielen te segmenteren heb ik door middel van de MBTI profielen, DMU types en type
-            websitebezoekers een structuur kunnen creëren die houvast gaf. Door deze basis ging het proces eigenlijk
-            vanzelf ging en door middel van interviews met de doelgroep en validaties met de product owner zijn er
-            doelgroepprofielen uitgekomen die passen bij de doelgroep van Brik <br><br>Voor de volgende keer zou ik de
-            interviews eerder inplannen, nu had ik deze in de laatste week van de fase gepland. Ik heb in deze fase één
-            interview kunnen afnemen maar wegens afzeggingen moesten er ook twee verplaatst worden naar de volgende
-            fase. Als ik de interviews eerder had gepland had ik nog speling gehad en had ik ze niet door hoeven
-            schuiven. Uiteindelijk heb ik de interviews wel gewoon afgenomen en kunnen toepassen in de
-            doelgroepprofielen.
+        <div class="text-xl regular leading-8 opacity-75"> Er is een MVP van de landingspagina gerealiseerd waarin content wordt
+            dynamisch wordt geladen gebaseerd op het type websitegebruiker en verder is de kwaliteit van een lead inzichtelijk. Voor een
+            doorontwikkeling van deze MVP wordt een conclusie van het project geschreven en zijn er aanbevelingen
+            uitgewerkt.
+        </div>
+        <div class="flex justify-center my-6">
+            <a href="index.html#sprints">
+                <button type="button"
+                    class="inline-flex items-center bold tracking-wide mx-2 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="9.98685" cy="10.2836" rx="9.8717" ry="9.66417"
+                            transform="rotate(180 9.98685 10.2836)" fill="#CEE8DC" />
+                        <path
+                            d="M9.40872 13.9619L5.36222 10.2833L9.40872 6.60464M14.6114 10.2833L5.36222 10.2833L14.6114 10.2833Z"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    &nbsp Naar overzicht </button>
+            </a>
+            <a href="conclusie.html">
+                <button type="button"
+                    class="inline-flex items-center bold tracking-wide pl-4 pr-4 mx-2 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                    Conclusie &nbsp
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="9.93823" cy="10.2833" rx="9.8717" ry="9.66417" fill="#CEE8DC" />
+                        <path d="M10.5162 6.60498L14.5627 10.2836L10.5162 13.9622M5.3136 10.2836H14.5627H5.3136Z"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </a>
         </div>
     </div>
+
 
     <div class="w-8/12 mx-auto my-12">
         <div class="text-2xl mt-8 uppercase bold mb-2">Literatuurlijst</div>
@@ -458,21 +477,6 @@
                 href="https://concept7.nl/artikelen/aankoopbeslissing/" target="_blank"><span
                     class="bold hover:opacity-75 underline">https://concept7.nl/artikelen/aankoopbeslissing/</span></a>
         </div>
-    </div>
-
-    <div class="flex justify-center mb-24">
-        <a href="index.html#sprints">
-            <button type="button"
-                class="inline-flex items-center bold tracking-wide mx-2 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="9.98685" cy="10.2836" rx="9.8717" ry="9.66417" transform="rotate(180 9.98685 10.2836)"
-                        fill="#CEE8DC" />
-                    <path
-                        d="M9.40872 13.9619L5.36222 10.2833L9.40872 6.60464M14.6114 10.2833L5.36222 10.2833L14.6114 10.2833Z"
-                        stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                &nbsp Naar overzicht </button>
-        </a>
     </div>
 
     </div>

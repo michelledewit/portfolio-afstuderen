@@ -50,17 +50,17 @@
                                 role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
                                 tabindex="-1">
                                 <!-- Active: "bg-gray-100", Not Active: "" -->
-                                <a href="index.html#projectinformatie"
-                                    class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold" role="menuitem"
-                                    tabindex="-1" id="user-menu-item-1">Opdracht</a>
-                                <a href="index.html#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                <a href="opdracht.html" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Opdracht</a>
+                                <a href="#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold"
                                     role="menuitem" tabindex="-1" id="user-menu-item-2">Onderzoeksvragen</a>
-                                <a href="index.html#conclusie" class="block px-4 py-4 text-2xl text-sm uppercase bold"
-                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Conclusie & Aanbevelingen</a>
-                                <a href="index.html#projectinformatie"
-                                    class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
-                                    tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
-                                <a href="index.html#projectinformatie"
+                                <a href="conclusie.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Conclusie</a>
+                                <a href="aanbevelingen.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Aanbevelingen</a>
+                                <a href="#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
+                                <a href="#projectinformatie"
                                     class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
                                     tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
                             </div>
@@ -80,13 +80,13 @@
                     @click.away=" isOpen = false">
 
                     <div class="flex flex-col space-y-6">
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Opdracht</a>
-                        <a href="index.html#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
-                        <a href="index.html#conclusie" class="text-sm text-black uppercase">Conclusie &
-                            Aanbevelingen</a>
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
-                    </div>
+                        <a href="opdracht.html" class="text-sm text-black uppercase">Opdracht</a>
+                        <a href="#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
+                        <a href="conclusie.html" class="text-sm text-black uppercase">Conclusie</a>
+                        <a href="aanbevelingen.html" class="text-sm text-black uppercase">Aanbevelingen</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
+                      </div>
                 </div>
             </div>
 
@@ -148,8 +148,10 @@
             <div class="w-1/2 mr-12 h-64 flex flex-col justify-center">
                 <div class="text-xl mt-64 uppercase bold mb-2">Inzicht 1: Midden- en kleinbedrijf</div>
                 <div class="text-lg regular leading-8 opacity-75 w-5/6">De bedrijven die de website bezoeken zijn
-                    voor 82% bedrijven met een aantal tussen de 1 en de 50 werknemers. Hieruit kan de conclusie worden getrokken dat
-                    bedrijven die de website bezoeken vallen onder midden- en kleinbedrijf (mkb). 13% van de bedrijven die de website bezoeken hebben meer dan 50 werknemers met een maximum aantal van 200 werknemers.
+                    voor 82% bedrijven met een aantal tussen de 1 en de 50 werknemers. Hieruit kan de conclusie worden
+                    getrokken dat
+                    bedrijven die de website bezoeken vallen onder midden- en kleinbedrijf (mkb). 13% van de bedrijven
+                    die de website bezoeken hebben meer dan 50 werknemers met een maximum aantal van 200 werknemers.
                 </div>
             </div>
             <div class="w-1/2 my-6">
@@ -228,7 +230,9 @@
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Type websitebezoeker</div>
-        <div class="text-xl regular leading-8 opacity-75">Naast de segmentaties in de doelgroep op de inhoudelijkheid van de content is er ook gesegmenteerd op de vorm waarop content moet worden aangeboden. Dit door het model van
+        <div class="text-xl regular leading-8 opacity-75">Naast de segmentaties in de doelgroep op de inhoudelijkheid
+            van de content is er ook gesegmenteerd op de vorm waarop content moet worden aangeboden. Dit door het model
+            van
             Myers-Briggs Type Indicator (MBTI) waarin er 16 persoonlijkheidstypes zijn gebaseerd op de
             persoonlijkheidstypetheorie van Carl Jung. Het MBTI-model gaat uit van 4 dimensies met daarin 2
             mogelijkheden waardoor deze persoonlijkheidstypes ontstaan. <a
@@ -649,9 +653,37 @@
             doelgroepprofielen. In ieder doelgroepprofiel is de sector, het DMU type en het type websitebezoekers
             verwerkt, de doelgroepprofielen van Brik zijn:
         </div>
-        <div class="my-12">
+        <div class="my-8">
             <a href="img/doelgroep/conclusie.png" class="glightbox" data-gallery="gallery5">
                 <img src="img/doelgroep/conclusie.png" class="w-full object-cover relative">
+            </a>
+        </div>
+        <div class="-mt-1 text-xl regular leading-8 opacity-75">Nu de doelgroepprofielen zijn uitgewerkt is de volgende
+            stap het marketing automation proces uitwerken die aansluit op de doelgroepprofielen.
+        </div>
+        <div class="flex justify-center my-6">
+            <a href="index.html#sprints">
+                <button type="button"
+                    class="inline-flex items-center bold tracking-wide mx-2 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="9.98685" cy="10.2836" rx="9.8717" ry="9.66417"
+                            transform="rotate(180 9.98685 10.2836)" fill="#CEE8DC" />
+                        <path
+                            d="M9.40872 13.9619L5.36222 10.2833L9.40872 6.60464M14.6114 10.2833L5.36222 10.2833L14.6114 10.2833Z"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    &nbsp Naar overzicht </button>
+            </a>
+            <a href="marketing-automation-proces.html">
+                <button type="button"
+                    class="inline-flex items-center bold tracking-wide pl-4 pr-4 mx-2 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                    Volgende fase &nbsp
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="9.93823" cy="10.2833" rx="9.8717" ry="9.66417" fill="#CEE8DC" />
+                        <path d="M10.5162 6.60498L14.5627 10.2836L10.5162 13.9622M5.3136 10.2836H14.5627H5.3136Z"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
             </a>
         </div>
     </div>
@@ -679,32 +711,6 @@
                 href="https://concept7.nl/artikelen/aankoopbeslissing/" target="_blank"><span
                     class="bold hover:opacity-75 underline">https://concept7.nl/artikelen/aankoopbeslissing/</span></a>
         </div>
-    </div>
-
-    <div class="flex justify-center mb-24">
-        <a href="index.html#sprints">
-            <button type="button"
-                class="inline-flex items-center bold tracking-wide mx-2 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="9.98685" cy="10.2836" rx="9.8717" ry="9.66417" transform="rotate(180 9.98685 10.2836)"
-                        fill="#CEE8DC" />
-                    <path
-                        d="M9.40872 13.9619L5.36222 10.2833L9.40872 6.60464M14.6114 10.2833L5.36222 10.2833L14.6114 10.2833Z"
-                        stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                &nbsp Naar overzicht </button>
-        </a>
-        <a href="marketing-automation-proces.html">
-            <button type="button"
-                class="inline-flex items-center bold tracking-wide pl-4 pr-4 mx-2 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
-                Volgende fase &nbsp
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="9.93823" cy="10.2833" rx="9.8717" ry="9.66417" fill="#CEE8DC" />
-                    <path d="M10.5162 6.60498L14.5627 10.2836L10.5162 13.9622M5.3136 10.2836H14.5627H5.3136Z"
-                        stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-        </a>
     </div>
 
     </div>

@@ -46,20 +46,23 @@
                             </div>
 
                             <div x-show.transition="open" @click.away="open = false"
-                                class="origin-top-right absolute right-0 z-50 mt-2 pl-6 pr-24 rounded-md shadow-lg py-1 bg-green ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                class="origin-top-right absolute right-0 z-50 mt-2 pl-6 pr-24 rounded-md shadow-lg py-1 bg-blue ring-1 ring-black ring-opacity-5 focus:outline-none"
                                 role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
                                 tabindex="-1">
                                 <!-- Active: "bg-gray-100", Not Active: "" -->
-                                <a href="index.html#projectinformatie" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold" role="menuitem"
-                                tabindex="-1" id="user-menu-item-1">Opdracht</a>
-                              <a href="index.html#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
-                                tabindex="-1" id="user-menu-item-2">Onderzoeksvragen</a>
-                              <a href="index.html#conclusie" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem" tabindex="-1"
-                                id="user-menu-item-0">Conclusie & Aanbevelingen</a>
-                              <a href="index.html#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
-                                tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
-                              <a href="index.html#projectinformatie" class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
-                                tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
+                                <a href="opdracht.html" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">Opdracht</a>
+                                <a href="#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Onderzoeksvragen</a>
+                                <a href="conclusie.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Conclusie</a>
+                                <a href="aanbevelingen.html" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">Aanbevelingen</a>
+                                <a href="#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
+                                <a href="#projectinformatie"
+                                    class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
+                                    tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
                             </div>
                         </div>
                     </div>
@@ -77,12 +80,13 @@
                     @click.away=" isOpen = false">
 
                     <div class="flex flex-col space-y-6">
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Opdracht</a>
-                        <a href="index.html#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
-                        <a href="index.html#conclusie" class="text-sm text-black uppercase">Conclusie & Aanbevelingen</a>
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
-                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
-                    </div>
+                        <a href="opdracht.html" class="text-sm text-black uppercase">Opdracht</a>
+                        <a href="#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
+                        <a href="conclusie.html" class="text-sm text-black uppercase">Conclusie</a>
+                        <a href="aanbevelingen.html" class="text-sm text-black uppercase">Aanbevelingen</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
+                      </div>
                 </div>
             </div>
 
@@ -92,7 +96,8 @@
     <div class="my-16">
         <div class="text-4xl uppercase bold text-center mt-1 md:w-6/12 w-1/2 mx-auto leading-tight">Analyse
         </div>
-        <div class="regular text-xl md:w-1/2 w-10/12 mx-auto text-center mt-4 opacity-75 uppercase">Wat is marketing automation?
+        <div class="regular text-xl md:w-1/2 w-10/12 mx-auto text-center mt-4 opacity-75 uppercase">Wat is marketing
+            automation?
         </div>
     </div>
 
@@ -106,32 +111,34 @@
         <div class="text-2xl mt-8 uppercase bold mb-2">Inleiding</div>
         <div class="text-xl regular leading-8 opacity-75 "> Het doel van de analysefase is om de deelvraag <span
                 class="bold">“Wat is marketing automation?”</span> te beantwoorden d.m.v. een onderzoek naar
-            marketing automation en marketing automation systemen. Aan het eind van de sprint heb is een requirements list
+            marketing automation en marketing automation systemen. Aan het eind van de sprint heb is een requirements
+            list
             opgesteld in de vorm van user stories. Lees hieronder het proces van de analysefase.<br><br>
             In de analysefase heb is als eerste stap een projectplan
             opgesteld. In het projectplan is de opdracht, de toegepaste project- en onderzoeksmethodes en
-            is de planning gedefinieerd. 
+            is de planning gedefinieerd.
         </div>
 
-        <a href="img/analyse/projectplan_michelledewit_versie4.pdf"
-        target="_blank">
-        <button type="button"
-            class="inline-flex items-center bold tracking-wide pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
-            <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
-                <path
-                    d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
-                    fill="black" />
-            </svg>
-            &nbsp Projectplan</button>
-    </a>
+        <a href="img/analyse/projectplan_michelledewit_versie4.pdf" target="_blank">
+            <button type="button"
+                class="inline-flex items-center bold tracking-wide pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
+                    <path
+                        d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
+                        fill="black" />
+                </svg>
+                &nbsp Projectplan</button>
+        </a>
     </div>
 
 
 
     <div class="w-8/12 mx-auto">
         <div class="text-2xl mt-8 uppercase bold mb-2">Literatuurstudie</div>
-        <div class="text-xl regular leading-8 opacity-75">Mijn kennis van marketing automation was voorafgaand aan het project nog erg laag. Een eerste stap in het project was daarom om middels een literatuurstudie marketing automation te onderzoeken. Vragen die tijdens het onderzoek zijn gesteld:
+        <div class="text-xl regular leading-8 opacity-75">Mijn kennis van marketing automation was voorafgaand aan het
+            project nog erg laag. Een eerste stap in het project was daarom om middels een literatuurstudie marketing
+            automation te onderzoeken. Vragen die tijdens het onderzoek zijn gesteld:
             <ul class="ml-8 mt-3 mb-4 text-xl regular list-disc ">
                 <li class="text-red-400 my-1">
                     <div class="text-black">Wat is marketing automation?</div>
@@ -145,12 +152,18 @@
             </ul>
         </div>
         <div class="text-xl mt-8 uppercase bold mb-2">Wat is marketing automation?</div>
-        <div class="text-xl regular leading-8 opacity-75">Op basis van dit onderzoek is in eigen woorden een definitie van marketing automation uitgewerkt. Marketing automation is:<span class="italic">"Het genereren van leads op online kanalen op basis van een geoptimaliseerde customer journey door middel van het automatiseren van marketingprocessen met behulp van software."</span><br>>Onderstaand zijn de verdere opgedane inzichten over marketing automation uitgeschreven. </div>
+        <div class="text-xl regular leading-8 opacity-75">Op basis van dit onderzoek is in eigen woorden een definitie
+            van marketing automation uitgewerkt. Marketing automation is:<span class="italic">"Het genereren van leads
+                op online kanalen op basis van een geoptimaliseerde customer journey door middel van het automatiseren
+                van marketingprocessen met behulp van software."</span><br>>Onderstaand zijn de verdere opgedane
+            inzichten over marketing automation uitgeschreven. </div>
 
         <div class="flex">
             <div class="w-1/2 mr-12 h-64 flex flex-col justify-center">
                 <div class="text-xl mt-8 uppercase bold mb-2">Inzicht 1: Relevantie doelgroep</div>
-                <div class="text-lg regular leading-8 opacity-75 w-5/6">Met marketing automation kan er worden ingespeeld op de behoeftes van de doelgroep en de leads waardoor de juiste content, op het juiste moment naar de juiste doelgroep worden gecommuniceerd. 
+                <div class="text-lg regular leading-8 opacity-75 w-5/6">Met marketing automation kan er worden
+                    ingespeeld op de behoeftes van de doelgroep en de leads waardoor de juiste content, op het juiste
+                    moment naar de juiste doelgroep worden gecommuniceerd.
                 </div>
             </div>
             <div class="w-1/2 mt-6 mb-0">
@@ -167,16 +180,20 @@
             </div>
             <div class="w-1/2 ml-12 flex flex-col justify-center">
                 <div class="text-xl mt-8 uppercase bold mb-2 -mt-1">Inzicht 2: Vergroten kwalitatieve leads</div>
-                <div class="text-lg regular leading-8 opacity-75 w-full">Marketing automation draagt bij aan het vergroten van het kwalitatievere leads. Door middel van marketing automation speel je in op de behoeftes van de leads en kan er worden achterhaald wanneer een lead gekwalificeerd is. 
+                <div class="text-lg regular leading-8 opacity-75 w-full">Marketing automation draagt bij aan het
+                    vergroten van het kwalitatievere leads. Door middel van marketing automation speel je in op de
+                    behoeftes van de leads en kan er worden achterhaald wanneer een lead gekwalificeerd is.
                 </div>
             </div>
         </div>
         <div class="flex">
             <div class="w-1/2 mr-12 h-64 flex flex-col justify-center">
                 <div class="text-xl mt-8 uppercase bold mb-2">Inzicht 3: Combineren kanalen</div>
-                <div class="text-lg regular leading-8 opacity-75 w-5/6">Het combineren van meerdere kanalen zoals sociale media, landingspagina's en e-mail. Het verzamelen van data via deze kanalen kunnen met elkaar worden vergeleken zodat er een beter beeld ontstaat van de doelgroep. <a
-                    href="https://fingerspitz.nl/downloads/whitepaper-marketing-automation/" target="_blank"><span
-                        class="hover:opacity-75 underline semi-bold">(Fingerspitz 2021, p. 7)
+                <div class="text-lg regular leading-8 opacity-75 w-5/6">Het combineren van meerdere kanalen zoals
+                    sociale media, landingspagina's en e-mail. Het verzamelen van data via deze kanalen kunnen met
+                    elkaar worden vergeleken zodat er een beter beeld ontstaat van de doelgroep. <a
+                        href="https://fingerspitz.nl/downloads/whitepaper-marketing-automation/" target="_blank"><span
+                            class="hover:opacity-75 underline semi-bold">(Fingerspitz 2021, p. 7)
                 </div>
             </div>
             <div class="w-1/2 my-6">
@@ -193,15 +210,19 @@
             </div>
             <div class="w-1/2 ml-12 flex flex-col justify-center">
                 <div class="text-xl mt-8 uppercase bold mb-2 -mt-1">Inzicht 4: Automatisering</div>
-                <div class="text-lg regular leading-8 opacity-75 w-full">Het verzenden van geautomatiseerde en dynamische content zoals e-mails die weer gekoppeld zijn aan het gedrag van een lead. <a
-                    href="https://ss-usa.s3.amazonaws.com/c/308457562/media/1095860a3d873e06fb49161411895346/Qamel_Whitepaper_Marketing_Automation_2021-05.pdf" target="_blank"><span
-                        class="hover:opacity-75 underline semi-bold">(Qamal, 2021, p. 5)</span></a> Zonder automatisering moet content handmatig worden verstuurd wat natuurlijk niet efficiënt is. Een flow wordt eenmalig ingesteld en is daarna voor meerdere leads in te stellen.
+                <div class="text-lg regular leading-8 opacity-75 w-full">Het verzenden van geautomatiseerde en
+                    dynamische content zoals e-mails die weer gekoppeld zijn aan het gedrag van een lead. <a
+                        href="https://ss-usa.s3.amazonaws.com/c/308457562/media/1095860a3d873e06fb49161411895346/Qamel_Whitepaper_Marketing_Automation_2021-05.pdf"
+                        target="_blank"><span class="hover:opacity-75 underline semi-bold">(Qamal, 2021, p.
+                            5)</span></a> Zonder automatisering moet content handmatig worden verstuurd wat natuurlijk
+                    niet efficiënt is. Een flow wordt eenmalig ingesteld en is daarna voor meerdere leads in te stellen.
                 </div>
             </div>
         </div>
 
         <div class="text-2xl mt-12 uppercase bold mb-2">Marketing automation flow</div>
-        <div class="text-xl regular leading-8 opacity-75">Binnen een marketing automation proces zijn er een aantal stappen die doorlopen moeten worden om een gerichte flow te kunnen opzetten.
+        <div class="text-xl regular leading-8 opacity-75">Binnen een marketing automation proces zijn er een aantal
+            stappen die doorlopen moeten worden om een gerichte flow te kunnen opzetten.
         </div>
 
         <div class="my-12">
@@ -212,20 +233,22 @@
 
         <div class="text-2xl mt-8 uppercase bold mb-2">Marketing automation systemen</div>
 
-        <div class="text-xl regular leading-8 opacity-75">Om te bepalen welk marketing automation systeem Brik wil gaan inzetten is een onderzoek naar marketing automation systemen uitgevoerd. Voor het onderzoek is met Chris Bovers, de product owner van het project een gesprek gevoerd over waaraan het marketing automation systeem moet voldoen en welke systemen moeten worden onderzocht.</div> 
+        <div class="text-xl regular leading-8 opacity-75">Om te bepalen welk marketing automation systeem Brik wil gaan
+            inzetten is een onderzoek naar marketing automation systemen uitgevoerd. Voor het onderzoek is met Chris
+            Bovers, de product owner van het project een gesprek gevoerd over waaraan het marketing automation systeem
+            moet voldoen en welke systemen moeten worden onderzocht.</div>
 
-        <a href="https://absorbed-transport-b26.notion.site/Systemen-723e1db3887c44cab2b92d50a49b359d"
-        target="_blank">
-        <button type="button"
-            class="inline-flex items-center bold tracking-wide pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
-            <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
-                <path
-                    d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
-                    fill="black" />
-            </svg>
-            &nbsp Volledig onderzoek</button>
-    </a>
+        <a href="https://absorbed-transport-b26.notion.site/Systemen-723e1db3887c44cab2b92d50a49b359d" target="_blank">
+            <button type="button"
+                class="inline-flex items-center bold tracking-wide pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
+                    <path
+                        d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
+                        fill="black" />
+                </svg>
+                &nbsp Volledig onderzoek</button>
+        </a>
 
         <div class="my-12">
             <a href="img/analyse/comparison chart.png" class="glightbox" data-gallery="gallery2">
@@ -234,7 +257,10 @@
         </div>
 
         <div class="text-xl mt-8 uppercase bold mb-2 mt-2">Conclusie systemen</div>
-        <div class="text-xl regular leading-8 opacity-75">Uiteindelijk vijf systemen onderzocht op de eisen van Brik waar het marketing automation systemen aan moet voldoen. De onderzochte systemen zijn de drie meest gebruikte marketing automation systemen, de andere twee systemen zijn aangedragen vanuit Brik om te onderzoeken. Op basis van het onderzoek zijn twee systemen geadviseerd:
+        <div class="text-xl regular leading-8 opacity-75">Uiteindelijk vijf systemen onderzocht op de eisen van Brik
+            waar het marketing automation systemen aan moet voldoen. De onderzochte systemen zijn de drie meest
+            gebruikte marketing automation systemen, de andere twee systemen zijn aangedragen vanuit Brik om te
+            onderzoeken. Op basis van het onderzoek zijn twee systemen geadviseerd:
             <ul class="ml-8 mt-3 text-xl regular list-disc mb-8">
                 <li class="text-red-400 my-1">
                     <div class="text-black">Mailerlite</div>
@@ -243,26 +269,39 @@
                     <div class="text-black">Mailchimp</div>
                 </li>
             </ul>
-            De systemen Hubspot en Sharpspring zijn afgevallen aangezien deze kosten al richting de honderden euro’s per maand zijn een daardoor te hoog zijn voor het budget van Brik. Mailerlite en Mailchimp zijn systemen met minder features maar er kunnen wel de benodigde plugins worden geïmplementeerd en hoeft er alleen betaald te worden voor de features die interessant zijn voor Brik.<br><br>
-            Voor de e-mail marketing flow heeft Brik uiteindelijk gekozen voor het systeem Mailerlite. Dit krijgt de voorkeur boven Mailchimp aangezien het dezelfde mogelijkheden heeft maar minder kost.<br><br>
+            De systemen Hubspot en Sharpspring zijn afgevallen aangezien deze kosten al richting de honderden euro’s per
+            maand zijn een daardoor te hoog zijn voor het budget van Brik. Mailerlite en Mailchimp zijn systemen met
+            minder features maar er kunnen wel de benodigde plugins worden geïmplementeerd en hoeft er alleen betaald te
+            worden voor de features die interessant zijn voor Brik.<br><br>
+            Voor de e-mail marketing flow heeft Brik uiteindelijk gekozen voor het systeem Mailerlite. Dit krijgt de
+            voorkeur boven Mailchimp aangezien het dezelfde mogelijkheden heeft maar minder kost.<br><br>
 
-            Brik heeft ook zijn eigen tools waarmee marketing automation wordt ingezet. Op de landingspagina's die gerealiseerd gaan worden moet data worden verzameld. Het gaat hierbij om data van lead scoring en gegevens uit het ingevulde contactformulier. De data van de leads wordt verzameld in Craft CMS zodat in de verdere funnel ingespeeld kan worden op deze data.
+            Brik heeft ook zijn eigen tools waarmee marketing automation wordt ingezet. Op de landingspagina's die
+            gerealiseerd gaan worden moet data worden verzameld. Het gaat hierbij om data van lead scoring en gegevens
+            uit het ingevulde contactformulier. De data van de leads wordt verzameld in Craft CMS zodat in de verdere
+            funnel ingespeeld kan worden op deze data.
         </div>
 
         <div class="text-2xl mt-8 uppercase bold mb-2">Project managemement Jira</div>
 
-        <div class="text-xl regular leading-8 opacity-75 mb-12">Binnen het project heb is als project management tool gebruikt gemaakt van Jira. In Jira zijn de sprints ingepland en de werkzaamheden die in deze fase plaatsvinden uitgewerkt. Elke sprint heeft zijn backlog met eigen user stories die vanuit Brik of mijn persoonlijke werkzaamheden zijn geschreven. Elke user story had daarbij ook weer zijn eigen onderliggende taken. Buiten de backlog is er ook een overzichtbord waarin de voortgang van een desbetreffende user story heb bijgehouden. 
-        </div> 
+        <div class="text-xl regular leading-8 opacity-75 mb-12">Binnen het project heb is als project management tool
+            gebruikt gemaakt van Jira. In Jira zijn de sprints ingepland en de werkzaamheden die in deze fase
+            plaatsvinden uitgewerkt. Elke sprint heeft zijn backlog met eigen user stories die vanuit Brik of mijn
+            persoonlijke werkzaamheden zijn geschreven. Elke user story had daarbij ook weer zijn eigen onderliggende
+            taken. Buiten de backlog is er ook een overzichtbord waarin de voortgang van een desbetreffende user story
+            heb bijgehouden.
+        </div>
 
         <div class="glide persona-slider">
             <div class="glide__track relative" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
-                        <a href="img/analyse/jira-backlog.png" class="glightbox "
-                            data-gallery="gallery1" data-type="image">
-                            <img src="img/analyse/jira-backlog.png"
-                                class="w-full object-cover relative">
-                                <figcaption class="flex justify-center my-10"> <div class="flex rounded justify-center bg-blue py-3 w-3/12">Backlog per sprint</div></figcaption>
+                        <a href="img/analyse/jira-backlog.png" class="glightbox " data-gallery="gallery1"
+                            data-type="image">
+                            <img src="img/analyse/jira-backlog.png" class="w-full object-cover relative">
+                            <figcaption class="flex justify-center my-10">
+                                <div class="flex rounded justify-center bg-blue py-3 w-3/12">Backlog per sprint</div>
+                            </figcaption>
                             <div class="absolute top-0 transform translate-y-8 translate-x-72 hover:opacity-75">
                                 <svg width="35" height="35" viewBox="0 0 54 54" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -275,11 +314,12 @@
                         </a>
                     </li>
                     <li class="glide__slide">
-                        <a href="img/analyse/jira-ond-taken.png" class="glightbox "
-                            data-gallery="gallery1" data-type="image">
-                            <img src="img/analyse/jira-ond-taken.png"
-                                class="w-full object-cover relative">
-                                <figcaption class="flex justify-center my-10"> <div class="flex rounded justify-center bg-blue py-3 w-3/12">Onderliggende taken </div></figcaption>
+                        <a href="img/analyse/jira-ond-taken.png" class="glightbox " data-gallery="gallery1"
+                            data-type="image">
+                            <img src="img/analyse/jira-ond-taken.png" class="w-full object-cover relative">
+                            <figcaption class="flex justify-center my-10">
+                                <div class="flex rounded justify-center bg-blue py-3 w-3/12">Onderliggende taken </div>
+                            </figcaption>
                             <div class="absolute top-0 transform translate-y-8 translate-x-72 hover:opacity-75">
                                 <svg width="35" height="35" viewBox="0 0 54 54" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -292,11 +332,13 @@
                         </a>
                     </li>
                     <li class="glide__slide">
-                        <a href="img/analyse/jira-bord.png" class="glightbox "
-                            data-gallery="gallery1" data-type="image">
-                            <img src="img/analyse/jira-bord.png"
-                                class="w-full object-cover relative">
-                                <figcaption class="flex justify-center my-10"> <div class="flex rounded justify-center bg-blue py-3 w-5/12">Bord met user stories - voortgang zichtbaar </div></figcaption>
+                        <a href="img/analyse/jira-bord.png" class="glightbox " data-gallery="gallery1"
+                            data-type="image">
+                            <img src="img/analyse/jira-bord.png" class="w-full object-cover relative">
+                            <figcaption class="flex justify-center my-10">
+                                <div class="flex rounded justify-center bg-blue py-3 w-5/12">Bord met user stories -
+                                    voortgang zichtbaar </div>
+                            </figcaption>
                             <div class="absolute top-0 transform translate-y-8 translate-x-72 hover:opacity-75">
                                 <svg width="35" height="35" viewBox="0 0 54 54" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -343,18 +385,50 @@
 
     <div class="w-8/12 mx-auto mb-12">
         <div class="text-2xl mt-8 uppercase bold mb-2">Conclusie analysefase</div>
-        <div class="text-xl regular leading-8 opacity-75"> In de analysefase stond de vraag <span class="bold">“Wat is marketing automation?” </span>centraal. Deze onderzoeksvraag is aan de hand van een literatuurstudie beantwoord waar uiteindelijk een definitie van marketing automation is gevormd.
+        <div class="text-xl regular leading-8 opacity-75"> In de analysefase stond de vraag <span class="bold">“Wat is
+                marketing automation?” </span>centraal. Deze onderzoeksvraag is aan de hand van een literatuurstudie
+            beantwoord waar uiteindelijk een definitie van marketing automation is gevormd.
         </div>
         <div class="mt-4 mb-8">
             <a href="img/analyse/conclusie.png" class="glightbox" data-gallery="gallery5">
                 <img src="img/analyse/conclusie.png" class="w-full object-cover relative">
             </a>
         </div>
-        <div class="text-xl regular leading-8 opacity-75"> Binnen een marketing automation flow zijn er verschillende fases waardoor een lead een klant kan worden en zich verplaatst in de marketing automation flow. Deze flow is visueel uitgewerkt in onderstaande afbeelding 
+        <div class="text-xl regular leading-8 opacity-75"> Binnen een marketing automation flow zijn er verschillende
+            fases waardoor een lead een klant kan worden en zich verplaatst in de marketing automation flow. Deze flow
+            is visueel uitgewerkt in onderstaande afbeelding:
         </div>
         <div class="mt-8 mb-12">
             <a href="img/analyse/ma_flow.png" class="glightbox" data-gallery="gallery5">
                 <img src="img/analyse/ma_flow.png" class="w-full object-cover relative">
+            </a>
+        </div>
+        <div class="text-xl regular leading-8 opacity-75"> De volgende stap is om de doelgroep van Brik te bepalen die
+            moeten worden aangesproken met de marketing automation flow.
+        </div>
+        <div class="flex justify-center my-6">
+            <a href="index.html#sprints">
+                <button type="button"
+                    class="inline-flex items-center bold tracking-wide mx-2 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="9.98685" cy="10.2836" rx="9.8717" ry="9.66417"
+                            transform="rotate(180 9.98685 10.2836)" fill="#CEE8DC" />
+                        <path
+                            d="M9.40872 13.9619L5.36222 10.2833L9.40872 6.60464M14.6114 10.2833L5.36222 10.2833L14.6114 10.2833Z"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    &nbsp Naar overzicht </button>
+            </a>
+            <a href="doelgroepfase.html">
+                <button type="button"
+                    class="inline-flex items-center bold tracking-wide pl-4 pr-4 mx-2 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
+                    Volgende fase &nbsp
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="9.93823" cy="10.2833" rx="9.8717" ry="9.66417" fill="#CEE8DC" />
+                        <path d="M10.5162 6.60498L14.5627 10.2836L10.5162 13.9622M5.3136 10.2836H14.5627H5.3136Z"
+                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
             </a>
         </div>
     </div>
@@ -387,31 +461,6 @@
                 href="https://www.intracto.com/nl-be/blog/lead-scoring-wat-het-en-hoe-zet-je-het-op"><span
                     class="bold hover:opacity-75">https://www.intracto.com/nl-be/blog/lead-scoring-wat-het-en-hoe-zet-je-het-op</span></a>
         </div>
-    </div>
-
-    <div class="flex justify-center mb-24">
-        <a href="index.html#sprints">
-            <button type="button"
-                class="inline-flex items-center bold tracking-wide mx-2 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <ellipse cx="9.98685" cy="10.2836" rx="9.8717" ry="9.66417" transform="rotate(180 9.98685 10.2836)"
-                        fill="#CEE8DC" />
-                    <path
-                        d="M9.40872 13.9619L5.36222 10.2833L9.40872 6.60464M14.6114 10.2833L5.36222 10.2833L14.6114 10.2833Z"
-                        stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                &nbsp Naar overzicht </button>
-        </a>
-        <a href="doelgroepfase.html">
-        <button type="button"
-            class="inline-flex items-center bold tracking-wide pl-4 pr-4 mx-2 py-2 border border-transparent leading-4 medium shadow-sm mt-6 bg-green hover:opacity-75 focus:outline-none uppercase rounded">
-            Volgende fase &nbsp 
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="9.93823" cy="10.2833" rx="9.8717" ry="9.66417" fill="#CEE8DC"/>
-                <path d="M10.5162 6.60498L14.5627 10.2836L10.5162 13.9622M5.3136 10.2836H14.5627H5.3136Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>                
-        </button>
-    </a>
     </div>
 
     </div>
