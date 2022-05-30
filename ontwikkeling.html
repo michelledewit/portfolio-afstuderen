@@ -125,14 +125,13 @@
 
     <div class="w-8/12 mx-auto">
         <div class="text-2xl mt-8 uppercase bold mb-2">Front-end landingspagina uitwerken</div>
-        <div class="text-xl regular leading-8 opacity-75">Na het uitwerken van de wireframes ben is er gestart met de
-            ontwikkeling van de Front-end gebaseerd op het ontwerp. In de Front-end ontwikkeling is gebruik gemaakt van
+        <div class="text-xl regular leading-8 opacity-75">Na het uitwerken van het ontwerp is de
+            de Front-end ontwikkelng gestart gebaseerd op het design van de landingspagina. In de Front-end ontwikkeling is gebruik gemaakt van
             het CSS framework <a href="https://tailwindcss.com/" target="_blank"><span
                     class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Er is voor Tailwind gekozen
             aangezien dit binnen Brik in de bestaande website het gebruikte CSS framework is. TailwindCSS maakt gebruik
-            van utility classes waardoor herbruikbare componenten kan worden gebouwd. Aan de HTML elementen is de CSS
-            meegegeven door middel van Tailwind classnames waardoor de HTMl en CSS wordt samengevoegd en aansluit op het
-            ontwerp.
+            van utility classes waardoor herbruikbare componenten kunnen worden gebouwd. Aan de HTML elementen is de CSS
+            toegevoegd door middel van het meegeven van Tailwind classnames. De HTMl en CSS is op deze manier overzichtelijk in één bestand samengevoegd.
         </div>
         <div class="mt-4 mb-12">
             <a href="img/ontwikkeling/tailwind.png" class="glightbox">
@@ -143,8 +142,8 @@
                     bijv. text-black = text-color, text-3xl = tekstformaat.</div>
             </figcaption>
         </div>
-        <div class="text-xl regular leading-8 opacity-75">Elk component van het ontwerp zoals een CTA, testimonials,
-            nieuwsbrief is voor de MSCH-profielen uitgewerkt. Zie in de onderstaande
+        <div class="text-xl regular leading-8 opacity-75">Elk component van het ontwerp zoals een CTA of een testimonials,
+            is op deze manier voor de MSCH-profielen uitgewerkt. Hierdoor krijgt elk profiel zijn eigen variatie die aansluit bij de informatiebehoefte waardoor er voor bijvoorbeeld de CTA vier variaties zijn gebouwd. Zie in de onderstaande
             afbeelding het CTA element voor de humanistische bezoeker.
         </div>
         <div class="mt-4 mb-12">
@@ -200,13 +199,12 @@
         </div>
 
         <div class="text-2xl mt-8 uppercase bold mb-2">Alpine JS</div>
-        <div class="text-xl regular leading-8 opacity-75">Voor het tonen van de juiste versie van een contentblok heb ik
+        <div class="text-xl regular leading-8 opacity-75">Voor het tonen van de juiste versie van een contentblok is
             gebruik gemaakt van
             <a href="https://alpinejs.dev/" target="_blank"><span class="hover:opacity-75 underline semi-bold"> Alpine
-                    JS</span></a>. Alpine JS is het JavaScript framework wat gebruikt wordt door Brik in webapplicaties.
-            Van belang is dat met Alpine JS dynamic loading op de landingspagina is toe te passen. Dit betekent dat er
-            content kan worden geladen die aansluit op het type doelgroepprofiel, op basis van de uitgevoerde acties van
-            een bezoeker zonder dat de pagina opnieuw geladen moet worden.
+                    JS</span></a>. Alpine JS is het JavaScript framework wat gebruikt wordt door Brik in webapplicaties en wordt op aanraden van het Brik team toegepast op de landingspagina.
+            Een belangrijke eigenschap van Alpine JS is het toepassen van dynamic loading. Met dynamic loading kunnen er
+            elementen worden getoond of verborgen zonder dat de pagina opnieuw geladen hoeft te worden. Op deze manier kan de juiste contentvorm worden geladen op basis van de uitgevoerde acties van een bezoeker zodat de content aansluit bij het type doelgroepprofiel.
         </div>
     </div>
 
@@ -215,8 +213,7 @@
         <div class="text-2xl mt-8 uppercase bold mb-2">Lead scoring + Dynamische content MSCH-profiel</div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Eerste MVP Lead scoring & Dynamische content</div>
-        <div class="text-xl regular leading-8 opacity-75">Ik ben begonnen met het uitwerken van een eerste MVP waarin de
-            lead score en het MSCH-profiel van een lead inzichtelijk is. Op basis van een actie (klik op knop) krijgt
+        <div class="text-xl regular leading-8 opacity-75">Nadat de Front-end ontwikkeling is gekoppeld aan Craft CMS stond het uitwerken van een eerste MVP centraal waarin content wordt geladen die past bij het MSCH-profiel, gebaseerd op lead scoring. Op basis van een actie (klik op knop) krijgt
             het humanistische profiel een punt. Bij 3 punten wordt dan door middel van Alpine JS dynamische content
             geladen die aansluit bij het profiel.
         </div>
