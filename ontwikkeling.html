@@ -110,31 +110,25 @@
                 class="bold">“Hoe kan een een technisch prototype worden uitgewerkt met de frameworks die binnen Brik
                 worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn?” </span>centraal.
 
-            Om deze vraag te beantwoorden is er gestart met het uitwerken van de Front-end ontwikkeling.
-            Deze Front-end is gekoppeld aan Craft CMS waardoor de content van de elementen te vullen zijn vanuit
-            het Back-end systeem. Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin content dynamisch wordt geladen op basis van het type websitegebruiker gebaseerd op de MSCH score. Op de landingspagina wordt ook een lead score bijgehouden waardoor de kwaliteit van een bezoeker zichtbaar is. Deze beide scores zijn zichtbaar in Craft CMS.
-            In de volgende hoofdstukken is het proces van het
-            technische prototype zorgvuldig uitgeschreven.
+            Om deze vraag te beantwoorden is er gestart met het uitwerken van de Front-end ontwikkeling en de koppeling met Craft CMS.
+Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin content dynamisch wordt geladen op basis van het type websitegebruiker gebaseerd op de MSCH score. Op de landingspagina wordt ook een lead score bijgehouden waardoor de kwaliteit van een bezoeker zichtbaar is. Deze beide scores zijn zichtbaar in Craft CMS.
         </div>
     </div>
 
     <div class="w-8/12 mx-auto">
-        <div id="versie1" class="text-2xl mt-8 uppercase bold mb-2">Proof of concept: Front-end landingspagina ontwikkeling</div>
-        <div class="text-xl regular leading-8 opacity-75">Na het uitwerken van het ontwerp is de
-            de Front-end ontwikkelng gestart gebaseerd op het design van de landingspagina. In de Front-end ontwikkeling is gebruik gemaakt van
+        <div id="versie1" class="text-2xl mt-8 uppercase bold mb-2">Proof of concept: Ontwikkeling landingspagina</div>
+        <div class="text-xl regular leading-8 opacity-75">Gebaseerd op het ontwerp van de landingspagina Craft CMS vs Wordpress is de
+            technische ontwikkelng gestart. In de Front-end ontwikkeling is gebruik gemaakt van
             het CSS framework <a href="https://tailwindcss.com/" target="_blank"><span
-                    class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Er is voor Tailwind gekozen
-            aangezien dit binnen Brik in de bestaande website het gebruikte CSS framework is. TailwindCSS maakt gebruik
-            van utility classes waardoor herbruikbare componenten kunnen worden gebouwd. De structuur van de landingspagina is met HTML uitgewerkt waarnaa aan de HTML elementen de styling van het ontwerp is toegevoegd door middel van de Tailwind classnames. De HTMl en CSS is op deze manier overzichtelijk in één bestand samengevoegd.
+                    class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Tailwind is het gebruikte CSS framework in de Brik website en om consistent te blijven is dit doorgevoerd. De structuur van de landingspagina is met HTML uitgewerkt waarna aan de HTML elementen de Tailwind classnames zijn toegevoegd waarmee styling aan de elementen zijn meegegeven. De HTMl en CSS is op deze manier overzichtelijk in één bestand samengevoegd.
         </div>
-        <div class="mt-4 mb-12">
+        <div class="mt-4 mb-10">
             <a href="img/ontwikkeling/tailwind.png" class="glightbox">
                 <img src="img/ontwikkeling/tailwind.png" class="w-full object-cover relative">
             </a>
-            <figcaption class="flex justify-center mt-6 mb-10">
-                <div class="flex rounded justify-center bg-blue py-3 w-5/12 text-center">Classnames bepalen styling:<br>
-                    bijv. text-black = text-color, text-3xl = tekstformaat.</div>
-            </figcaption>
+            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-0 italic">Classnames bepalen styling: 
+                bijv. text-black = text-color, text-3xl = tekstformaat.
+            </div>
         </div>
         <div class="text-xl regular leading-8 opacity-75">Elk component van het ontwerp zoals een CTA of een testimonial is op bovenstaande manier voor de MSCH-profielen uitgewerkt. Elk profiel heeft zijn eigen versie van een element die aansluit bij de desbetreffende informatiebehoefte. Zo heeft het CTA element vier versies, voor elk profiel één. Zie in de onderstaande
             afbeelding het CTA element voor de humanistische bezoeker.
@@ -144,10 +138,9 @@
                 <img src="img/ontwikkeling/tailwind-2.png" class="w-full object-cover relative">
             </a>
         </div>
-        <div class="text-2xl mt-8 uppercase bold mb-2">Front-end koppelen met Craft CMS</div>
         <div class="flex flex-row">
             <div class="w-2/4">
-                <div class="text-xl mt-4 uppercase bold mb-2">Creëren pagina's</div>
+                <div class="text-xl mt-4 uppercase bold mb-2">Front-end koppelen met Craft CMS</div>
                 <div class="text-xl regular leading-8 opacity-75">Binnen Brik wordt voor digitale webapplicaties gebruik
                     gemaakt van het content management systeem <a href="https://craftcms.com/" target="_blank"><span
                             class="hover:opacity-75 underline semi-bold"> Craft CMS</span></a> . Craft CMS is volledig
@@ -196,47 +189,86 @@
         <div class="text-xl regular leading-8 opacity-75">Nadat de Front-end ontwikkeling is gekoppeld aan Craft CMS stond het ontwikkelen van dynamic content loading centraal. Hiervoor is
             gebruik gemaakt van
             <a href="https://alpinejs.dev/" target="_blank"><span class="hover:opacity-75 underline semi-bold"> Alpine
-                    JS</span></a>. Alpine JS is een JavaScript framework en is op aanraden van het Brik team toegepast op de landingspagina aangezien met Alpine dynamic loading kan worden toegepast. Met dynamic loading kunnen er
+                    JS</span></a>. Alpine JS is een JavaScript framework en is op aanraden van het Brik team gebruikt aangezien met Alpine dynamic loading kan worden toegepast. Met dynamic loading kunnen er
             elementen worden getoond of verborgen zonder dat de pagina opnieuw geladen hoeft te worden. Op deze manier kan de juiste contentvorm worden geladen op basis van de uitgevoerde acties van een bezoeker en op deze manier de content beter aansluit bij het type doelgroepprofiel.
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Eerste versie</div>
         <div class="text-xl regular leading-8 opacity-75">Er is een eerste versie van het dynamisch content laden uitgewerkt. Op basis van een actie (klik op knop) krijgt
-            het humanistische profiel een punt. Bij 3 punten wordt dan door middel van Alpine JS dynamische content
-            geladen die aansluit bij het profiel.
+            het humanistische profiel een punt. Bij 3 punten wordt het CTA element getoond.
         </div>
-        <div class="my-12">
+        <div class="my-8">
             <a href="img/ontwikkeling/mvp-1.gif" class="glightbox" data-gallery="gallery2">
                 <img src="img/ontwikkeling/mvp-1.gif" class="w-full object-cover relative">
             </a>
         </div>
 
-        <div class="text-xl mt-4 uppercase bold mb-2">Bij eerste paginaload</div>
-        <div class="text-xl regular leading-8 opacity-75">Uit de Google Analytics gegevens blijkt dat de gemiddelde
-            sessieduur 42 seconden is. Hierop gebaseerd moet de score bij een sessieduur van 42 seconden punten
-            aftrekken of bijtrekken afhankelijk van het doelgroepprofiel.
+        <div class="text-xl mt-4 uppercase bold mb-2">Lead scoring model verwerken</div>
+        <div class="text-xl regular leading-8 opacity-75">
+            Bovenstaande Proof of Concept is verder uitgebouwd. Op basis van het lead scoring model zijn de datagegevens van de acties (hovers en kliks) en bijbehorende puntenscore per element (afbeeldingen en knoppen) op de landingspagina toegevoegd.
+        </div>
+        <div class="my-6">
+            <a href="img/ontwikkeling/data-ls.png" class="glightbox" data-gallery="gallery2">
+                <img src="img/ontwikkeling/data-ls.png" class="w-full object-cover relative">
+            </a>
+            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">mouseover: [1,1,-1,-1,1] staat voor actie:[Lead scoring = 1 ptn, M = 1 ptn, S = -1 ptn, C = -1 ptn, H = 1 ptn] van scores
+            </div>
         </div>
 
-        <div class="text-xl mt-4 uppercase bold mb-2">sessionTime</div>
-        <div class="text-xl regular leading-8 opacity-75">Uit de Google Analytics gegevens blijkt dat de gemiddelde
-            sessieduur 42 seconden is. Hierop gebaseerd moet de score bij een sessieduur van 42 seconden punten
-            aftrekken of bijtrekken afhankelijk van het doelgroepprofiel.
+        <div class="text-xl mt-4 uppercase bold mb-2">Tonen/verbergen elementversie afhankelijk van MSCH profiel</div>
+        <div class="text-xl regular leading-8 opacity-75">
+            Als een bezoeker op de landingspagina minimaal 20 punten heeft behaald binnen een bepaald MSCH profiel en het profiel heeft de hoogste score heeft, wordt de versie van de landingspagina getoond die past bij het profiel.
         </div>
 
-        <div class="text-2xl mt-8 uppercase bold mb-2">Proof of concept: Lead waarde inzichtelijk</div>
-
-        <div class="text-xl mt-4 uppercase bold mb-2">Dashboard Craft CMS</div>
-        <div class="text-xl regular leading-8 opacity-75">In de tweede POC was de lead score van de bezoeker zichtbaar aan de voorkant van de landingspagina. Voor het verzamelen van data is deze oplossing niet voldoende. Hiervoor is een dashboard gerealiseerd in Craft CMS. In dit dashboard worden de lead score en de MSCH score van een bezoeker live bijgehouden.
+        <div class="my-6">
+            <a href="img/ontwikkeling/x-show.png" class="glightbox" data-gallery="gallery2">
+                <img src="img/ontwikkeling/x-show.png" class="w-full object-cover relative">
+            </a>
+            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">De versie van een element wordt getoond op basis van een if statement, voorbeeld van een humanstische versie van element
+            </div>
         </div>
 
-        <div class="my-12">
-            <a href="img/ontwikkeling/inzichtelijk1.png" class="glightbox" data-gallery="gallery2">
-                <img src="img/ontwikkeling/inzichtelijk1.png" class="w-full object-cover relative">
+        <div class="text-xl mt-4 uppercase bold mb-2">Scorebord</div>
+        <div class="text-xl regular leading-8 opacity-75">De data toevoegingen aan de acties voor de score en het tonen of verbergen van versies van elementen op basis van de score zijn doorgevoerd voor elk element op de landingspagina.
+            De totaal scores van een bezoeker op de landingspaginaworden per lead score en de MSCH profielen bijgehouden (Zie rechtsonder).
+        </div>
+        <div class="my-6">
+            <a href="img/ontwikkeling/scorebord.png" class="glightbox" data-gallery="gallery2">
+                <img src="img/ontwikkeling/scorebord.png" class="w-full object-cover relative">
             </a>
         </div>
 
+
+        <!-- <div class="text-xl mt-4 uppercase bold mb-2">Bij eerste paginaload</div>
+        <div class="text-xl regular leading-8 opacity-75">Uit de Google Analytics gegevens blijkt dat de gemiddelde
+            sessieduur 42 seconden is. Hierop gebaseerd moet de score bij een sessieduur van 42 seconden punten
+            aftrekken of bijtrekken afhankelijk van het doelgroepprofiel.
+        </div> -->
+
+        <div class="text-2xl mt-12 uppercase bold mb-2">Proof of concept: Lead waarde inzichtelijk</div>
+
+        <div class="text-xl mt-4 uppercase bold mb-2">Dashboard Craft CMS</div>
+        <div class="text-xl regular leading-8 opacity-75">In de tweede POC was de lead score van de bezoeker alleen zichtbaar aan de voorkant van de landingspagina. Om de data inzichtelijk te krijgen in Craft CMS is een dashboard gerealiseerd. In dit dashboard worden de lead score en de MSCH score van een bezoeker live bijgehouden.
+        </div>
+
+        <div class="my-8">
+            <a href="img/ontwikkeling/table-craft.png" class="glightbox" data-gallery="gallery2">
+                <img src="img/ontwikkeling/table-craft.png" class="w-full object-cover relative">
+            </a>
+            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">Scores en sessie worden bijgehouden
+            </div>
+        </div>
+
+        <div class="my-8">
+            <a href="img/ontwikkeling/inzichtelijk1.png" class="glightbox" data-gallery="gallery2">
+                <img src="img/ontwikkeling/inzichtelijk1.png" class="w-full object-cover relative">
+            </a>
+            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">Scores inzichtelijk in Craft CMS
+            </div>
+        </div>
+
         <div class="text-xl mt-4 uppercase bold mb-2">Sessiedata behouden</div>
-        <div class="text-xl regular leading-8 opacity-75">In het vorige prototype verdwenen de scores en informatie bij het herladen van de pagina. In een iteratie van het prototype worden daarom de scores van een bezoeker bijgehouden in een sessie. Bij het herladen van de pagina blijven de scores en de content die bij het profiel past behouden. De sessie wordt beëindigd totdat de browser wordt afgesloten. 
+        <div class="text-xl regular leading-8 opacity-75">In het vorige prototype verdwenen de scores en informatie bij het herladen van de pagina. In een iteratie van het prototype worden daarom de scores van een bezoeker bijgehouden in een sessie. Bij het herladen van de pagina blijven de scores en de content die bij het profiel past behouden. De sessie wordt beëindigd totdat de browser wordt afgesloten. Bij het opnieuw openen van de landingspagina wordt er dan weer een nieuwe versie gestart.
         </div>
 
         <div class="my-12">
@@ -246,13 +278,18 @@
         </div>
 
         <div class="text-2xl mt-8 uppercase bold mb-2">Mailerlite koppeling</div>
-        <div class="text-xl regular leading-8 opacity-75">In het marketing automation proces zijn er drie conversie vastgesteld waarmee bezoekers naar leads converteren: aanvragen whitepaper, invullen contactformulier en aanmelden nieuwsbrief. Bij een conversie moeten deze leads in het geadviseerde marketing automation systeem Mailerlite zichtbaar zijn zodat de e-mail workflows kunnen worden ingezet.
+        <div class="text-xl regular leading-8 opacity-75">In het marketing automation proces zijn er drie conversies vastgesteld waarmee bezoekers naar leads converteren: aanvragen whitepaper, invullen contactformulier en aanmelden nieuwsbrief. Bij een conversie moeten deze leads in het in de analysefase geadviseerde marketing automation systeem Mailerlite komen. Zodat vanuit hier de  de e-mail workflows van start kunnen gaan.
         </div>
 
         <div class="my-12">
             <a href="img/ontwikkeling/inzichtelijk1.png" class="glightbox" data-gallery="gallery2">
                 <img src="img/ontwikkeling/inzichtelijk1.png" class="w-full object-cover relative">
             </a>
+        </div>
+
+
+        <div class="text-2xl mt-8 uppercase bold mb-2">Demo technisch prototype</div>
+        <div class="text-xl regular leading-8 opacity-75">Bekijk in de video hieronder een demo van het technisch prototype dat is opgeleverd aan Brik.
         </div>
 
     </div>
@@ -284,7 +321,7 @@
         <a href="https://absorbed-transport-b26.notion.site/Interviewplan-c37d5332cbe247698d0fe4dc293cf2ae"
             target="_blank">
             <button type="button"
-                class="inline-flex items-center bold tracking-wide -mt-5 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mb-16 bg-green hover:opacity-75 focus:outline-none uppercase rounded mr-4">
+                class="inline-flex items-center bold tracking-wide -mt-5 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mb-5 bg-green hover:opacity-75 focus:outline-none uppercase rounded mr-4">
                 <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
                     <path
@@ -297,13 +334,14 @@
     </div>
 
     <div class="w-8/12 mx-auto my-12">
+
         <div class="text-2xl mt-8 uppercase bold mb-2">Conclusie ontwikkeling</div>
         <div class="text-xl regular leading-8 opacity-75"> In de ontwikkeling stond de vraag <span class="bold">“Hoe kan een een technisch prototype worden uitgewerkt met de frameworks die binnen Brik
             worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn?” </span>centraal. Deze onderzoeksvraag heb ik aan de
             hand van de Front-end en Back-end ontwikkeling van het technische prototype
             beantwoord.
         </div>
-        <div class="text-xl mt-4 regular leading-8 opacity-75"> Er is een technisch prototype gerealiseerd van de landingspagina. Als eerste stap is het ontwerp uitgewerkt in de front-end ontwikkeling middels TailwindCSS. De Front-end is middels Twig gekoppeld is aan het back-end systeem, Craft CMS. Op de landingspagina wordt de vorm van de content dynamisch aangepast op basis van het MSCH profiel. De elementen die worden getoond passen bij het type websitegebruiker en worden zonder dat de pagina herladen hoeft te worden dynamisch geladen met Alpine JS. De lead score en de MSCH score zijn zichtbaar in Craft CMS, waardoor de kwaliteit van de lead en het doelgroepprofiel van de lead inzichtelijk is.
+        <div class="text-xl mt-4 regular leading-8 opacity-75">Uiteindelijk is er een technisch prototype gerealiseerd van de landingspagina Craft CMS vs Wordpress. In de landingspagina is het ontwerp uitgewerkt in de front-end ontwikkeling met HTML en TailwindCSS. De Front-end is middels Twig gekoppeld aan het Back-end systeem, Craft CMS. Op de landingspagina wordt de vorm van de content dynamisch aangepast op basis van het MSCH profiel. De elementen die worden getoond passen bij het type websitegebruiker en worden zonder dat de pagina herladen hoeft te worden dynamisch geladen met Alpine JS. De lead score en de MSCH score zijn zichtbaar in Craft CMS, waardoor de kwaliteit van de lead en het doelgroepprofiel van de lead inzichtelijk is.
         </div>
         <div class="text-xl mt-4 regular leading-8 opacity-75">Voor een
             doorontwikkeling van het technisch prototype is er een conclusie geschreven en zijn er aanbevelingen
