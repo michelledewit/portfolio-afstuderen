@@ -195,7 +195,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
 
         <div class="text-xl mt-4 uppercase bold mb-2">Eerste versie</div>
         <div class="text-xl regular leading-8 opacity-75">Er is een eerste versie van het dynamisch content laden uitgewerkt. Op basis van een actie (klik op knop) krijgt
-            het humanistische profiel een punt. Bij 3 punten wordt het CTA element getoond.
+            het humanistische profiel een punt. Bij 3 punten wordt het CTA element dynamisch geladen.
         </div>
         <div class="my-8">
             <a href="img/ontwikkeling/mvp-1.gif" class="glightbox" data-gallery="gallery2">
@@ -229,8 +229,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Scorebord</div>
-        <div class="text-xl regular leading-8 opacity-75">De data toevoegingen aan de acties voor de score en het tonen of verbergen van versies van elementen op basis van de score zijn doorgevoerd voor elk element op de landingspagina.
-            De totaal scores van een bezoeker op de landingspaginaworden per lead score en de MSCH profielen bijgehouden (Zie rechtsonder).
+        <div class="text-xl regular leading-8 opacity-75">Alle scores op basis van de acties van een bezoeker zijn in het prototype aan elkaar gekoppeld waardoor er een totaalscore ontstaat voor de lead score en MSCH score. Deze scores zorgen ervoor dat elementen worden getoond/verborgen afhankelijk van de score en de lead scoring scores zijn inzichtelijk (zie rechtsonder afb).
         </div>
         <div class="my-6">
             <a href="img/ontwikkeling/scorebord.png" class="glightbox" data-gallery="gallery2">
@@ -238,24 +237,27 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
             </a>
         </div>
 
+        <div class="text-xl mt-12 uppercase bold mb-2">POC Demo</div>
+        <div class="text-xl regular leading-8 opacity-75">Demo dynamic loading: Bezoeker komt op de landingspagina en behaald de drempel van 20 en blijkt een humanistische bezoeker te zijn. Elementen worden aangepast naar humanistische versies zoals het CTA element.
+        </div>
+        <div class="my-6">
+            <a href="img/ontwikkeling/dynamic.gif" class="glightbox" data-gallery="gallery2">
+                <img src="img/ontwikkeling/dynamic.gif" class="w-full object-cover relative">
+            </a>
+        </div>
 
-        <!-- <div class="text-xl mt-4 uppercase bold mb-2">Bij eerste paginaload</div>
-        <div class="text-xl regular leading-8 opacity-75">Uit de Google Analytics gegevens blijkt dat de gemiddelde
-            sessieduur 42 seconden is. Hierop gebaseerd moet de score bij een sessieduur van 42 seconden punten
-            aftrekken of bijtrekken afhankelijk van het doelgroepprofiel.
-        </div> -->
 
-        <div class="text-2xl mt-12 uppercase bold mb-2">Proof of concept: Lead waarde inzichtelijk</div>
+        <div class="text-2xl mt-16 uppercase bold mb-2">Proof of concept: Lead waarde inzichtelijk</div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Dashboard Craft CMS</div>
-        <div class="text-xl regular leading-8 opacity-75">In de tweede POC was de lead score van de bezoeker alleen zichtbaar aan de voorkant van de landingspagina. Om de data inzichtelijk te krijgen in Craft CMS is een dashboard gerealiseerd. In dit dashboard worden de lead score en de MSCH score van een bezoeker live bijgehouden.
+        <div class="text-xl regular leading-8 opacity-75">In de tweede POC was de lead score van de bezoeker alleen zichtbaar aan de voorkant van de landingspagina. Om de data inzichtelijk te krijgen is een dashboard gerealiseerd in Craft CMS. In dit dashboard zijn de lead score en de MSCH score van een bezoeker van de landingspagina doorgezet naar Craft CMS en worden de scores live bijgehouden. In het dashboard is ook inzichtelijk binnen welk type websitegebruiker een profiel past, op deze manier is bijvoorbeeld inzichtelijk welk MSCH profiel de website het meest bezoekt.
         </div>
 
         <div class="my-8">
             <a href="img/ontwikkeling/table-craft.png" class="glightbox" data-gallery="gallery2">
                 <img src="img/ontwikkeling/table-craft.png" class="w-full object-cover relative">
             </a>
-            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">Scores en sessie worden bijgehouden
+            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">Scores en sessie worden doorgezet naar Craft CMS
             </div>
         </div>
 
@@ -263,34 +265,39 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
             <a href="img/ontwikkeling/inzichtelijk1.png" class="glightbox" data-gallery="gallery2">
                 <img src="img/ontwikkeling/inzichtelijk1.png" class="w-full object-cover relative">
             </a>
-            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">Scores inzichtelijk in Craft CMS
+            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">Scores zijn vervolgens inzichtelijk in Craft CMS
             </div>
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Sessiedata behouden</div>
-        <div class="text-xl regular leading-8 opacity-75">In het vorige prototype verdwenen de scores en informatie bij het herladen van de pagina. In een iteratie van het prototype worden daarom de scores van een bezoeker bijgehouden in een sessie. Bij het herladen van de pagina blijven de scores en de content die bij het profiel past behouden. De sessie wordt beëindigd totdat de browser wordt afgesloten. Bij het opnieuw openen van de landingspagina wordt er dan weer een nieuwe versie gestart.
+        <div class="text-xl regular leading-8 opacity-75">In het vorige prototype verdwenen de scores bij het herladen van de pagina. In een iteratie van het prototype worden daarom de scores van een bezoeker bijgehouden in een sessie. Bij het herladen van de pagina blijven de scores en de content die bij het profiel past behouden. De sessie wordt beëindigd wanneer de browser wordt afgesloten. Bij het opnieuw openen van de landingspagina staan de scores dan weer op 0.
         </div>
 
-        <div class="my-12">
-            <a href="img/ontwikkeling/inzichtelijk1.png" class="glightbox" data-gallery="gallery2">
-                <img src="img/ontwikkeling/inzichtelijk1.png" class="w-full object-cover relative">
+        <div class="my-8">
+            <a href="img/ontwikkeling/cookie.gif" class="glightbox" data-gallery="gallery2">
+                <img src="img/ontwikkeling/cookie.gif" class="w-full object-cover relative">
             </a>
         </div>
 
         <div class="text-2xl mt-8 uppercase bold mb-2">Mailerlite koppeling</div>
-        <div class="text-xl regular leading-8 opacity-75">In het marketing automation proces zijn er drie conversies vastgesteld waarmee bezoekers naar leads converteren: aanvragen whitepaper, invullen contactformulier en aanmelden nieuwsbrief. Bij een conversie moeten deze leads in het in de analysefase geadviseerde marketing automation systeem Mailerlite komen. Zodat vanuit hier de  de e-mail workflows van start kunnen gaan.
+        <div class="text-xl regular leading-8 opacity-75">Op de landingspagina zijn er drie conversie mogelijkheden door middel van het invullen van formulieren. Op de landingspagina zijn deze conversies gerealiseerd, bij een conversie komt een lead in het in de analysefase geadviseerde marketing automation systeem Mailerlite, zodat de lead in de e-mail workflow terecht komt.<br><br>
+            In het onderstaande voorbeeld het aanvragen van de whitepaper: Bij het klikken op de knop "downloaden" in het formulier zijn het ingevulde e-mailadres, sector en DMU type zichtbaar in Mailerlite. Aan de achterkant wordt ook het MSCH profiel en de lead score van de lead meegestuurd zodat deze ook zichtbaar zijn in Mailerlite. 
         </div>
 
         <div class="my-12">
-            <a href="img/ontwikkeling/inzichtelijk1.png" class="glightbox" data-gallery="gallery2">
-                <img src="img/ontwikkeling/inzichtelijk1.png" class="w-full object-cover relative">
+            <a href="img/ontwikkeling/mailerlite.gif" class="glightbox" data-gallery="gallery2">
+                <img src="img/ontwikkeling/mailerlite.gif" class="w-full object-cover relative">
             </a>
+            <div class="text-lg regular leading-7 opacity-75 mt-4 mb-6 italic">Conversie downloaden whitepaper
+            </div>
         </div>
 
 
-        <div class="text-2xl mt-8 uppercase bold mb-2">Demo technisch prototype</div>
-        <div class="text-xl regular leading-8 opacity-75">Bekijk in de video hieronder een demo van het technisch prototype dat is opgeleverd aan Brik.
+        <div class="text-2xl mt-8 uppercase bold mb-2">Demo technisch prototype oplevering</div>
+        <div class="text-xl regular leading-8 opacity-75 mb-4">Bekijk in de video hieronder een demo van het technisch prototype dat is opgeleverd aan Brik.
         </div>
+
+        <iframe width="1060" height="615" src="https://www.youtube.com/embed/jNRLOOFDRgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
 
@@ -304,7 +311,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
             het project heb is een branch aangemaakt speciaal gericht op het realiseren van de landingspagina. Hierin is
             de binnen Brik gebruikte naming convention (feature/naam-feature).
         </div>
-        <div class="my-12">
+        <div class="my-8">
             <a href="img/ontwikkeling/git-branch.png" class="glightbox" data-gallery="gallery2">
                 <img src="img/ontwikkeling/git-branch.png" class="w-full object-cover relative">
             </a>
@@ -313,12 +320,12 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
             aanpassingen binnen de code doorgezet (commits) naar de landingspagina branch. Elke commit bevat de binnen
             Brik standaard toegepaste naming convention: "type commit" + "uitgevoerde werkzaamheid".
         </div>
-        <div class="my-12">
+        <div class="mt-8 mb-12">
             <a href="img/ontwikkeling/git-branch-2.png" class="glightbox" data-gallery="gallery2">
                 <img src="img/ontwikkeling/git-branch-2.png" class="w-full object-cover relative">
             </a>
         </div>
-        <a href="https://absorbed-transport-b26.notion.site/Interviewplan-c37d5332cbe247698d0fe4dc293cf2ae"
+        <a href="https://github.com/michelledewit/brik_landingpages/tree/master/templates/contentBlocks"
             target="_blank">
             <button type="button"
                 class="inline-flex items-center bold tracking-wide -mt-5 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mb-5 bg-green hover:opacity-75 focus:outline-none uppercase rounded mr-4">
@@ -328,8 +335,20 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
                         d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
                         fill="black" />
                 </svg>
-                &nbsp Link naar Git</button>
+                &nbsp GIT Contentblokken</button>
         </a>
+        <a href="https://github.com/michelledewit/brik_landingpages/tree/master/templates/landing"
+        target="_blank">
+        <button type="button"
+            class="inline-flex items-center bold tracking-wide -mt-5 pl-3 pr-4 py-2 border border-transparent leading-4 medium shadow-sm mb-5 bg-green hover:opacity-75 focus:outline-none uppercase rounded mr-4">
+            <svg width="30" height="30" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10.1438" cy="10.5802" r="9.66417" fill="#CEE8DC" />
+                <path
+                    d="M6.45703 7.42973V14.8033C6.45703 15.1292 6.58651 15.4418 6.81697 15.6722C7.04744 15.9027 7.36002 16.0322 7.68595 16.0322H13.5233C13.6048 16.0322 13.683 15.9998 13.7406 15.9422C13.7982 15.8846 13.8306 15.8064 13.8306 15.725C13.8306 15.6435 13.7982 15.5653 13.7406 15.5077C13.683 15.4501 13.6048 15.4177 13.5233 15.4177H7.68595C7.52299 15.4177 7.3667 15.353 7.25146 15.2378C7.13623 15.1225 7.07149 14.9662 7.07149 14.8033H13.2161C13.3791 14.8033 13.5354 14.7385 13.6506 14.6233C13.7658 14.5081 13.8306 14.3518 13.8306 14.1888V7.42973C13.8306 7.1038 13.7011 6.79122 13.4706 6.56075C13.2402 6.33028 12.9276 6.20081 12.6016 6.20081H7.68595C7.36002 6.20081 7.04744 6.33028 6.81697 6.56075C6.58651 6.79122 6.45703 7.1038 6.45703 7.42973V7.42973ZM12.6016 6.81527C12.7646 6.81527 12.9209 6.88 13.0361 6.99524C13.1514 7.11047 13.2161 7.26676 13.2161 7.42973V14.1888H7.07149V7.42973C7.07149 7.26676 7.13623 7.11047 7.25146 6.99524C7.3667 6.88 7.52299 6.81527 7.68595 6.81527H12.6016ZM11.1183 11.0421C11.3283 10.7246 11.4128 10.3404 11.3555 9.964C11.2982 9.58765 11.1033 9.24596 10.8084 9.00519C10.5135 8.76442 10.1398 8.64171 9.75955 8.66087C9.37935 8.68002 9.0198 8.83966 8.75061 9.10885C8.48143 9.37803 8.32178 9.73758 8.30263 10.1178C8.28348 10.498 8.40618 10.8718 8.64695 11.1666C8.88773 11.4615 9.22941 11.6565 9.60577 11.7137C9.98212 11.771 10.3663 11.6865 10.6839 11.4766L11.4624 12.2557C11.491 12.2843 11.5249 12.3069 11.5622 12.3224C11.5996 12.3378 11.6396 12.3458 11.68 12.3458C11.7203 12.3458 11.7604 12.3378 11.7977 12.3224C11.835 12.3069 11.8689 12.2843 11.8975 12.2557C11.926 12.2271 11.9487 12.1932 11.9642 12.1559C11.9796 12.1186 11.9876 12.0786 11.9876 12.0382C11.9876 11.9978 11.9796 11.9578 11.9642 11.9205C11.9487 11.8831 11.926 11.8492 11.8975 11.8207L11.1183 11.0428V11.0421ZM8.91488 10.1948C8.91488 9.95036 9.01198 9.71592 9.18483 9.54307C9.35768 9.37022 9.59212 9.27311 9.83657 9.27311C10.081 9.27311 10.3155 9.37022 10.4883 9.54307C10.6612 9.71592 10.7583 9.95036 10.7583 10.1948C10.7583 10.4393 10.6612 10.6737 10.4883 10.8465C10.3155 11.0194 10.081 11.1165 9.83657 11.1165C9.59212 11.1165 9.35768 11.0194 9.18483 10.8465C9.01198 10.6737 8.91488 10.4393 8.91488 10.1948V10.1948Z"
+                    fill="black" />
+            </svg>
+            &nbsp Git Landingspagina entry</button>
+    </a>
 
     </div>
 
@@ -371,32 +390,6 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
                     </svg>
                 </button>
             </a>
-        </div>
-    </div>
-
-
-    <div class="w-8/12 mx-auto my-12">
-        <div class="text-2xl mt-8 uppercase bold mb-2">Literatuurlijst</div>
-        <div class="text-lg regular leading-8 opacity-75 mb-4">Van Vliet, V. (2022, 24 januari). Wat is een Decision
-            Making Unit? Uitleg en voorbeelden. Toolshero. Geraadpleegd op 23 maart 2022, van <a
-                href="https://www.toolshero.nl/marketing-modellen/dmu-decision-making-unit/" target="_blank"><span
-                    class="bold hover:opacity-75 underline">https://www.toolshero.nl/marketing-modellen/dmu-decision-making-unit/</span></a>
-        </div>
-        <div class="text-lg regular leading-8 opacity-75 mb-4">MBTI ® persoon­lijkheidstypen. (z.d.).
-            eu.themyersbriggs.com. Geraadpleegd op 21 maart 2022, van <a
-                href="https://eu.themyersbriggs.com/nl-NL/tools/MBTI/MBTI-Step-I" target="_blank"><span
-                    class="bold hover:opacity-75 underline">https://eu.themyersbriggs.com/nl-NL/tools/MBTI/MBTI-Step-I</span></a>
-        </div>
-        <div class="text-lg regular leading-8 opacity-75 mb-4">Plugers, W. (2020, 1 oktober). Zo pas je MBTI toe op
-            websites en binnen online marketing. Scherponline. Geraadpleegd op 22 maart 2022, van <a
-                href=" https://www.scherponline.nl/mbti-website-online-marketing/" target="_blank"><span
-                    class="bold hover:opacity-75 underline">
-                    https://www.scherponline.nl/mbti-website-online-marketing/</span></a>
-        </div>
-        <div class="text-lg regular leading-8 opacity-75 mb-4">Zo beslist jouw bezoeker om een aankoop te doen. (2021,
-            29 juli). Concept7. Geraadpleegd op 23 maart 2022 van <a
-                href="https://concept7.nl/artikelen/aankoopbeslissing/" target="_blank"><span
-                    class="bold hover:opacity-75 underline">https://concept7.nl/artikelen/aankoopbeslissing/</span></a>
         </div>
     </div>
 
