@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literatuurlijst</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="../src/app.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        window.markerConfig = {
+          destination: '62a08506518e98007db169ac', 
+          source: 'snippet'
+        };
+      </script>
+      
+      <script>
+      !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
+      </script>
+    <link rel="stylesheet" href="src/glightbox.css" />
+
+
+
+</head>
+
+<body>
+
+    <nav class="">
+        <div class="flex items-center justify-between h-28 bg-yellow">
+            <div class="flex flex-col"></div>
+            <div class="bg-yellow lg:w-6/12 w-full py-6">
+                <div class="hidden sm:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+                    <a href="index.html" class="text-black hover:opacity-75 py-8 bold text-3xl uppercase">Portfolio</a>
+                </div>
+            </div>
+            <div
+                class="bg-yellow lg:grid hidden w-6/12 py-6 justify-items-end  max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
+
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex items-center">
+
+                        <!-- Profile dropdown -->
+                        <div class="ml-3 relative " x-data="{ open: false }">
+                            <div>
+                                <button type="button"
+                                    class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                    @click="open = true" x-bind:aria-expanded="open" id="user-menu-button"
+                                    aria-haspopup="true">
+                                    <span class="sr-only">Open user menu</span>
+                                    <img class="h-6 w-6 " src="img/Vector.svg" alt="">
+                                </button>
+                            </div>
+
+                            <div x-show.transition="open" @click.away="open = false"
+                                class="origin-top-right absolute right-0 z-50 mt-2 pl-6 pr-24 rounded-md shadow-lg py-1 bg-yellow ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                tabindex="-1">
+                                <!-- Active: "bg-gray-100", Not Active: "" -->
+                                <a href="opdracht.html" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold" role="menuitem"
+                                tabindex="-1" id="user-menu-item-1">Opdracht</a>
+                              <a href="#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
+                                tabindex="-1" id="user-menu-item-2">Onderzoeksvragen</a>
+                              <a href="adviesrapport.html" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem" tabindex="-1"
+                                id="user-menu-item-0">Adviesrapport</a>
+                              <a href="#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
+                                tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
+                              <a href="#projectinformatie" class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
+                                tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div x-data="{ isOpen: false }" class="mobile-navbar sm:hidden">
+                <button type="button" @click="isOpen = !isOpen" class=" focus:outline-none mx-4 mt-2 mb-"
+                    id="user-menu-button" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="h-8 w-8 " src="img/Vector.svg" alt="">
+                </button>
+                <!-- navbar wrapper -->
+                <div class="fixed left-0 w-full h-40 p-5 bg-white rounded-lg shadow-xl top-16 z-50" x-show="isOpen"
+                    @click.away=" isOpen = false">
+
+                    <div class="flex flex-col space-y-6">
+                        <a href="opdracht.html" class="text-sm text-black uppercase">Opdracht</a>
+                        <a href="#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
+                        <a href="adviesrapport.html" class="text-sm text-black uppercase">Adviesrapport</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
+                        <a href="#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="my-16">
+        <div class="text-4xl uppercase bold text-center mt-1 md:w-6/12 w-1/2 mx-auto leading-tight">Literatuurlijst
+        </div>
+        <div class="regular text-xl md:w-2/5 w-10/12 mx-auto text-center mt-4 opacity-75 uppercase">Overzicht van de gebruikte bronnen in de onderzoeksopdracht
+        </div>
+    </div>
+
+    <div class="w-8/12 mx-auto my-12">
+        <div class="text-2xl mt-8 uppercase bold mb-2">Literatuurlijst</div>
+        <div class="text-xl mt-4 uppercase bold mb-2">Analyse</div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Lucassen, S. (2021, 11 mei). Wat is de customer journey
+            en hoe breng je hem in kaart? ICM opleidingen & trainingen. Geraadpleegd op 22 februari 2022, van <a target="_blank"
+                href="https://www.icm.nl/extra/wat-is-de-customer-journey-en-hoe-breng-je-hem-in-kaart/"><span
+                    class="bold hover:opacity-75">https://www.icm.nl/extra/wat-is-de-customer-journey-en-hoe-breng-je-hem-in-kaart/</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Wat is een Lead? (2021, 3 november). Online Marketing
+            Agency. Geraadpleegd op 20 februari 2022, van <a target="_blank" href="https://www.simplicate.com/nl/functies/"><span
+                    class="bold hover:opacity-75">https://www.simplicate.com/nl/functies/</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Fingerspitz. (2021). marketing automation. Bas Boomaars &
+            Remco van Meel. <a target="_blank" href="https://fingerspitz.nl/downloads/whitepaper-marketing-automation/"><span
+                    class="bold hover:opacity-75">https://fingerspitz.nl/downloads/whitepaper-marketing-automation/</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Qamal. (2021). Qamel Whitepaper Marketing Automation. <a target="_blank"
+                href="https://ss-usa.s3.amazonaws.com/c/308457562/media/1095860a3d873e06fb49161411895346/Qamel_Whitepaper_Marketing_Automation_2021-05.pdf"><span
+                    class="bold hover:opacity-75">https://ss-usa.s3.amazonaws.com/Qamel_Whitepaper_Marketing_Automation_2021-05.pdf</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Stan & Stacy. (2021). Marketing Automation Whitepaper <a target="_blank"
+                href="https://stanandstacy.com/marketing-automation-whitepaper/"><span
+                    class="bold hover:opacity-75">https://stanandstacy.com/marketing-automation-whitepaper/</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Intracto. (2021). Lead Scoring: wat is het en hoe zet je
+            het op? Geraadpleegd op 22 februari 2022, van <a target="_blank"
+                href="https://www.intracto.com/nl-be/blog/lead-scoring-wat-het-en-hoe-zet-je-het-op"><span
+                    class="bold hover:opacity-75">https://www.intracto.com/nl-be/blog/lead-scoring-wat-het-en-hoe-zet-je-het-op</span></a>
+        </div>
+        <div class="text-xl mt-8 uppercase bold mb-2">Doelgroep</div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Van Vliet, V. (2022, 24 januari). Wat is een Decision
+            Making Unit? Uitleg en voorbeelden. Toolshero. Geraadpleegd op 23 maart 2022, van <a
+                href="https://www.toolshero.nl/marketing-modellen/dmu-decision-making-unit/" target="_blank"><span
+                    class="bold hover:opacity-75 underline">https://www.toolshero.nl/marketing-modellen/dmu-decision-making-unit/</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">MBTI ® persoon­lijkheidstypen. (z.d.).
+            eu.themyersbriggs.com. Geraadpleegd op 21 maart 2022, van <a
+                href="https://eu.themyersbriggs.com/nl-NL/tools/MBTI/MBTI-Step-I" target="_blank"><span
+                    class="bold hover:opacity-75 underline">https://eu.themyersbriggs.com/nl-NL/tools/MBTI/MBTI-Step-I</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Plugers, W. (2020, 1 oktober). Zo pas je MBTI toe op
+            websites en binnen online marketing. Scherponline. Geraadpleegd op 22 maart 2022, van <a
+                href=" https://www.scherponline.nl/mbti-website-online-marketing/" target="_blank"><span
+                    class="bold hover:opacity-75 underline">
+                    https://www.scherponline.nl/mbti-website-online-marketing/</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Zo beslist jouw bezoeker om een aankoop te doen. (2021,
+            29 juli). Concept7. Geraadpleegd op 23 maart 2022 van <a
+                href="https://concept7.nl/artikelen/aankoopbeslissing/" target="_blank"><span
+                    class="bold hover:opacity-75 underline">https://concept7.nl/artikelen/aankoopbeslissing/</span></a>
+        </div>
+        <div class="text-xl mt-8 uppercase bold mb-2">Marketing automation flow</div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">D. (2019, 31 oktober). 6 Essentiële Lead Nurturing
+            Workflows in B2B. Booming. Geraadpleegd op 7 april 2022, van <a
+                href="https://www.booming.nl/e/lead-nurturing/" target="_blank"><span
+                    class="bold hover:opacity-75 underline">https://www.booming.nl/e/lead-nurturing/</span></a>
+        </div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">Vermeule, A. (2022, 24 februari). Waarom het verschil
+            tussen een MQL en SQL cruciaal is voor je B2B marketing. Online Succes • B2B leadgeneratie. Geraadpleegd
+            op
+            30 maart 2022, van <a href="https://www.onlinesucces.nl/blog/verschil-tussen-mql-sql-b2b-marketing/"
+                target="_blank"><span
+                    class="bold hover:opacity-75 underline">https://www.onlinesucces.nl/blog/verschil-tussen-mql-sql-b2b-marketing/</span></a>
+        </div>
+        <div class="text-xl mt-8 uppercase bold mb-2">Ontwerp</div>
+        <div class="text-lg regular leading-8 opacity-75 mb-4">10 Usability Heuristics for User Interface Design. (z.d.). Nielsen Norman Group. Geraadpleegd op 7 juni 2022, van <a target="_blank"
+            href="https://www.nngroup.com/articles/ten-usability-heuristics/"><span
+                class="bold hover:opacity-75">https://www.nngroup.com/articles/ten-usability-heuristics/</span></a>
+    </div>
+    <div class="text-xl mt-8 uppercase bold mb-2">Adviesrapport</div>
+    <div class="text-lg regular leading-8 opacity-75 mb-4">Wat zijn analytische cookies? (z.d.). WebsiteNazorg.nl. Geraadpleegd op 10 juni 2022, van <a target="_blank"
+        href="https://websitenazorg.nl/kb/wat-zijn-analytische-cookies/"><span
+            class="bold hover:opacity-75">https://websitenazorg.nl/kb/wat-zijn-analytische-cookies/</span></a>
+</div>
+    </div>
+
+
+    </div>
+
+    <footer class="flex flex-col justify-center px-6 mt-12  sm:px-6 lg:px-24">
+        <div class="h-px w-full bg-gray-800 mb-6 opacity-25"></div>
+        <div class="text-lg text-center mb-6">Michelle de Wit - Afstudeerportfolio 2022</div>
+    </footer>
+</body>
+
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+<script src="src/glightbox.js"></script>
+
+<script>
+    let personaSlider = document.querySelectorAll('.persona-slider');
+
+    for (let i = 0; i < personaSlider.length; i++) {
+        let glide = new Glide(personaSlider[i], {
+        });
+        glide.mount();
+    }
+
+    let cjSlider = document.querySelectorAll('.cj-slider');
+
+    for (let i = 0; i < cjSlider.length; i++) {
+        let glide = new Glide(cjSlider[i], {
+        });
+        glide.mount();
+    }
+
+    var lightbox = GLightbox();
+    lightbox.on('open', (target) => {
+        console.log('lightbox opened');
+    });
+
+    var lightboxVideo = GLightbox({
+        selector: '.glightbox3'
+    });
+    lightboxVideo.on('slide_changed', ({ prev, current }) => {
+        console.log('Prev slide', prev);
+        console.log('Current slide', current);
+
+        const { slideIndex, slideNode, slideConfig, player } = current;
+
+        if (player) {
+            if (!player.ready) {
+                // If player is not ready
+                player.on('ready', (event) => {
+                    // Do something when video is ready
+                });
+            }
+
+            player.on('play', (event) => {
+                console.log('Started play');
+            });
+
+            player.on('volumechange', (event) => {
+                console.log('Volume change');
+            });
+
+            player.on('ended', (event) => {
+                console.log('Video ended');
+            });
+        }
+    });
+
+    var lightboxInlineIframe = GLightbox({
+        selector: '.glightbox4'
+    });
+
+</script>
+
+
+</html>
