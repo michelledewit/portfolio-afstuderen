@@ -31,7 +31,7 @@
 <body>
 
     <nav class="">
-        <div class=" flex items-center justify-between h-28 bg-green">
+        <div class=" flex items-center justify-between h-28 fixed w-full z-50 bg-green">
             <div class="flex flex-col"></div>
             <div class="bg-green lg:w-6/12 w-full py-6">
                 <div class="hidden sm:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-24">
@@ -62,13 +62,13 @@
                                 <!-- Active: "bg-gray-100", Not Active: "" -->
                                 <a href="opdracht.html" class="block px-4 py-4 mt-3 text-2xl text-sm uppercase bold" role="menuitem"
                                 tabindex="-1" id="user-menu-item-1">Opdracht</a>
-                              <a href="#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
+                              <a href="index.html#sprints" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
                                 tabindex="-1" id="user-menu-item-2">Onderzoeksvragen</a>
                               <a href="adviesrapport.html" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem" tabindex="-1"
                                 id="user-menu-item-0">Adviesrapport</a>
-                              <a href="#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
+                              <a href="index.html#projectinformatie" class="block px-4 py-4 text-2xl text-sm uppercase bold" role="menuitem"
                                 tabindex="-1" id="user-menu-item-2">Leeswijzer</a>
-                              <a href="#projectinformatie" class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
+                              <a href="index.html#projectinformatie" class="block px-4 py-4 mb-3 text-2xl text-sm uppercase bold" role="menuitem"
                                 tabindex="-1" id="user-menu-item-0">Literatuurlijst</a>
                             </div>
                         </div>
@@ -88,10 +88,10 @@
 
                     <div class="flex flex-col space-y-6">
                         <a href="opdracht.html" class="text-sm text-black uppercase">Opdracht</a>
-                        <a href="#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
+                        <a href="index.html#sprints" class="text-sm text-black uppercase">Onderzoeksvragen</a>
                         <a href="adviesrapport.html" class="text-sm text-black uppercase">Adviesrapport</a>
-                        <a href="#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
-                        <a href="#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
+                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Leeswijzer</a>
+                        <a href="index.html#projectinformatie" class="text-sm text-black uppercase">Literatuurlijst</a>
                       </div>
                 </div>
             </div>
@@ -99,8 +99,8 @@
         </div>
     </nav>
 
-    <div class="my-16">
-        <div class="text-4xl uppercase bold text-center mt-1 md:w-6/12 w-1/2 mx-auto leading-tight">Ontwikkeling
+    <div class="mb-16">
+        <div class="text-4xl uppercase bold text-center pt-32 md:w-6/12 w-1/2 mx-auto leading-tight">Ontwikkeling
         </div>
         <div class="regular text-xl md:w-7/12 w-10/12 mx-auto text-center mt-4 opacity-75 uppercase">Hoe kan een een
             werkende prototype worden uitgewerkt met
@@ -128,9 +128,9 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
     <div class="w-8/12 mx-auto">
         <div id="versie1" class="text-2xl mt-8 uppercase bold mb-2">Proof of concept: Ontwikkeling landingspagina</div>
         <div class="text-xl regular leading-8 opacity-75">Gebaseerd op het ontwerp van de landingspagina Craft CMS vs Wordpress is de
-            technische ontwikkelng gestart. In de Front-end ontwikkeling is gebruik gemaakt van
+            technische ontwikkelng gestart. In de <span class="bold">Front-end ontwikkeling</span> is gebruik gemaakt van
             het CSS framework <a href="https://tailwindcss.com/" target="_blank"><span
-                    class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Tailwind is het gebruikte CSS framework in de Brik website en om consistent te blijven is dit doorgevoerd. De structuur van de landingspagina is met HTML uitgewerkt waarna aan de HTML elementen de Tailwind classnames zijn toegevoegd waarmee styling aan de elementen zijn meegegeven. De HTML en CSS is op deze manier overzichtelijk in één bestand samengevoegd.
+                    class="hover:opacity-75 underline semi-bold">TailwindCSS</span></a>. Tailwind is het gebruikte CSS framework in de Brik website en om consistent te blijven is dit doorgevoerd. De structuur van de landingspagina is met <span class="bold">HTML</span> uitgewerkt waarna aan de HTML elementen de Tailwind classnames zijn toegevoegd waarmee styling aan de elementen zijn meegegeven. De HTML en CSS is op deze manier overzichtelijk in één bestand samengevoegd.
         </div>
         <div class="mt-4 mb-10">
             <a href="img/ontwikkeling/tailwind.png" class="glightbox">
@@ -140,7 +140,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
                 bijv. text-black = text-color, text-3xl = tekstformaat.
             </div>
         </div>
-        <div class="text-xl regular leading-8 opacity-75">Elk component van het ontwerp zoals een CTA of een testimonial is op bovenstaande manier voor de MSCH-profielen uitgewerkt. Elk profiel heeft zijn eigen versie van een element die aansluit bij de desbetreffende informatiebehoefte. Zo heeft het CTA element vier versies, voor elk profiel één. Zie in de onderstaande
+        <div class="text-xl regular leading-8 opacity-75">Elk element van het ontwerp zoals een CTA of een testimonial is op bovenstaande manier voor de MSCH-profielen uitgewerkt. Elk profiel heeft zijn eigen versie van een element die aansluit bij de desbetreffende informatiebehoefte. Zo heeft het CTA element vier versies, voor elk profiel één. Zie in de onderstaande
             afbeelding het CTA element voor de humanistische bezoeker.
         </div>
         <div class="mt-4 mb-12">
@@ -168,7 +168,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
 
         <div class="text-xl mt-4 uppercase bold mb-2">MSCH-profiel eigen versies per contentblok</div>
         <div class="text-xl regular leading-8 opacity-75">
-            De landingspagina bestaat in Craft CMS uit contentblokken. Elk component van het ontwerp (CTA, FAQ, etc.) heeft zijn eigen
+            De landingspagina bestaat in Craft CMS uit contentblokken. Elk element van het ontwerp (CTA, FAQ, etc.) heeft zijn eigen
             contentblok. Elk contentblok heeft weer vier versies, één versie per MSCH-profiel. Op deze manier kan de juiste versie van het
             contentblok worden getoond die past bij het profiel</div>
 
@@ -199,8 +199,8 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         <div class="text-xl regular leading-8 opacity-75">Nadat de Front-end ontwikkeling is gekoppeld aan Craft CMS stond het ontwikkelen van dynamic content loading centraal. Hiervoor is
             gebruik gemaakt van
             <a href="https://alpinejs.dev/" target="_blank"><span class="hover:opacity-75 underline semi-bold"> Alpine
-                    JS</span></a>. Alpine JS is een JavaScript framework en is op aanraden van het Brik team gebruikt aangezien met Alpine dynamic loading kan worden toegepast. Met dynamic loading kunnen er
-            elementen worden getoond of verborgen zonder dat de pagina opnieuw geladen hoeft te worden. Op deze manier kan de juiste contentvorm worden geladen op basis van de uitgevoerde acties van een bezoeker en op deze manier de content beter aansluit bij het type doelgroepprofiel.
+                    JS</span></a>. Alpine JS is een JavaScript framework en is op aanraden van het Brik team gebruikt aangezien met Alpine <span class="bold">dynamic loading</span> kan worden toegepast. Met dynamic loading kunnen er
+            elementen worden getoond of verborgen <span class="bold">zonder</span> dat de <span class="bold">pagina opnieuw geladen</span> hoeft te worden. Op deze manier kan de juiste contentvorm worden geladen op basis van de uitgevoerde acties van een bezoeker en op deze manier de content beter aansluit bij het type doelgroepprofiel.
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Eerste versie</div>
@@ -215,7 +215,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
 
         <div class="text-xl mt-4 uppercase bold mb-2">Lead scoring model verwerken</div>
         <div class="text-xl regular leading-8 opacity-75">
-            Bovenstaande Proof of Concept is verder uitgebouwd. Op basis van het lead scoring model zijn de datagegevens van de acties (hovers en kliks) en bijbehorende puntenscore per element (afbeeldingen en knoppen) op de landingspagina toegevoegd.
+            Bovenstaande Proof of Concept is verder uitgebouwd. Op basis van het <span class="bold">lead scoring model</span> zijn de <span class="bold">datagegevens</span> van de acties (hovers en kliks) en bijbehorende puntenscore per element (afbeeldingen en knoppen) <span class="bold">gekoppeld</span> aan de elementen op de landingspagina.
         </div>
         <div class="my-6">
             <a href="img/ontwikkeling/data-ls.png" class="glightbox" data-gallery="gallery2">
@@ -227,7 +227,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
 
         <div class="text-xl mt-4 uppercase bold mb-2">Tonen/verbergen elementversie afhankelijk van MSCH profiel</div>
         <div class="text-xl regular leading-8 opacity-75">
-            Als een bezoeker op de landingspagina minimaal 20 punten heeft behaald binnen een bepaald MSCH profiel en het profiel heeft de hoogste score heeft, wordt de versie van de landingspagina getoond die past bij het profiel.
+            Als een bezoeker op de landingspagina <span class="bold">minimaal 20 punten</span> heeft behaald binnen een bepaald MSCH profiel en het profiel heeft de hoogste score heeft, wordt de <span class="bold">versie</span> van de landingspagina <span class="bold">getoond</span> die past bij het <span class="bold">profiel.</span>
         </div>
 
         <div class="my-6">
@@ -239,7 +239,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Scorebord</div>
-        <div class="text-xl regular leading-8 opacity-75">Alle scores op basis van de acties van een bezoeker zijn in het prototype aan elkaar gekoppeld waardoor er een totaalscore ontstaat voor de lead score en MSCH score. Deze scores zorgen ervoor dat elementen worden getoond/verborgen afhankelijk van de score en de lead scoring scores zijn inzichtelijk (zie rechtsonder afb).
+        <div class="text-xl regular leading-8 opacity-75">Alle scores op basis van de acties van een bezoeker zijn in het prototype aan elkaar gekoppeld waardoor er een <span class="bold">totaalscore</span> ontstaat voor de lead score en MSCH score. Deze scores zorgen ervoor dat elementen worden getoond/verborgen afhankelijk van de score en de lead scoring scores zijn inzichtelijk (zie rechtsonder afb).
         </div>
         <div class="my-6">
             <a href="img/ontwikkeling/scorebord.png" class="glightbox" data-gallery="gallery2">
@@ -260,7 +260,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         <div class="text-2xl mt-16 uppercase bold mb-2">Proof of concept: Lead waarde inzichtelijk</div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Dashboard Craft CMS</div>
-        <div class="text-xl regular leading-8 opacity-75">In de tweede POC was de lead score van de bezoeker alleen zichtbaar aan de voorkant van de landingspagina. Om de data inzichtelijk te krijgen is een dashboard gerealiseerd in Craft CMS. In dit dashboard zijn de lead score en de MSCH score van een bezoeker van de landingspagina doorgezet naar Craft CMS en worden de scores live bijgehouden. In het dashboard is ook inzichtelijk binnen welk type websitegebruiker een profiel past, op deze manier is bijvoorbeeld inzichtelijk welk MSCH profiel de website het meest bezoekt.
+        <div class="text-xl regular leading-8 opacity-75">In de tweede POC was de lead score van de bezoeker alleen zichtbaar aan de voorkant van de landingspagina. Om de data inzichtelijk te krijgen is een <span class="bold">dashboard</span> gerealiseerd in <span class="bold">Craft CMS.</span> In dit dashboard zijn de <span class="bold">lead score en de MSCH score</span>  van een bezoeker van de landingspagina doorgezet naar Craft CMS en worden de scores live bijgehouden. In het dashboard is ook inzichtelijk binnen welk type websitegebruiker een profiel past, op deze manier is bijvoorbeeld inzichtelijk welk MSCH profiel de website het meest bezoekt.
         </div>
 
         <div class="my-8">
@@ -280,7 +280,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Sessiedata behouden</div>
-        <div class="text-xl regular leading-8 opacity-75">In het vorige prototype verdwenen de scores bij het herladen van de pagina. In een iteratie van het prototype worden daarom de scores van een bezoeker bijgehouden in een sessie. Bij het herladen van de pagina blijven de scores en de content die bij het profiel past behouden. De sessie wordt beëindigd wanneer de browser wordt afgesloten. Bij het opnieuw openen van de landingspagina staan de scores dan weer op 0.
+        <div class="text-xl regular leading-8 opacity-75">In het vorige prototype verdwenen de scores bij het herladen van de pagina. In een iteratie van het prototype worden daarom de scores van een bezoeker bijgehouden in een <span class="bold">sessie</span>. Bij het herladen van de pagina blijven de scores en de content die bij het profiel past <span class="bold">behouden</span>. De sessie wordt beëindigd wanneer de browser wordt afgesloten. Bij het opnieuw openen van de landingspagina staan de scores dan weer op 0.
         </div>
 
         <div class="my-8">
@@ -290,7 +290,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         </div>
 
         <div class="text-2xl mt-8 uppercase bold mb-2">Mailerlite koppeling</div>
-        <div class="text-xl regular leading-8 opacity-75">Op de landingspagina zijn er drie conversie mogelijkheden door middel van het invullen van formulieren. Op de landingspagina zijn deze conversies gerealiseerd, bij een conversie komt een lead in het in de analysefase geadviseerde marketing automation systeem Mailerlite, zodat de lead in de e-mail workflow terecht komt.<br><br>
+        <div class="text-xl regular leading-8 opacity-75">Op de landingspagina zijn er drie conversie mogelijkheden door middel van het invullen van formulieren. Op de landingspagina zijn deze <span class="bold">conversies gerealiseerd</span>, bij een conversie komt een lead in het in de analysefase geadviseerde marketing automation systeem <span class="bold">Mailerlite</span>, zodat de lead in de e-mail workflow terecht komt.<br><br>
             In het onderstaande voorbeeld het aanvragen van de whitepaper: Bij het klikken op de knop "downloaden" in het formulier zijn het ingevulde e-mailadres, sector en DMU type zichtbaar in Mailerlite. Aan de achterkant wordt ook het MSCH profiel en de lead score van de lead meegestuurd zodat deze ook zichtbaar zijn in Mailerlite. 
         </div>
 
@@ -314,12 +314,12 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
 
     <div id="git" class="w-8/12 mx-auto my-12">
         <div class="text-2xl mt-8 uppercase bold mb-2">Git</div>
-        <div class="text-xl regular leading-8 opacity-75">Voor versiebeheer van de technische ontwikkeling is de
+        <div class="text-xl regular leading-8 opacity-75">Voor <span class="bold">versiebeheer</span> van de technische ontwikkeling is de
             binnen Brik gebruikte management tool Gitlab toegepast. Hierdoor kan de code worden beheerd in
             groepsverband en kan er door middel
             van versiebeheer eenvoudig worden teruggevallen op oudere versies. Binnen de repository van
-            het project heb is een branch aangemaakt speciaal gericht op het realiseren van de landingspagina. Hierin is
-            de binnen Brik gebruikte naming convention (feature/naam-feature).
+            het project is een <span class="bold">branch</span> aangemaakt speciaal gericht op het realiseren van de landingspagina. Hierin is
+            de binnen Brik gebruikte <span class="bold">naming convention</span> (feature/naam-feature).
         </div>
         <div class="my-8">
             <a href="img/ontwikkeling/git-branch.png" class="glightbox" data-gallery="gallery2">
@@ -327,7 +327,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
             </a>
         </div>
         <div class="text-xl regular leading-8 opacity-75">Tijdens de realisatie zijn de verschillende toevoegingen en
-            aanpassingen binnen de code doorgezet (commits) naar de landingspagina branch. Elke commit bevat de binnen
+            aanpassingen binnen de code doorgezet (commits) naar de landingspagina branch. Elke <span class="bold">commit</span> bevat de binnen
             Brik standaard toegepaste naming convention: "type commit" + "uitgevoerde werkzaamheid".
         </div>
         <div class="mt-8 mb-12">
