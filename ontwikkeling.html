@@ -13,16 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script>
-        window.markerConfig = {
-          destination: '62a08506518e98007db169ac', 
-          source: 'snippet'
-        };
-      </script>
-      
-      <script>
-      !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
-      </script>
     <link rel="stylesheet" href="src/glightbox.css" />
 
 
@@ -169,7 +159,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         <div class="text-xl mt-4 uppercase bold mb-2">MSCH-profiel eigen versies per contentblok</div>
         <div class="text-xl regular leading-8 opacity-75">
             De landingspagina bestaat in Craft CMS uit contentblokken. Elk element van het ontwerp (CTA, FAQ, etc.) heeft zijn eigen
-            contentblok. Elk contentblok heeft weer vier versies, één versie per MSCH-profiel. Op deze manier kan de juiste versie van het
+            contentblok. Elk contentblok heeft vier versies, één versie per MSCH-profiel. Op deze manier kan de juiste versie van het
             contentblok worden getoond die past bij het profiel</div>
 
         <div class="my-12">
@@ -200,7 +190,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
             gebruik gemaakt van
             <a href="https://alpinejs.dev/" target="_blank"><span class="hover:opacity-75 underline semi-bold"> Alpine
                     JS</span></a>. Alpine JS is een JavaScript framework en is op aanraden van het Brik team gebruikt aangezien met Alpine <span class="bold">dynamic loading</span> kan worden toegepast. Met dynamic loading kunnen er
-            elementen worden getoond of verborgen <span class="bold">zonder</span> dat de <span class="bold">pagina opnieuw geladen</span> hoeft te worden. Op deze manier kan de juiste contentvorm worden geladen op basis van de uitgevoerde acties van een bezoeker en op deze manier de content beter aansluit bij het type doelgroepprofiel.
+            elementen worden getoond of verborgen <span class="bold">zonder</span> dat de <span class="bold">pagina opnieuw geladen</span> hoeft te worden. Op deze manier kan de juiste contentvorm worden geladen op basis van de uitgevoerde acties van een bezoeker en sluit de content aan bij het type doelgroepprofiel.
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Eerste versie</div>
@@ -227,7 +217,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
 
         <div class="text-xl mt-4 uppercase bold mb-2">Tonen/verbergen elementversie afhankelijk van MSCH profiel</div>
         <div class="text-xl regular leading-8 opacity-75">
-            Als een bezoeker op de landingspagina <span class="bold">minimaal 20 punten</span> heeft behaald binnen een bepaald MSCH profiel en het profiel heeft de hoogste score heeft, wordt de <span class="bold">versie</span> van de landingspagina <span class="bold">getoond</span> die past bij het <span class="bold">profiel.</span>
+            Als een bezoeker op de landingspagina <span class="bold">minimaal 20 punten</span> heeft behaald binnen een bepaald MSCH profiel en het profiel heeft de hoogste score, wordt de <span class="bold">versie</span> van de landingspagina <span class="bold">getoond</span> die past bij het <span class="bold">profiel.</span>
         </div>
 
         <div class="my-6">
@@ -239,7 +229,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         </div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Scorebord</div>
-        <div class="text-xl regular leading-8 opacity-75">Alle scores op basis van de acties van een bezoeker zijn in het prototype aan elkaar gekoppeld waardoor er een <span class="bold">totaalscore</span> ontstaat voor de lead score en MSCH score. Deze scores zorgen ervoor dat elementen worden getoond/verborgen afhankelijk van de score en de lead scoring scores zijn inzichtelijk (zie rechtsonder afb).
+        <div class="text-xl regular leading-8 opacity-75">Alle scores op basis van de acties van een bezoeker zijn in het prototype aan elkaar gekoppeld waardoor er een <span class="bold">totaalscore</span> ontstaat voor de lead score en MSCH score. Deze scores zorgen ervoor dat elementen worden getoond/verborgen afhankelijk van de score en maken de lead scoring inzichtelijk (zie rechtsonder afb).
         </div>
         <div class="my-6">
             <a href="img/ontwikkeling/scorebord.png" class="glightbox" data-gallery="gallery2">
@@ -248,7 +238,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         </div>
 
         <div class="text-xl mt-12 uppercase bold mb-2">POC Demo</div>
-        <div class="text-xl regular leading-8 opacity-75">Demo dynamic loading: Bezoeker komt op de landingspagina en behaald de drempel van 20 en blijkt een humanistische bezoeker te zijn. Elementen worden aangepast naar humanistische versies zoals het CTA element.
+        <div class="text-xl regular leading-8 opacity-75">Demo dynamic loading: Bezoeker behaald de drempel van 20 en blijkt een humanistische bezoeker te zijn. Elementen worden aangepast naar humanistische versies zoals het CTA element.
         </div>
         <div class="my-6">
             <a href="img/ontwikkeling/dynamic.gif" class="glightbox" data-gallery="gallery2">
@@ -260,7 +250,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         <div class="text-2xl mt-16 uppercase bold mb-2">Proof of concept: Lead waarde inzichtelijk</div>
 
         <div class="text-xl mt-4 uppercase bold mb-2">Dashboard Craft CMS</div>
-        <div class="text-xl regular leading-8 opacity-75">In de tweede POC was de lead score van de bezoeker alleen zichtbaar aan de voorkant van de landingspagina. Om de data inzichtelijk te krijgen is een <span class="bold">dashboard</span> gerealiseerd in <span class="bold">Craft CMS.</span> In dit dashboard zijn de <span class="bold">lead score en de MSCH score</span>  van een bezoeker van de landingspagina doorgezet naar Craft CMS en worden de scores live bijgehouden. In het dashboard is ook inzichtelijk binnen welk type websitegebruiker een profiel past, op deze manier is bijvoorbeeld inzichtelijk welk MSCH profiel de website het meest bezoekt.
+        <div class="text-xl regular leading-8 opacity-75">In de tweede POC was de lead score van de bezoeker alleen zichtbaar aan de voorkant van de landingspagina. Om de data inzichtelijk te krijgen is een <span class="bold">dashboard</span> gerealiseerd in <span class="bold">Craft CMS.</span> In dit dashboard zijn de <span class="bold">lead score en de MSCH score</span>  van een bezoeker van de landingspagina doorgezet naar Craft CMS en worden de scores live bijgehouden. In het dashboard is ook inzichtelijk binnen welk type websitegebruiker een profiel past, op deze manier is inzichtelijk welk MSCH profiel de website het meest bezoekt.
         </div>
 
         <div class="my-8">
@@ -290,7 +280,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
         </div>
 
         <div class="text-2xl mt-8 uppercase bold mb-2">Mailerlite koppeling</div>
-        <div class="text-xl regular leading-8 opacity-75">Op de landingspagina zijn er drie conversie mogelijkheden door middel van het invullen van formulieren. Op de landingspagina zijn deze <span class="bold">conversies gerealiseerd</span>, bij een conversie komt een lead in het in de analysefase geadviseerde marketing automation systeem <span class="bold">Mailerlite</span>, zodat de lead in de e-mail workflow terecht komt.<br><br>
+        <div class="text-xl regular leading-8 opacity-75">Op de landingspagina zijn er drie conversie mogelijkheden door middel van het invullen van formulieren. Deze <span class="bold">conversies zijn gerealiseerd</span>, bij een conversie komt een lead in het in de analysefase geadviseerde marketing automation systeem <span class="bold">Mailerlite</span>, zodat de lead in de e-mail workflow terecht komt.<br><br>
             In het onderstaande voorbeeld het aanvragen van de whitepaper: Bij het klikken op de knop "downloaden" in het formulier zijn het ingevulde e-mailadres, sector en DMU type zichtbaar in Mailerlite. Aan de achterkant wordt ook het MSCH profiel en de lead score van de lead meegestuurd zodat deze ook zichtbaar zijn in Mailerlite. 
         </div>
 
@@ -315,10 +305,10 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
     <div id="git" class="w-8/12 mx-auto my-12">
         <div class="text-2xl mt-8 uppercase bold mb-2">Git</div>
         <div class="text-xl regular leading-8 opacity-75">Voor <span class="bold">versiebeheer</span> van de technische ontwikkeling is de
-            binnen Brik gebruikte management tool Gitlab toegepast. Hierdoor kan de code worden beheerd in
+            gebruik gemaakt van Git. Hierdoor kan de code worden beheerd in
             groepsverband en kan er door middel
             van versiebeheer eenvoudig worden teruggevallen op oudere versies. Binnen de repository van
-            het project is een <span class="bold">branch</span> aangemaakt speciaal gericht op het realiseren van de landingspagina. Hierin is
+            het project is een <span class="bold">branch</span> aangemaakt gericht op het realiseren van de landingspagina. Volgens
             de binnen Brik gebruikte <span class="bold">naming convention</span> (feature/naam-feature).
         </div>
         <div class="my-8">
@@ -326,7 +316,7 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
                 <img src="img/ontwikkeling/git-branch.png" class="w-full object-cover relative">
             </a>
         </div>
-        <div class="text-xl regular leading-8 opacity-75">Tijdens de realisatie zijn de verschillende toevoegingen en
+        <div class="text-xl regular leading-8 opacity-75">Tijdens de realisatie zijn de toevoegingen en
             aanpassingen binnen de code doorgezet (commits) naar de landingspagina branch. Elke <span class="bold">commit</span> bevat de binnen
             Brik standaard toegepaste naming convention: "type commit" + "uitgevoerde werkzaamheid".
         </div>
@@ -366,11 +356,11 @@ Nadat de basis van de landingspagina stond is een prototype uitgewerk waarin con
 
         <div class="text-2xl mt-8 uppercase bold mb-2">Conclusie ontwikkeling</div>
         <div class="text-xl regular leading-8 opacity-75"> In de ontwikkeling stond de vraag <span class="bold">“Hoe kan een een technisch prototype worden uitgewerkt met de frameworks die binnen Brik
-            worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn?” </span>centraal. Deze onderzoeksvraag heb ik aan de
-            hand van de Front-end en Back-end ontwikkeling van het technische prototype
+            worden gebruikt waardoor de kwalitatieve leads inzichtelijk zijn?” </span>centraal. Deze onderzoeksvraag is met
+            de Front- en Back-end ontwikkeling van het technische prototype
             beantwoord.
         </div>
-        <div class="text-xl mt-4 regular leading-8 opacity-75">Uiteindelijk is er een technisch prototype gerealiseerd van de landingspagina Craft CMS vs Wordpress. In de landingspagina is het ontwerp uitgewerkt in de front-end ontwikkeling met HTML en TailwindCSS. De Front-end is middels Twig gekoppeld aan het Back-end systeem, Craft CMS. Op de landingspagina wordt de vorm van de content dynamisch aangepast op basis van het MSCH profiel. De elementen die worden getoond passen bij het type websitegebruiker en worden zonder dat de pagina herladen hoeft te worden dynamisch geladen met Alpine JS. De lead score en de MSCH score zijn zichtbaar in Craft CMS, waardoor de kwaliteit van de lead en het doelgroepprofiel van de lead inzichtelijk is.
+        <div class="text-xl mt-4 regular leading-8 opacity-75">Uiteindelijk is er een technisch prototype gerealiseerd van de landingspagina Craft CMS vs Wordpress. In de landingspagina is het ontwerp uitgewerkt in de Front-end ontwikkeling met HTML en TailwindCSS. De Front-end is middels Twig gekoppeld aan het Back-end systeem, Craft CMS. Op de landingspagina wordt de vorm van de content dynamisch aangepast op basis van het MSCH profiel. De getoonde elementen passen bij het type websitegebruiker en worden dynamisch geladen met Alpine JS. De lead score en de MSCH score zijn zichtbaar in Craft CMS, waardoor de kwaliteit van de lead en het doelgroepprofiel van de lead inzichtelijk is.
         </div>
         <div class="text-xl mt-4 regular leading-8 opacity-75">Voor een
             doorontwikkeling van het technisch prototype is er een conclusie geschreven en zijn er aanbevelingen
